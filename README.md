@@ -145,3 +145,7 @@ The exact code, frozen by hash, is in [`paper/`](paper/README.md).
   year   = {2026}
 }
 ```
+
+## License
+
+Code: Apache-2.0 (see `LICENSE`). AgentOrchBench data: CC-BY-4.0.

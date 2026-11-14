@@ -8,6 +8,7 @@ version = "0.1.0"
 description = "Harness enforcement that protects LLM agents from silent API failures, and the AgentOrchBench benchmark"
 readme = "README.md"
 requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
 authors = [
   { name = "Sajib Acharjee Dip", email = "sajibacharjeedip@vt.edu" },
   { name = "Brian Ouyang" },
@@ -15,6 +16,7 @@ authors = [
 ]
 keywords = ["llm-agents", "tool-use", "silent-failures", "guardrails", "benchmark", "api"]
 classifiers = [
+  "License :: OSI Approved :: Apache Software License",
   "Programming Language :: Python :: 3",
   "Intended Audience :: Science/Research",
   "Topic :: Scientific/Engineering :: Artificial Intelligence",
