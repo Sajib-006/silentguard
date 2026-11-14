@@ -1,0 +1,21 @@
+NCBI E-utilities (gene)      base=37885 doc=1567 | organism=SILENT, species=SILENT, taxid=SILENT | partition 1567+36318 vs 37885: True
+UniProtKB                    base=55460 doc=666 | organism_id=SILENT, organism=SILENT, taxonomy=SILENT | partition 666+54794 vs 55460: True
+ClinicalTrials.gov v2        base=24424 doc=1963 | status=rejected, overallStatus=rejected, recruitment_status=rejected
+Europe PMC                   base=291095 doc=15436 | year=SILENT, pub_year=SILENT, date=SILENT | partition 15436+275659 vs 291095: True
+OpenAlex                     base=611853 doc=37622 | year=rejected, publication_year=rejected, from_publication_date=rejected
+Crossref                     base=89634 doc=4268 | year=rejected, from-pub-date=rejected, published=rejected
+openFDA drug events          base=617937 doc=435397 | serious=rejected, seriousness=rejected, filter=rejected
+DataCite                     base=609191 doc=216660 | type=SILENT, resourceType=SILENT, resource_type=changed
+Zenodo                       base=110913 doc=25549 | resource_type=applied, record_type=SILENT, kind=SILENT | partition 25549+85364 vs 110913: True
+GitHub repository search     base=55661 doc=17225 | language=SILENT, lang=SILENT | partition 17225+38436 vs 55661: True
+ChEMBL molecules             base=2921148 doc=4225 | phase=SILENT, clinical_phase=SILENT, maxphase=SILENT
+arXiv                        base=186698 doc=2799 | cat=SILENT, category=SILENT | partition 2799+183899 vs 186698: True
+GBIF occurrences             base=31660 doc=11681 | countryCode=SILENT, nation=SILENT, country_code=SILENT
+iNaturalist                  base=18185 doc=11212 | country=SILENT, place=SILENT, place_name=SILENT
+Semantic Scholar             base=214821 doc=None | publication_year=rejected, pub_year=rejected, published=rejected
+
+reachable APIs: 15/15
+
+APIs with at least one SILENTLY ignored wrong filter: 10/15
+wrong-parameter probes by class: {'SILENT': 26, 'rejected': 15, 'changed': 1, 'applied': 1}  (n=43)
+partition identity on real data: holds 6/6

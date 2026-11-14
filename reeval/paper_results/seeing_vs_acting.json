@@ -1,0 +1,202 @@
+{
+ "advisory": {
+  "per_model": {
+   "llama4-scout": {
+    "flag_rate_fault": 62.03703703703704,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": 91.41791044776119,
+    "n_flagged": 268
+   },
+   "llama4-maverick": {
+    "flag_rate_fault": 86.11111111111111,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": 70.6989247311828,
+    "n_flagged": 372
+   },
+   "llama33-70b": {
+    "flag_rate_fault": 87.96296296296296,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": 87.89473684210526,
+    "n_flagged": 380
+   },
+   "gpt-oss-120b": {
+    "flag_rate_fault": 87.73148148148148,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": 56.72823218997362,
+    "n_flagged": 379
+   },
+   "nemotron-ultra": {
+    "flag_rate_fault": 87.96296296296296,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": 73.94736842105263,
+    "n_flagged": 380
+   },
+   "gemma3-27b": {
+    "flag_rate_fault": 81.71296296296296,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": 39.6600566572238,
+    "n_flagged": 353
+   },
+   "phi-4": {
+    "flag_rate_fault": 33.56481481481482,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": 30.344827586206897,
+    "n_flagged": 145
+   }
+  },
+  "flag_rate_fault": 75.29761904761904,
+  "flag_rate_clean": 0.0,
+  "wrong_after_flag": 64.38457955364373,
+  "models": 7
+ },
+ "advisory_hint": {
+  "per_model": {
+   "llama4-scout": {
+    "flag_rate_fault": 68.28703703703704,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": 65.42372881355932,
+    "n_flagged": 295
+   },
+   "llama4-maverick": {
+    "flag_rate_fault": 96.75925925925925,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": 61.483253588516746,
+    "n_flagged": 418
+   },
+   "llama33-70b": {
+    "flag_rate_fault": 97.22222222222223,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": 15.238095238095237,
+    "n_flagged": 420
+   },
+   "gpt-oss-120b": {
+    "flag_rate_fault": 96.75925925925925,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": 2.8708133971291865,
+    "n_flagged": 418
+   },
+   "nemotron-ultra": {
+    "flag_rate_fault": 97.22222222222223,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": 46.42857142857143,
+    "n_flagged": 420
+   },
+   "gemma3-27b": {
+    "flag_rate_fault": 91.20370370370371,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": 46.954314720812185,
+    "n_flagged": 394
+   },
+   "phi-4": {
+    "flag_rate_fault": 37.5,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": 33.95061728395062,
+    "n_flagged": 162
+   }
+  },
+  "flag_rate_fault": 83.56481481481481,
+  "flag_rate_clean": 0.0,
+  "wrong_after_flag": 38.907056352947826,
+  "models": 7
+ },
+ "judge_check": {
+  "per_model": {
+   "llama4-scout": {
+    "flag_rate_fault": 70.37037037037037,
+    "flag_rate_clean": 16.666666666666668,
+    "wrong_after_flag": 81.57894736842105,
+    "n_flagged": 304
+   },
+   "llama4-maverick": {
+    "flag_rate_fault": 95.60185185185185,
+    "flag_rate_clean": 15.277777777777779,
+    "wrong_after_flag": 82.32445520581113,
+    "n_flagged": 413
+   },
+   "llama33-70b": {
+    "flag_rate_fault": 94.9074074074074,
+    "flag_rate_clean": 8.333333333333334,
+    "wrong_after_flag": 81.21951219512195,
+    "n_flagged": 410
+   },
+   "gpt-oss-120b": {
+    "flag_rate_fault": 94.9074074074074,
+    "flag_rate_clean": 9.722222222222221,
+    "wrong_after_flag": 76.58536585365853,
+    "n_flagged": 410
+   },
+   "nemotron-ultra": {
+    "flag_rate_fault": 95.13888888888889,
+    "flag_rate_clean": 6.944444444444445,
+    "wrong_after_flag": 82.48175182481752,
+    "n_flagged": 411
+   },
+   "gemma3-27b": {
+    "flag_rate_fault": 90.50925925925925,
+    "flag_rate_clean": 8.333333333333334,
+    "wrong_after_flag": 81.58567774936061,
+    "n_flagged": 391
+   },
+   "phi-4": {
+    "flag_rate_fault": 35.416666666666664,
+    "flag_rate_clean": 31.944444444444443,
+    "wrong_after_flag": 56.209150326797385,
+    "n_flagged": 153
+   }
+  },
+  "flag_rate_fault": 82.40740740740739,
+  "flag_rate_clean": 13.888888888888888,
+  "wrong_after_flag": 77.42640864628403,
+  "models": 7
+ },
+ "om": {
+  "per_model": {
+   "llama4-scout": {
+    "flag_rate_fault": 23.84259259259259,
+    "flag_rate_clean": 37.5,
+    "wrong_after_flag": 59.22330097087379,
+    "n_flagged": 103
+   },
+   "llama4-maverick": {
+    "flag_rate_fault": 0.0,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": null,
+    "n_flagged": 0
+   },
+   "llama33-70b": {
+    "flag_rate_fault": 0.0,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": null,
+    "n_flagged": 0
+   },
+   "gpt-oss-120b": {
+    "flag_rate_fault": 0.0,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": null,
+    "n_flagged": 0
+   },
+   "nemotron-ultra": {
+    "flag_rate_fault": 0.0,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": null,
+    "n_flagged": 0
+   },
+   "gemma3-27b": {
+    "flag_rate_fault": 0.0,
+    "flag_rate_clean": 0.0,
+    "wrong_after_flag": null,
+    "n_flagged": 0
+   },
+   "phi-4": {
+    "flag_rate_fault": 0.6944444444444444,
+    "flag_rate_clean": 5.555555555555555,
+    "wrong_after_flag": 0.0,
+    "n_flagged": 3
+   }
+  },
+  "flag_rate_fault": 3.505291005291005,
+  "flag_rate_clean": 6.150793650793651,
+  "wrong_after_flag": 29.611650485436893,
+  "models": 7
+ }
+}

@@ -1,0 +1,2 @@
+{"enforce2": {"n": 3024, "wrong": 266, "requery_until_pass": 130, "every_call_failed": 90, "check_passed_every_call": 13, "check_never_ran": 33},
+ "sgp": {"n": 3024, "wrong": 52, "requery_until_pass": 13, "every_call_failed": 11, "check_passed_every_call": 21, "check_never_ran": 7}}

@@ -1,0 +1,10 @@
+env/
+runs/
+out/
+code/.env
+.env
+__pycache__/
+*.pyc
+*.db
+*.log
+.DS_Store

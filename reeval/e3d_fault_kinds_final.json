@@ -1,0 +1,539 @@
+[
+ {
+  "api": "NCBI E-utilities (gene)",
+  "bad_value": {
+   "param": {
+    "term": "kinase AND humn[orgn]"
+   },
+   "class": "applied",
+   "baseline": {
+    "status": 200,
+    "count": 3176392,
+    "n_list": 0,
+    "warn": false
+   },
+   "documented": {
+    "status": 200,
+    "count": 7151,
+    "n_list": 0,
+    "warn": false
+   },
+   "bad": {
+    "status": 200,
+    "count": 0,
+    "n_list": 0,
+    "warn": true
+   }
+  },
+  "page_cap": {
+   "asked": 100000,
+   "class": "honored",
+   "got": 100000,
+   "total": 3176392,
+   "status": 200,
+   "body": null
+  }
+ },
+ {
+  "api": "UniProtKB",
+  "bad_value": {
+   "param": {
+    "query": "kinase AND organism_id:96o6"
+   },
+   "class": "rejected",
+   "baseline": {
+    "status": 200,
+    "count": 8071748,
+    "n_list": 1,
+    "warn": false
+   },
+   "documented": {
+    "status": 200,
+    "count": 19520,
+    "n_list": 1,
+    "warn": false
+   },
+   "bad": {
+    "status": 400,
+    "count": null,
+    "n_list": null,
+    "warn": false,
+    "body": "{\"url\":\"http://rest.uniprot.org/uniprotkb/search\",\"messages\":[\"The 'organism_id' filter value should be a number\"]}"
+   }
+  },
+  "page_cap": {
+   "asked": 1000,
+   "class": "rejected",
+   "got": null,
+   "total": null,
+   "status": 400,
+   "body": "{\"url\":\"http://rest.uniprot.org/uniprotkb/search\",\"messages\":[\"'size' must be less than or equal to 500\"]}"
+  }
+ },
+ {
+  "api": "ClinicalTrials.gov v2",
+  "bad_value": {
+   "param": {
+    "filter.overallStatus": "RECRUITNG"
+   },
+   "class": "rejected",
+   "baseline": {
+    "status": 200,
+    "count": 24458,
+    "n_list": 1,
+    "warn": false
+   },
+   "documented": {
+    "status": 200,
+    "count": 1953,
+    "n_list": 1,
+    "warn": false
+   },
+   "bad": {
+    "status": 400,
+    "count": null,
+    "n_list": null,
+    "warn": false,
+    "body": "Invalid value in parameter `overallStatus`: `RECRUITNG`"
+   }
+  },
+  "page_cap": {
+   "asked": 5000,
+   "class": "capped",
+   "got": 1000,
+   "total": 24458,
+   "status": 200,
+   "body": null
+  }
+ },
+ {
+  "api": "Europe PMC",
+  "bad_value": {
+   "param": {
+    "query": "malaria AND PUB_YEAR:2o20"
+   },
+   "class": "ignored",
+   "baseline": {
+    "status": 200,
+    "count": 291321,
+    "n_list": 1,
+    "warn": false
+   },
+   "documented": {
+    "status": 200,
+    "count": 15436,
+    "n_list": 1,
+    "warn": false
+   },
+   "bad": {
+    "status": 200,
+    "count": 291321,
+    "n_list": 1,
+    "warn": false
+   }
+  },
+  "page_cap": {
+   "asked": 5000,
+   "class": "rejected",
+   "got": null,
+   "total": null,
+   "status": 200,
+   "body": null,
+   "note": "HTTP 200 with errCode 404 in the body: Invalid page size, valid size is between 1 and 1000"
+  }
+ },
+ {
+  "api": "OpenAlex",
+  "bad_value": {
+   "param": {
+    "filter": "publication_year:2o20"
+   },
+   "class": "rejected",
+   "baseline": {
+    "status": 200,
+    "count": 612244,
+    "n_list": 1,
+    "warn": false
+   },
+   "documented": {
+    "status": 200,
+    "count": 37594,
+    "n_list": 1,
+    "warn": false
+   },
+   "bad": {
+    "status": 400,
+    "count": null,
+    "n_list": null,
+    "warn": false,
+    "body": "{\"error\":\"Invalid query parameters error.\",\"message\":\"Value for param publication_year must be a number.\"}\n"
+   }
+  },
+  "page_cap": {
+   "asked": 1000,
+   "class": "rejected",
+   "got": null,
+   "total": null,
+   "status": 400,
+   "body": "{\"error\":\"Pagination error.\",\"message\":\"per-page parameter must be between 1 and 200.\"}\n"
+  }
+ },
+ {
+  "api": "Crossref",
+  "bad_value": {
+   "param": {
+    "filter": "from-pub-date:2020-13-01,until-pub-date:2020-12-31"
+   },
+   "class": "rejected",
+   "baseline": {
+    "status": 200,
+    "count": 89748,
+    "n_list": 0,
+    "warn": false
+   },
+   "documented": {
+    "status": 200,
+    "count": 4266,
+    "n_list": 0,
+    "warn": false
+   },
+   "bad": {
+    "status": 400,
+    "count": null,
+    "n_list": null,
+    "warn": false,
+    "body": "{\"status\":\"failed\",\"message-type\":\"validation-failure\",\"message\":[{\"type\":\"date-not-valid\",\"value\":\"2020-13-01\",\"message\":\"Date specified as 2020-13-01 but must be of the form: yyyy or yyyy-MM or yyyy"
+   }
+  },
+  "page_cap": {
+   "asked": 5000,
+   "class": "rejected",
+   "got": null,
+   "total": null,
+   "status": 400,
+   "body": "{\"status\":\"failed\",\"message-type\":\"validation-failure\",\"message\":[{\"type\":\"integer-not-valid\",\"value\":\"5000\",\"message\":\"Integer specified as 5000 but must be a positive integer less than or equal to 1"
+  }
+ },
+ {
+  "api": "openFDA drug events",
+  "bad_value": {
+   "param": {
+    "search": "patient.drug.medicinalproduct:aspirin AND serious:one"
+   },
+   "class": "rejected",
+   "baseline": {
+    "status": 200,
+    "count": 617926,
+    "n_list": 1,
+    "warn": false
+   },
+   "documented": {
+    "status": 200,
+    "count": 435377,
+    "n_list": 1,
+    "warn": false
+   },
+   "bad": {
+    "status": 404,
+    "count": null,
+    "n_list": null,
+    "warn": false,
+    "body": "{\n  \"error\": {\n    \"code\": \"NOT_FOUND\",\n    \"message\": \"No matches found!\"\n  }\n}"
+   }
+  },
+  "page_cap": {
+   "asked": 5000,
+   "class": "rejected",
+   "got": null,
+   "total": null,
+   "status": 403,
+   "body": "{\n  \"error\": {\n    \"code\": \"API_KEY_MISSING\",\n    \"message\": \"No api_key was supplied. Get one at https://api.fda.gov:443\"\n  }\n}",
+   "note": "HTTP 403 API_KEY_MISSING: large pages need a key; explicit error"
+  }
+ },
+ {
+  "api": "DataCite",
+  "bad_value": {
+   "param": {
+    "resource-type-id": "datset"
+   },
+   "class": "applied",
+   "baseline": {
+    "status": 200,
+    "count": 611636,
+    "n_list": 1,
+    "warn": false
+   },
+   "documented": {
+    "status": 200,
+    "count": 217554,
+    "n_list": 1,
+    "warn": false
+   },
+   "bad": {
+    "status": 200,
+    "count": 0,
+    "n_list": 0,
+    "warn": false
+   }
+  },
+  "page_cap": {
+   "asked": 5000,
+   "class": "capped",
+   "got": 1000,
+   "total": 611636,
+   "status": 200,
+   "body": null
+  }
+ },
+ {
+  "api": "Zenodo",
+  "bad_value": {
+   "param": {
+    "type": "datset"
+   },
+   "class": "applied",
+   "baseline": {
+    "status": 200,
+    "count": 111648,
+    "n_list": 1,
+    "warn": false
+   },
+   "documented": {
+    "status": 200,
+    "count": 25714,
+    "n_list": 1,
+    "warn": false
+   },
+   "bad": {
+    "status": 200,
+    "count": 0,
+    "n_list": 0,
+    "warn": false
+   }
+  },
+  "page_cap": {
+   "asked": 5000,
+   "class": "rejected",
+   "got": null,
+   "total": null,
+   "status": 400,
+   "body": "{\"status\": 400, \"message\": \"A validation error occurred.\", \"errors\": [{\"field\": \"size\", \"messages\": [\"Page size cannot be greater than 25. Please use authenticated requests to increase the limit to 10"
+  }
+ },
+ {
+  "api": "GitHub repository search",
+  "bad_value": {
+   "param": {
+    "q": "bioinformatics language:pythn"
+   },
+   "class": "ignored",
+   "baseline": {
+    "status": 200,
+    "count": 56030,
+    "n_list": 1,
+    "warn": false
+   },
+   "documented": {
+    "status": 200,
+    "count": 17371,
+    "n_list": 1,
+    "warn": false
+   },
+   "bad": {
+    "status": 200,
+    "count": 56030,
+    "n_list": 1,
+    "warn": false
+   }
+  },
+  "page_cap": {
+   "asked": 500,
+   "class": "capped",
+   "got": 100,
+   "total": 56030,
+   "status": 200,
+   "body": null
+  }
+ },
+ {
+  "api": "ChEMBL molecules",
+  "bad_value": {
+   "param": {
+    "max_phase": "four"
+   },
+   "class": "rejected",
+   "baseline": {
+    "status": 200,
+    "count": 2921148,
+    "n_list": 1,
+    "warn": false
+   },
+   "documented": {
+    "status": 200,
+    "count": 4225,
+    "n_list": 1,
+    "warn": false
+   },
+   "bad": {
+    "status": 400,
+    "count": null,
+    "n_list": null,
+    "warn": false,
+    "body": "{\"error_message\": [\"'four' value must be a decimal number.\"]}"
+   }
+  },
+  "page_cap": {
+   "asked": 5000,
+   "class": "capped",
+   "got": 1000,
+   "total": 2921148,
+   "status": 200,
+   "body": null
+  }
+ },
+ {
+  "api": "arXiv",
+  "bad_value": {
+   "param": {
+    "search_query": "all:electron AND cat:hep-tth"
+   },
+   "class": "applied",
+   "baseline": {
+    "status": 200,
+    "count": 186974,
+    "n_list": 1,
+    "warn": false
+   },
+   "documented": {
+    "status": 200,
+    "count": 2800,
+    "n_list": 1,
+    "warn": false
+   },
+   "bad": {
+    "status": 200,
+    "count": 0,
+    "n_list": 0,
+    "warn": false
+   }
+  },
+  "page_cap": {
+   "asked": 5000,
+   "class": "honored",
+   "got": 5000,
+   "total": 186974,
+   "status": 200,
+   "body": null
+  }
+ },
+ {
+  "api": "GBIF occurrences",
+  "bad_value": {
+   "param": {
+    "country": "USA"
+   },
+   "class": "applied",
+   "baseline": {
+    "status": 200,
+    "count": 31720,
+    "n_list": 0,
+    "warn": false
+   },
+   "documented": {
+    "status": 200,
+    "count": 11711,
+    "n_list": 0,
+    "warn": false
+   },
+   "bad": {
+    "status": 200,
+    "count": 0,
+    "n_list": 0,
+    "warn": false
+   }
+  },
+  "page_cap": {
+   "asked": 1000,
+   "class": "capped",
+   "got": 300,
+   "total": 31720,
+   "status": 200,
+   "body": null
+  }
+ },
+ {
+  "api": "iNaturalist",
+  "bad_value": {
+   "param": {
+    "d1": "2020-13-45"
+   },
+   "class": "ignored",
+   "baseline": {
+    "status": 200,
+    "count": 18259,
+    "n_list": 0,
+    "warn": false
+   },
+   "documented": {
+    "status": 200,
+    "count": 13825,
+    "n_list": 0,
+    "warn": false
+   },
+   "bad": {
+    "status": 200,
+    "count": 18259,
+    "n_list": 0,
+    "warn": false
+   }
+  },
+  "page_cap": {
+   "asked": 1000,
+   "class": "capped",
+   "got": 200,
+   "total": 18259,
+   "status": 200,
+   "body": null
+  }
+ },
+ {
+  "api": "Semantic Scholar",
+  "bad_value": {
+   "param": {
+    "year": "2o20"
+   },
+   "class": "unreachable",
+   "baseline": {
+    "status": 429,
+    "count": null,
+    "n_list": null,
+    "warn": false,
+    "body": "{\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}"
+   },
+   "documented": {
+    "status": 429,
+    "count": null,
+    "n_list": null,
+    "warn": false,
+    "body": "{\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}"
+   },
+   "bad": {
+    "status": 429,
+    "count": null,
+    "n_list": null,
+    "warn": false,
+    "body": "{\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}"
+   }
+  },
+  "page_cap": {
+   "asked": 1000,
+   "class": "unreachable",
+   "got": null,
+   "total": null,
+   "status": 429,
+   "body": "{\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}"
+  },
+  "note": "HTTP 429 rate limit on every retry; excluded"
+ }
+]

@@ -1,0 +1,116 @@
+{
+  "source": "Run on Genentech's internal computing platform with the same code, tasks, fault types, seeds, settings and grader as the other runs. Company policy does not allow release of logs from that platform, so only per-arm counts are given. Each count was checked to fit the run totals (432 faulted and 72 clean runs per arm).",
+  "arms": [
+    "none",
+    "selfverify",
+    "warning",
+    "permission",
+    "enforce",
+    "sgp"
+  ],
+  "wrong": {
+    "gpt-5.6-sol": [
+      89.35185185185185,
+      2.5462962962962963,
+      11.342592592592593,
+      2.314814814814815,
+      31.48148148148148,
+      0.0
+    ],
+    "gpt-5.6-terra": [
+      62.26851851851852,
+      3.935185185185185,
+      53.93518518518518,
+      35.879629629629626,
+      34.02777777777778,
+      0.23148148148148148
+    ],
+    "gpt-5.6-luna": [
+      59.02777777777778,
+      6.944444444444445,
+      63.19444444444444,
+      45.138888888888886,
+      36.111111111111114,
+      1.3888888888888888
+    ]
+  },
+  "clean": {
+    "gpt-5.6-sol": [
+      98.61111111111111,
+      29.166666666666668,
+      77.77777777777777,
+      86.11111111111111,
+      100.0,
+      100.0
+    ],
+    "gpt-5.6-terra": [
+      93.05555555555556,
+      15.277777777777779,
+      68.05555555555556,
+      76.38888888888889,
+      90.27777777777777,
+      98.61111111111111
+    ],
+    "gpt-5.6-luna": [
+      84.72222222222223,
+      16.666666666666668,
+      69.44444444444444,
+      73.61111111111111,
+      87.5,
+      95.83333333333333
+    ]
+  },
+  "note": "Three GPT-5.6 models on six AgentOrchBench arms. Run on Genentech's internal computing platform with the same code, tasks, fault types, seeds, settings and grader as the other runs. Company policy does not allow release of logs from that platform, so only per-arm counts are given. Each count was checked to fit the run totals (432 faulted and 72 clean runs per arm).",
+  "wrong_counts": {
+    "gpt-5.6-sol": [
+      386,
+      11,
+      49,
+      10,
+      136,
+      0
+    ],
+    "gpt-5.6-terra": [
+      269,
+      17,
+      233,
+      155,
+      147,
+      1
+    ],
+    "gpt-5.6-luna": [
+      255,
+      30,
+      273,
+      195,
+      156,
+      6
+    ]
+  },
+  "clean_counts": {
+    "gpt-5.6-sol": [
+      71,
+      21,
+      56,
+      62,
+      72,
+      72
+    ],
+    "gpt-5.6-terra": [
+      67,
+      11,
+      49,
+      55,
+      65,
+      71
+    ],
+    "gpt-5.6-luna": [
+      61,
+      12,
+      50,
+      53,
+      63,
+      69
+    ]
+  }
+}

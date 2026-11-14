@@ -1,0 +1,129 @@
+{
+  "agreements": [
+    {"id": "agr-001", "name": "10x Genomics Public Data License", "provider": "10x Genomics", "study_ids": ["PBMC-STUDY-001"], "approval_status": "RECEIVING_DATA"},
+    {"id": "agr-002", "name": "Allen Brain Atlas Public Access", "provider": "Allen Institute", "study_ids": ["BRAIN-STUDY-002"], "approval_status": "RECEIVING_DATA"},
+    {"id": "agr-003", "name": "NCBI GEO Public Dataset Agreement", "provider": "NCBI", "study_ids": ["GEO-STUDY-003", "GEO-STUDY-004"], "approval_status": "RECEIVING_DATA"},
+    {"id": "agr-004", "name": "Benchmark Synthetic Data Agreement", "provider": "AgentOrchBench", "study_ids": [], "approval_status": "RECEIVING_DATA"}
+  ],
+  "transfers": [
+    {
+      "id": "transfer-001",
+      "name": "PBMC3K-RNAseq-Batch01",
+      "agreement_id": "agr-001",
+      "status": "SUCCESS",
+      "qc_status": "SUCCESS",
+      "routing_status": "SUCCESS",
+      "total_files": 6,
+      "size_bytes": 4893736960,
+      "is_test": false,
+      "study_ids": ["PBMC-STUDY-001"],
+      "sent_at": "2026-01-15T10:00:00Z",
+      "updated_at": "2026-01-15T11:30:00Z",
+      "files": [
+        {"name": "read-RA_si-GTTGCATG_lane-002-chunk-000.fastq.gz", "size_bytes": 1782579200, "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/fastq/read-RA_si-GTTGCATG_lane-002-chunk-000.fastq.gz"},
+        {"name": "read-RA_si-CGCTATCC_lane-001-chunk-001.fastq.gz", "size_bytes": 1926119424, "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/fastq/read-RA_si-CGCTATCC_lane-001-chunk-001.fastq.gz"},
+        {"name": "read-RA_si-CGCTATCC_lane-002-chunk-000.fastq.gz", "size_bytes": 647020544, "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/fastq/read-RA_si-CGCTATCC_lane-002-chunk-000.fastq.gz"},
+        {"name": "read-I1_si-GTTGCATG_lane-001-chunk-001.fastq.gz", "size_bytes": 403897344, "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/fastq/read-I1_si-GTTGCATG_lane-001-chunk-001.fastq.gz"},
+        {"name": "read-I2_si-CGCTATCC_lane-001-chunk-001.fastq.gz", "size_bytes": 210763776, "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/fastq/read-I2_si-CGCTATCC_lane-001-chunk-001.fastq.gz"},
+        {"name": "read-I2_si-GTTGCATG_lane-002-chunk-000.fastq.gz", "size_bytes": 193036288, "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/fastq/read-I2_si-GTTGCATG_lane-002-chunk-000.fastq.gz"}
+      ]
+    },
+    {
+      "id": "transfer-002",
+      "name": "AllenBrain-WMB-Midbrain-Batch01",
+      "agreement_id": "agr-002",
+      "status": "SUCCESS",
+      "qc_status": "SUCCESS",
+      "routing_status": "SUCCESS",
+      "total_files": 1,
+      "size_bytes": 811597824,
+      "is_test": false,
+      "study_ids": ["BRAIN-STUDY-002"],
+      "sent_at": "2026-02-01T09:00:00Z",
+      "updated_at": "2026-02-01T09:45:00Z",
+      "files": [
+        {"name": "WMB-10Xv2-MB-raw.h5ad", "size_bytes": 811597824, "s3_uri": "s3://agentorchbench/allen-brain/WMB-10Xv2-MB-raw.h5ad"}
+      ]
+    },
+    {
+      "id": "transfer-003",
+      "name": "PBMC3K-QCResults-Batch01",
+      "agreement_id": "agr-001",
+      "status": "SUCCESS",
+      "qc_status": "SUCCESS",
+      "routing_status": "SUCCESS",
+      "total_files": 4,
+      "size_bytes": 524288,
+      "is_test": false,
+      "study_ids": ["PBMC-STUDY-001"],
+      "sent_at": "2026-01-16T08:00:00Z",
+      "updated_at": "2026-01-16T08:15:00Z",
+      "files": [
+        {"name": "read-RA_si-GTTGCATG_fastqc.html", "size_bytes": 131072, "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/qc/read-RA_si-GTTGCATG_fastqc.html"},
+        {"name": "read-RA_si-GTTGCATG_fastqc.zip", "size_bytes": 65536, "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/qc/read-RA_si-GTTGCATG_fastqc.zip"},
+        {"name": "read-RA_si-CGCTATCC_fastqc.html", "size_bytes": 131072, "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/qc/read-RA_si-CGCTATCC_fastqc.html"},
+        {"name": "read-RA_si-CGCTATCC_fastqc.zip", "size_bytes": 65536, "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/qc/read-RA_si-CGCTATCC_fastqc.zip"}
+      ]
+    },
+    {
+      "id": "transfer-004",
+      "name": "GEO-GSE160189-HippocampusRNAseq",
+      "agreement_id": "agr-003",
+      "status": "IN_PROGRESS",
+      "qc_status": "NOT_STARTED",
+      "routing_status": "NOT_STARTED",
+      "total_files": 10,
+      "size_bytes": 34091573248,
+      "is_test": false,
+      "study_ids": ["GEO-STUDY-003"],
+      "sent_at": "2026-03-01T14:00:00Z",
+      "updated_at": "2026-03-01T14:30:00Z",
+      "files": []
+    },
+    {
+      "id": "transfer-005",
+      "name": "BenchTest-SyntheticData-001",
+      "agreement_id": "agr-004",
+      "status": "FAILED",
+      "qc_status": "FAILED",
+      "routing_status": "NOT_STARTED",
+      "total_files": 2,
+      "size_bytes": 1024,
+      "is_test": true,
+      "study_ids": [],
+      "sent_at": "2026-03-10T10:00:00Z",
+      "updated_at": "2026-03-10T10:05:00Z",
+      "files": []
+    },
+    {
+      "id": "transfer-006",
+      "name": "PBMC10K-v3-Batch02",
+      "agreement_id": "agr-001",
+      "status": "SUCCESS",
+      "qc_status": "SUCCESS",
+      "routing_status": "NOT_STARTED",
+      "total_files": 8,
+      "size_bytes": 51539607552,
+      "is_test": false,
+      "study_ids": ["PBMC-STUDY-001"],
+      "sent_at": "2026-04-01T10:00:00Z",
+      "updated_at": "2026-04-01T12:00:00Z",
+      "files": []
+    },
+    {
+      "id": "transfer-007",
+      "name": "AllenBrain-WMB-Cortex-Batch02",
+      "agreement_id": "agr-002",
+      "status": "NOT_STARTED",
+      "qc_status": "NOT_STARTED",
+      "routing_status": "NOT_STARTED",
+      "total_files": 0,
+      "size_bytes": 0,
+      "is_test": false,
+      "study_ids": ["BRAIN-STUDY-002"],
+      "sent_at": "2026-04-15T08:00:00Z",
+      "updated_at": "2026-04-15T08:00:00Z",
+      "files": []
+    }
+  ]
+}

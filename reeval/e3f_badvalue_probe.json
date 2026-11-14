@@ -1,0 +1,207 @@
+[
+ {
+  "api": "europepmc",
+  "task": "malaria|2020",
+  "bad_value": "2o20",
+  "N_A": 291546,
+  "N_good": 15435,
+  "N_bad": 291546,
+  "N_A_not_bad": 291546,
+  "silently_ignored": true,
+  "wrong_count": true,
+  "identity_fires_on_bad": true,
+  "identity_fires_on_good": false
+ },
+ {
+  "api": "europepmc",
+  "task": "CRISPR|2018",
+  "bad_value": "2o18",
+  "N_A": 237643,
+  "N_good": 11602,
+  "N_bad": 237643,
+  "N_A_not_bad": 237643,
+  "silently_ignored": true,
+  "wrong_count": true,
+  "identity_fires_on_bad": true,
+  "identity_fires_on_good": false
+ },
+ {
+  "api": "europepmc",
+  "task": "tuberculosis|2015",
+  "bad_value": "2o15",
+  "N_A": 738164,
+  "N_good": 18630,
+  "N_bad": 738164,
+  "N_A_not_bad": 738164,
+  "silently_ignored": true,
+  "wrong_count": true,
+  "identity_fires_on_bad": true,
+  "identity_fires_on_good": false
+ },
+ {
+  "api": "europepmc",
+  "task": "zika|2016",
+  "bad_value": "2o16",
+  "N_A": 53224,
+  "N_good": 2658,
+  "N_bad": 53224,
+  "N_A_not_bad": 53224,
+  "silently_ignored": true,
+  "wrong_count": true,
+  "identity_fires_on_bad": true,
+  "identity_fires_on_good": false
+ },
+ {
+  "api": "europepmc",
+  "task": "dengue|2019",
+  "bad_value": "2o19",
+  "N_A": 104891,
+  "N_good": 5210,
+  "N_bad": 104891,
+  "N_A_not_bad": 104891,
+  "silently_ignored": true,
+  "wrong_count": true,
+  "identity_fires_on_bad": true,
+  "identity_fires_on_good": false
+ },
+ {
+  "api": "inat",
+  "task": "Puma concolor|2020",
+  "bad_value": "2020-13-45",
+  "N_A": 18294,
+  "N_good": 13858,
+  "N_bad": 18294,
+  "silently_ignored": true,
+  "wrong_count": true,
+  "probe_flags_on_bad": [
+   "d1"
+  ],
+  "probe_flags_on_good": []
+ },
+ {
+  "api": "inat",
+  "task": "Ursus arctos|2019",
+  "bad_value": "2019-13-45",
+  "N_A": 26693,
+  "N_good": 21126,
+  "N_bad": 26693,
+  "silently_ignored": true,
+  "wrong_count": true,
+  "probe_flags_on_bad": [
+   "d1"
+  ],
+  "probe_flags_on_good": []
+ },
+ {
+  "api": "inat",
+  "task": "Canis lupus|2021",
+  "bad_value": "2021-13-45",
+  "N_A": 183399,
+  "N_good": 124219,
+  "N_bad": 183399,
+  "silently_ignored": true,
+  "wrong_count": true,
+  "probe_flags_on_bad": [
+   "d1"
+  ],
+  "probe_flags_on_good": []
+ },
+ {
+  "api": "inat",
+  "task": "Lynx rufus|2018",
+  "bad_value": "2018-13-45",
+  "N_A": 55659,
+  "N_good": 49416,
+  "N_bad": 55659,
+  "silently_ignored": true,
+  "wrong_count": true,
+  "probe_flags_on_bad": [
+   "d1"
+  ],
+  "probe_flags_on_good": []
+ },
+ {
+  "api": "inat",
+  "task": "Vulpes vulpes|2022",
+  "bad_value": "2022-13-45",
+  "N_A": 172399,
+  "N_good": 115643,
+  "N_bad": 172399,
+  "silently_ignored": true,
+  "wrong_count": true,
+  "probe_flags_on_bad": [
+   "d1"
+  ],
+  "probe_flags_on_good": []
+ },
+ {
+  "api": "github",
+  "task": "bioinformatics|python",
+  "bad_value": "pythn",
+  "N_A": 56341,
+  "N_good": 17521,
+  "N_bad": 56341,
+  "N_A_not_bad": 56341,
+  "silently_ignored": true,
+  "wrong_count": true,
+  "identity_fires_on_bad": true,
+  "identity_fires_on_good": false,
+  "N_A_not_good": 38820
+ },
+ {
+  "api": "github",
+  "task": "genomics|python",
+  "bad_value": "pythn",
+  "N_A": 28062,
+  "N_good": 7473,
+  "N_bad": 28062,
+  "N_A_not_bad": 28062,
+  "silently_ignored": true,
+  "wrong_count": true,
+  "identity_fires_on_bad": true,
+  "identity_fires_on_good": false,
+  "N_A_not_good": 20589
+ },
+ {
+  "api": "github",
+  "task": "proteomics|python",
+  "bad_value": "pythn",
+  "N_A": 5526,
+  "N_good": 1260,
+  "N_bad": 5526,
+  "N_A_not_bad": 5526,
+  "silently_ignored": true,
+  "wrong_count": true,
+  "identity_fires_on_bad": true,
+  "identity_fires_on_good": false,
+  "N_A_not_good": 4266
+ },
+ {
+  "api": "github",
+  "task": "phylogenetics|python",
+  "bad_value": "pythn",
+  "N_A": 5968,
+  "N_good": 1629,
+  "N_bad": 5968,
+  "N_A_not_bad": 5968,
+  "silently_ignored": true,
+  "wrong_count": true,
+  "identity_fires_on_bad": true,
+  "identity_fires_on_good": false,
+  "N_A_not_good": 4339
+ },
+ {
+  "api": "github",
+  "task": "metagenomics|python",
+  "bad_value": "pythn",
+  "N_A": 5833,
+  "N_good": 1630,
+  "N_bad": 5833,
+  "N_A_not_bad": 5833,
+  "silently_ignored": true,
+  "wrong_count": true,
+  "identity_fires_on_bad": true,
+  "identity_fires_on_good": false,
+  "N_A_not_good": 4203
+ }
+]

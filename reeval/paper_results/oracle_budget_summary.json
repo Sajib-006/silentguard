@@ -1,0 +1,452 @@
+{
+ "off": {
+  "none": {
+   "detect": 0.0,
+   "extra_calls": 0.0,
+   "correct": 100.0,
+   "unknown": 0.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "fixed-last": {
+   "detect": 0.0,
+   "extra_calls": 2.0,
+   "correct": 100.0,
+   "unknown": 0.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "random-1": {
+   "detect": 0.0,
+   "extra_calls": 2.0,
+   "correct": 100.0,
+   "unknown": 0.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "random-2": {
+   "detect": 0.0,
+   "extra_calls": 4.0,
+   "correct": 100.0,
+   "unknown": 0.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "sequential": {
+   "detect": 0.0,
+   "extra_calls": 5.166666666666667,
+   "correct": 100.0,
+   "unknown": 0.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "all": {
+   "detect": 0.0,
+   "extra_calls": 5.166666666666667,
+   "correct": 100.0,
+   "unknown": 0.0,
+   "wrong": 0.0,
+   "n": 36
+  }
+ },
+ "drop_last": {
+  "none": {
+   "detect": 0.0,
+   "extra_calls": 0.0,
+   "correct": 0.0,
+   "unknown": 0.0,
+   "wrong": 100.0,
+   "n": 36
+  },
+  "fixed-last": {
+   "detect": 97.22222222222223,
+   "extra_calls": 2.0,
+   "correct": 0.0,
+   "unknown": 97.22222222222223,
+   "wrong": 2.7777777777777777,
+   "n": 36
+  },
+  "random-1": {
+   "detect": 99.07407407407408,
+   "extra_calls": 2.0,
+   "correct": 0.0,
+   "unknown": 99.07407407407408,
+   "wrong": 0.925925925925926,
+   "n": 36
+  },
+  "random-2": {
+   "detect": 100.0,
+   "extra_calls": 4.0,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "sequential": {
+   "detect": 100.0,
+   "extra_calls": 2.018518518518518,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "all": {
+   "detect": 100.0,
+   "extra_calls": 5.166666666666667,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  }
+ },
+ "cap_total": {
+  "none": {
+   "detect": 0.0,
+   "extra_calls": 0.0,
+   "correct": 0.0,
+   "unknown": 0.0,
+   "wrong": 100.0,
+   "n": 36
+  },
+  "fixed-last": {
+   "detect": 100.0,
+   "extra_calls": 2.0,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "random-1": {
+   "detect": 99.07407407407408,
+   "extra_calls": 2.0,
+   "correct": 0.0,
+   "unknown": 99.07407407407408,
+   "wrong": 0.925925925925926,
+   "n": 36
+  },
+  "random-2": {
+   "detect": 100.0,
+   "extra_calls": 4.0,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "sequential": {
+   "detect": 100.0,
+   "extra_calls": 2.018518518518518,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "all": {
+   "detect": 100.0,
+   "extra_calls": 5.166666666666667,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  }
+ },
+ "or_semantics": {
+  "none": {
+   "detect": 0.0,
+   "extra_calls": 0.0,
+   "correct": 0.0,
+   "unknown": 0.0,
+   "wrong": 100.0,
+   "n": 36
+  },
+  "fixed-last": {
+   "detect": 100.0,
+   "extra_calls": 2.0,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "random-1": {
+   "detect": 100.0,
+   "extra_calls": 2.0,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "random-2": {
+   "detect": 100.0,
+   "extra_calls": 4.0,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "sequential": {
+   "detect": 100.0,
+   "extra_calls": 2.0,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "all": {
+   "detect": 100.0,
+   "extra_calls": 5.166666666666667,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  }
+ },
+ "drop_field": {
+  "none": {
+   "detect": 0.0,
+   "extra_calls": 0.0,
+   "correct": 16.666666666666668,
+   "unknown": 0.0,
+   "wrong": 83.33333333333333,
+   "n": 36
+  },
+  "fixed-last": {
+   "detect": 33.333333333333336,
+   "extra_calls": 2.0,
+   "correct": 16.666666666666668,
+   "unknown": 33.333333333333336,
+   "wrong": 50.0,
+   "n": 36
+  },
+  "random-1": {
+   "detect": 33.333333333333336,
+   "extra_calls": 2.0,
+   "correct": 16.666666666666668,
+   "unknown": 33.333333333333336,
+   "wrong": 50.0,
+   "n": 36
+  },
+  "random-2": {
+   "detect": 66.66666666666667,
+   "extra_calls": 4.0,
+   "correct": 16.666666666666668,
+   "unknown": 66.66666666666667,
+   "wrong": 16.666666666666664,
+   "n": 36
+  },
+  "sequential": {
+   "detect": 83.33333333333333,
+   "extra_calls": 3.8333333333333335,
+   "correct": 16.666666666666668,
+   "unknown": 83.33333333333333,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "all": {
+   "detect": 83.33333333333333,
+   "extra_calls": 5.166666666666667,
+   "correct": 16.666666666666668,
+   "unknown": 83.33333333333333,
+   "wrong": 0.0,
+   "n": 36
+  }
+ },
+ "ignore_negation": {
+  "none": {
+   "detect": 0.0,
+   "extra_calls": 0.0,
+   "correct": 100.0,
+   "unknown": 0.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "fixed-last": {
+   "detect": 97.22222222222223,
+   "extra_calls": 2.0,
+   "correct": 2.7777777777777777,
+   "unknown": 97.22222222222223,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "random-1": {
+   "detect": 99.07407407407408,
+   "extra_calls": 2.0,
+   "correct": 0.925925925925926,
+   "unknown": 99.07407407407408,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "random-2": {
+   "detect": 100.0,
+   "extra_calls": 4.0,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "sequential": {
+   "detect": 100.0,
+   "extra_calls": 2.018518518518518,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "all": {
+   "detect": 100.0,
+   "extra_calls": 5.166666666666667,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  }
+ },
+ "off_by_one": {
+  "none": {
+   "detect": 0.0,
+   "extra_calls": 0.0,
+   "correct": 0.0,
+   "unknown": 0.0,
+   "wrong": 100.0,
+   "n": 36
+  },
+  "fixed-last": {
+   "detect": 100.0,
+   "extra_calls": 2.0,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "random-1": {
+   "detect": 100.0,
+   "extra_calls": 2.0,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "random-2": {
+   "detect": 100.0,
+   "extra_calls": 4.0,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "sequential": {
+   "detect": 100.0,
+   "extra_calls": 2.0,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "all": {
+   "detect": 100.0,
+   "extra_calls": 5.166666666666667,
+   "correct": 0.0,
+   "unknown": 100.0,
+   "wrong": 0.0,
+   "n": 36
+  }
+ },
+ "prefix": {
+  "none": {
+   "detect": 0.0,
+   "extra_calls": 0.0,
+   "correct": 100.0,
+   "unknown": 0.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "fixed-last": {
+   "detect": 0.0,
+   "extra_calls": 2.0,
+   "correct": 100.0,
+   "unknown": 0.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "random-1": {
+   "detect": 0.0,
+   "extra_calls": 2.0,
+   "correct": 100.0,
+   "unknown": 0.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "random-2": {
+   "detect": 0.0,
+   "extra_calls": 4.0,
+   "correct": 100.0,
+   "unknown": 0.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "sequential": {
+   "detect": 0.0,
+   "extra_calls": 5.166666666666667,
+   "correct": 100.0,
+   "unknown": 0.0,
+   "wrong": 0.0,
+   "n": 36
+  },
+  "all": {
+   "detect": 0.0,
+   "extra_calls": 5.166666666666667,
+   "correct": 100.0,
+   "unknown": 0.0,
+   "wrong": 0.0,
+   "n": 36
+  }
+ },
+ "consistent_lie": {
+  "none": {
+   "detect": 0.0,
+   "extra_calls": 0.0,
+   "correct": 0.0,
+   "unknown": 0.0,
+   "wrong": 100.0,
+   "n": 36
+  },
+  "fixed-last": {
+   "detect": 0.0,
+   "extra_calls": 2.0,
+   "correct": 0.0,
+   "unknown": 0.0,
+   "wrong": 100.0,
+   "n": 36
+  },
+  "random-1": {
+   "detect": 0.9259259259259258,
+   "extra_calls": 2.0,
+   "correct": 0.0,
+   "unknown": 0.9259259259259258,
+   "wrong": 99.07407407407408,
+   "n": 36
+  },
+  "random-2": {
+   "detect": 1.8518518518518516,
+   "extra_calls": 4.0,
+   "correct": 0.0,
+   "unknown": 1.8518518518518516,
+   "wrong": 98.14814814814814,
+   "n": 36
+  },
+  "sequential": {
+   "detect": 2.7777777777777777,
+   "extra_calls": 5.111111111111111,
+   "correct": 0.0,
+   "unknown": 2.7777777777777777,
+   "wrong": 97.22222222222223,
+   "n": 36
+  },
+  "all": {
+   "detect": 2.7777777777777777,
+   "extra_calls": 5.166666666666667,
+   "correct": 0.0,
+   "unknown": 2.7777777777777777,
+   "wrong": 97.22222222222223,
+   "n": 36
+  }
+ }
+}

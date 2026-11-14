@@ -1,0 +1,18 @@
+runs 1560 errors 0
+
+ALL APIs  (wrong / abstain / correct / no answer)
+  docs A  none    n=260  wrong 0.07  abstain 0.02  correct 0.89  no_ans 0.01
+  docs A  guard   n=260  wrong 0.06  abstain 0.04  correct 0.89  no_ans 0.01
+  docs A  schema  n=260  wrong 0.07  abstain 0.03  correct 0.89  no_ans 0.01
+  docs G  none    n=260  wrong 0.82  abstain 0.05  correct 0.13  no_ans 0.00
+  docs G  guard   n=260  wrong 0.29  abstain 0.36  correct 0.34  no_ans 0.01
+  docs G  schema  n=260  wrong 0.30  abstain 0.04  correct 0.65  no_ans 0.01
+
+per API, docs G: wrong / correct
+  ncbi        none 0.83/0.12  guard 0.34/0.28  schema 0.48/0.49
+  uniprot     none 0.72/0.20  guard 0.03/0.46  schema 0.26/0.65
+  europepmc   none 0.74/0.22  guard 0.77/0.20  schema 0.45/0.48
+  gbif        none 0.97/0.00  guard 0.03/0.42  schema 0.02/0.98
+
+correct docs, no guard: runs using an undocumented parameter on their own: 0/260
+models with fewer wrong answers under guard vs none (docs G): 13/13; schema vs none: 13/13

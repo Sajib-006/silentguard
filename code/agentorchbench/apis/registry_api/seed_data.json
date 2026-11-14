@@ -1,0 +1,21 @@
+{
+  "projects": [
+    {"id": "PRJ-001", "name": "pbmc3k-benchmark", "description": "PBMC 3k public benchmark dataset", "owner": "bench-admin", "study_tag": "PBMC-STUDY-001", "collection_project": "Benchmark"},
+    {"id": "PRJ-002", "name": "allen-brain-benchmark", "description": "Allen Brain Atlas benchmark subset", "owner": "bench-admin", "study_tag": "BRAIN-STUDY-002", "collection_project": "Benchmark"},
+    {"id": "PRJ-003", "name": "geo-hippocampus", "description": "GSE160189 hippocampus snRNA-seq", "owner": "bench-user", "study_tag": "GEO-STUDY-003", "collection_project": "Public"}
+  ],
+  "assay_types": [
+    {"id": "AT-001", "name": "scRNAseq-10Xv3-GEX", "code": "SC-RNASEQ-10X-V3"},
+    {"id": "AT-002", "name": "scRNAseq-10Xv2-GEX", "code": "SC-RNASEQ-10X-V2"},
+    {"id": "AT-003", "name": "snRNAseq-DropSeq", "code": "SN-RNASEQ"},
+    {"id": "AT-004", "name": "WGS-PCRfree-150bp", "code": "WGS"},
+    {"id": "AT-005", "name": "WES-V7-Agilent", "code": "WES"},
+    {"id": "AT-006", "name": "bulkRNAseq-polyA", "code": "BULK-RNASEQ"},
+    {"id": "AT-007", "name": "ATACseq-OMNI", "code": "ATAC"},
+    {"id": "AT-008", "name": "Multiome-ATAC-GEX-10Xv1", "code": "MULTIOME-10X"},
+    {"id": "AT-009", "name": "SpatialTx-Visium-FFPE", "code": "SPATIAL-VISIUM"},
+    {"id": "AT-010", "name": "ChIPseq-H3K27ac", "code": "CHIP"},
+    {"id": "AT-011", "name": "CUTnRUN-H3K4me3", "code": "CUTNRUN"},
+    {"id": "AT-012", "name": "HiC-insitu-DpnII", "code": "HIC"}
+  ]
+}

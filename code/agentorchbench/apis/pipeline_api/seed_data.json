@@ -1,0 +1,54 @@
+{
+  "pipelines": [
+    {
+      "name": "nf-core/rnaseq",
+      "version": "3.14.0",
+      "description": "RNA sequencing analysis pipeline using STAR, RSEM, HISAT2 or Salmon",
+      "topics": ["rna", "rnaseq", "quantification"],
+      "required_params": ["input", "outdir", "fasta", "gtf"],
+      "optional_params": ["aligner", "pseudo_aligner", "skip_bbsplit"],
+      "samplesheet_columns": ["sample", "fastq_1", "fastq_2", "strandedness"],
+      "samplesheet_required": ["sample", "fastq_1", "strandedness"]
+    },
+    {
+      "name": "nf-core/sarek",
+      "version": "3.4.4",
+      "description": "Analysis pipeline to detect germline or somatic variants from WGS/WES",
+      "topics": ["wgs", "wes", "variant", "germline", "somatic"],
+      "required_params": ["input", "outdir", "genome"],
+      "optional_params": ["tools", "joint_germline", "step"],
+      "samplesheet_columns": ["patient", "sample", "lane", "fastq_1", "fastq_2"],
+      "samplesheet_required": ["patient", "sample", "fastq_1"]
+    },
+    {
+      "name": "nf-core/atacseq",
+      "version": "2.1.2",
+      "description": "ATAC-seq peak-calling and differential analysis",
+      "topics": ["atac", "chromatin", "peaks"],
+      "required_params": ["input", "outdir", "fasta", "gtf"],
+      "optional_params": ["aligner", "narrow_peak"],
+      "samplesheet_columns": ["sample", "fastq_1", "fastq_2", "replicate"],
+      "samplesheet_required": ["sample", "fastq_1", "replicate"]
+    },
+    {
+      "name": "nf-core/mag",
+      "version": "3.0.0",
+      "description": "Assembly, binning and annotation of metagenomes",
+      "topics": ["metagenomics", "assembly", "binning"],
+      "required_params": ["input", "outdir"],
+      "optional_params": ["skip_clipping", "assembler"],
+      "samplesheet_columns": ["sample", "group", "short_reads_1", "short_reads_2"],
+      "samplesheet_required": ["sample", "short_reads_1"]
+    },
+    {
+      "name": "nf-core/scrnaseq",
+      "version": "2.7.1",
+      "description": "Single-cell RNA-seq pipeline for 10X Genomics",
+      "topics": ["scrna", "single-cell", "10x"],
+      "required_params": ["input", "outdir", "genome", "protocol"],
+      "optional_params": ["aligner", "skip_emptydrops"],
+      "samplesheet_columns": ["sample", "fastq_1", "fastq_2", "expected_cells"],
+      "samplesheet_required": ["sample", "fastq_1"]
+    }
+  ]
+}

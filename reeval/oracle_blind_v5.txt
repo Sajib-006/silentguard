@@ -1,0 +1,24 @@
+fault/position             n  fire v1  fire v3        none           enforce_v1        enforce_v3         repair_v1          repair3    
+off/all                   36        0        0     36/  0/  0        36/  0/  0        36/  0/  0        36/  0/  0        36/  0/  0      
+blind_analyzed_text_match/all  36        0        0      4/  0/ 32         4/  0/ 32         4/  0/ 32         4/  0/ 32         4/  0/ 32      
+blind_null_negation_drop/all  36        0        0     36/  0/  0        36/  0/  0        36/  0/  0        36/  0/  0        36/  0/  0      
+blind_partial_shard_timeout/all  36       36       36     16/  0/ 20         0/ 36/  0         0/ 36/  0         2/  0/ 34         2/  0/ 34      
+blind_tag_join_fanout/all  36       15       15      0/  0/ 36         0/ 15/ 21         0/ 15/ 21         0/  0/ 36         0/  0/ 36      
+blind_keyset_cursor_ties/all  36       32       36     27/  0/  9         3/ 32/  1         0/ 36/  0        35/  0/  1        36/  0/  0      
+blind_lossy_bitmap_no_recheck/all  36       35       35      1/  0/ 35         1/ 35/  0         1/ 35/  0         1/ 35/  0         1/ 35/  0      
+(cells: ok / abstain / WRONG)
+
+verified-but-WRONG repairs: 98
+   ('blind_partial_shard_timeout', 'first', 'ADV5-001', 'repair_v1', 36, 25, 'pad')
+   ('blind_partial_shard_timeout', 'first', 'ADV5-001', 'repair3', 36, 25, 'pad')
+   ('blind_partial_shard_timeout', 'first', 'ADV5-002', 'repair_v1', 24, 20, 'pad')
+   ('blind_partial_shard_timeout', 'first', 'ADV5-002', 'repair3', 24, 20, 'pad')
+   ('blind_partial_shard_timeout', 'first', 'ADV5-003', 'repair_v1', 27, 24, 'pad')
+   ('blind_partial_shard_timeout', 'first', 'ADV5-003', 'repair3', 27, 24, 'pad')
+   ('blind_partial_shard_timeout', 'first', 'ADV5-005', 'repair_v1', 31, 24, 'pad')
+   ('blind_partial_shard_timeout', 'first', 'ADV5-005', 'repair3', 31, 24, 'pad')
+   ('blind_partial_shard_timeout', 'first', 'ADV5-006', 'repair_v1', 27, 20, 'pad')
+   ('blind_partial_shard_timeout', 'first', 'ADV5-006', 'repair3', 27, 20, 'pad')
+   ('blind_partial_shard_timeout', 'first', 'ADV5-007', 'repair_v1', 17, 12, 'pad')
+   ('blind_partial_shard_timeout', 'first', 'ADV5-007', 'repair3', 17, 12, 'pad')
+ORACLE_DONE

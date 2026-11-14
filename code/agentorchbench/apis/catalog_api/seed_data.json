@@ -1,0 +1,472 @@
+{
+  "assets": [
+    {
+      "item_id": "cat-001",
+      "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/fastq/read-RA_si-GTTGCATG_lane-002-chunk-000.fastq.gz",
+      "item_type": "s3_file",
+      "tags": [
+        "pbmc3k",
+        "batch-1",
+        "fastq",
+        "raw-delivery",
+        "scrna-seq"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_1",
+        "Study_ID": "PBMC-STUDY-001",
+        "File_Format": "fastq",
+        "QC_Status": "qc-pass",
+        "Pipeline_Stage": "raw-delivery",
+        "Assay_Type": "Single Cell RNA-seq (10X Chromium v3)",
+        "Source": "bench-seed",
+        "Transfer_ID": "transfer-001",
+        "Organization": "Benchmark"
+      }
+    },
+    {
+      "item_id": "cat-002",
+      "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/fastq/read-RA_si-CGCTATCC_lane-001-chunk-001.fastq.gz",
+      "item_type": "s3_file",
+      "tags": [
+        "pbmc3k",
+        "batch-1",
+        "fastq",
+        "raw-delivery",
+        "scrna-seq"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_1",
+        "Study_ID": "PBMC-STUDY-001",
+        "File_Format": "fastq",
+        "QC_Status": "qc-pass",
+        "Pipeline_Stage": "raw-delivery",
+        "Assay_Type": "Single Cell RNA-seq (10X Chromium v3)",
+        "Source": "bench-seed",
+        "Transfer_ID": "transfer-001",
+        "Organization": "Benchmark"
+      }
+    },
+    {
+      "item_id": "cat-003",
+      "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/fastq/read-RA_si-CGCTATCC_lane-002-chunk-000.fastq.gz",
+      "item_type": "s3_file",
+      "tags": [
+        "pbmc3k",
+        "batch-1",
+        "fastq",
+        "raw-delivery",
+        "scrna-seq"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_1",
+        "Study_ID": "PBMC-STUDY-001",
+        "File_Format": "fastq",
+        "QC_Status": "qc-pending",
+        "Pipeline_Stage": "raw-delivery",
+        "Assay_Type": "Single Cell RNA-seq (10X Chromium v3)",
+        "Source": "bench-seed",
+        "Transfer_ID": "transfer-001",
+        "Organization": "Benchmark"
+      }
+    },
+    {
+      "item_id": "cat-004",
+      "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/fastq/read-I1_si-GTTGCATG_lane-001-chunk-001.fastq.gz",
+      "item_type": "s3_file",
+      "tags": [
+        "pbmc3k",
+        "batch-1",
+        "fastq",
+        "raw-delivery",
+        "index"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_1",
+        "Study_ID": "PBMC-STUDY-001",
+        "File_Format": "fastq",
+        "QC_Status": "qc-pass",
+        "Pipeline_Stage": "raw-delivery",
+        "Assay_Type": "Single Cell RNA-seq (10X Chromium v3)",
+        "Source": "bench-seed",
+        "Transfer_ID": "transfer-001",
+        "Organization": "Benchmark"
+      }
+    },
+    {
+      "item_id": "cat-005",
+      "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/qc/read-RA_si-GTTGCATG_fastqc.html",
+      "item_type": "s3_file",
+      "tags": [
+        "pbmc3k",
+        "batch-1",
+        "html",
+        "qc-output",
+        "fastqc"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_1",
+        "Study_ID": "PBMC-STUDY-001",
+        "File_Format": "html",
+        "QC_Status": "qc-pass",
+        "QC_Tool": "fastqc",
+        "Pipeline_Stage": "qc-output",
+        "Assay_Type": "Single Cell RNA-seq (10X Chromium v3)",
+        "Source": "bench-seed",
+        "Transfer_ID": "transfer-003",
+        "Organization": "Benchmark"
+      }
+    },
+    {
+      "item_id": "cat-006",
+      "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/qc/read-RA_si-GTTGCATG_fastqc.zip",
+      "item_type": "s3_file",
+      "tags": [
+        "pbmc3k",
+        "batch-1",
+        "zip",
+        "qc-output",
+        "fastqc"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_1",
+        "Study_ID": "PBMC-STUDY-001",
+        "File_Format": "zip",
+        "QC_Status": "qc-pass",
+        "QC_Tool": "fastqc",
+        "Pipeline_Stage": "qc-output",
+        "Assay_Type": "Single Cell RNA-seq (10X Chromium v3)",
+        "Source": "bench-seed",
+        "Transfer_ID": "transfer-003",
+        "Organization": "Benchmark"
+      }
+    },
+    {
+      "item_id": "cat-007",
+      "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/qc/read-RA_si-CGCTATCC_fastqc.html",
+      "item_type": "s3_file",
+      "tags": [
+        "pbmc3k",
+        "batch-1",
+        "html",
+        "qc-output",
+        "fastqc"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_1",
+        "Study_ID": "PBMC-STUDY-001",
+        "File_Format": "html",
+        "QC_Status": "qc-fail",
+        "QC_Tool": "fastqc",
+        "Pipeline_Stage": "qc-output",
+        "Assay_Type": "Single Cell RNA-seq (10X Chromium v3)",
+        "Source": "bench-seed",
+        "Transfer_ID": "transfer-003",
+        "Organization": "Benchmark"
+      }
+    },
+    {
+      "item_id": "cat-008",
+      "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/qc/multiqc_report.html",
+      "item_type": "s3_file",
+      "tags": [
+        "pbmc3k",
+        "batch-1",
+        "html",
+        "qc-aggregate",
+        "multiqc"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_1",
+        "Study_ID": "PBMC-STUDY-001",
+        "File_Format": "html",
+        "QC_Status": "qc-pass",
+        "QC_Tool": "multiqc",
+        "Pipeline_Stage": "qc-aggregate",
+        "Assay_Type": "Single Cell RNA-seq (10X Chromium v3)",
+        "Source": "bench-seed",
+        "Organization": "Benchmark"
+      }
+    },
+    {
+      "item_id": "cat-009",
+      "s3_uri": "s3://agentorchbench/allen-brain/WMB-10Xv2-MB-raw.h5ad",
+      "item_type": "s3_file",
+      "tags": [
+        "allen-brain",
+        "batch-1",
+        "h5ad",
+        "raw-delivery",
+        "snrna-seq",
+        "mouse"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_1",
+        "Study_ID": "BRAIN-STUDY-002",
+        "File_Format": "h5ad",
+        "QC_Status": "qc-pass",
+        "Pipeline_Stage": "raw-delivery",
+        "Assay_Type": "Single Cell RNA-seq (10X Chromium v2)",
+        "Source": "bench-seed",
+        "Transfer_ID": "transfer-002",
+        "Organization": "Benchmark"
+      }
+    },
+    {
+      "item_id": "cat-010",
+      "s3_uri": "s3://agentorchbench/pbmc3k/batch_2/fastq/pbmc3k_S1_L001_R1_001.fastq.gz",
+      "item_type": "s3_file",
+      "tags": [
+        "pbmc3k",
+        "batch-2",
+        "fastq",
+        "raw-delivery",
+        "scrna-seq"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_2",
+        "Study_ID": "PBMC-STUDY-001",
+        "File_Format": "fastq",
+        "QC_Status": "qc-pending",
+        "Pipeline_Stage": "raw-delivery",
+        "Assay_Type": "Single Cell RNA-seq (10X Chromium v3)",
+        "Source": "bench-seed",
+        "Transfer_ID": "transfer-006",
+        "Organization": "Benchmark"
+      }
+    },
+    {
+      "item_id": "cat-011",
+      "s3_uri": "s3://agentorchbench/pbmc3k/batch_2/fastq/pbmc3k_S1_L001_R2_001.fastq.gz",
+      "item_type": "s3_file",
+      "tags": [
+        "pbmc3k",
+        "batch-2",
+        "fastq",
+        "raw-delivery",
+        "scrna-seq"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_2",
+        "Study_ID": "PBMC-STUDY-001",
+        "File_Format": "fastq",
+        "QC_Status": "qc-pending",
+        "Pipeline_Stage": "raw-delivery",
+        "Assay_Type": "Single Cell RNA-seq (10X Chromium v3)",
+        "Source": "bench-seed",
+        "Transfer_ID": "transfer-006",
+        "Organization": "Benchmark"
+      }
+    },
+    {
+      "item_id": "cat-012",
+      "s3_uri": "s3://agentorchbench/pbmc3k/batch_2/fastq/pbmc10k_S1_L001_R1_001.fastq.gz",
+      "item_type": "s3_file",
+      "tags": [
+        "pbmc10k",
+        "batch-2",
+        "fastq",
+        "raw-delivery",
+        "scrna-seq"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_2",
+        "Study_ID": "PBMC-STUDY-001",
+        "File_Format": "fastq",
+        "QC_Status": "qc-pending",
+        "Pipeline_Stage": "raw-delivery",
+        "Assay_Type": "Single Cell RNA-seq (10X Chromium v3)",
+        "Source": "bench-seed",
+        "Transfer_ID": "transfer-006",
+        "Organization": "Benchmark"
+      }
+    },
+    {
+      "item_id": "cat-013",
+      "s3_uri": "s3://agentorchbench/geo/GSE160189/SRR12905322_1.fastq.gz",
+      "item_type": "s3_file",
+      "tags": [
+        "geo",
+        "hippocampus",
+        "batch-1",
+        "fastq",
+        "raw-delivery",
+        "snrna-seq",
+        "human"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_1",
+        "Study_ID": "GEO-STUDY-003",
+        "File_Format": "fastq",
+        "QC_Status": "qc-pending",
+        "Pipeline_Stage": "raw-delivery",
+        "Assay_Type": "Single Nucleus RNA-seq",
+        "Source": "bench-seed",
+        "Organization": "Benchmark",
+        "Transfer_ID": "transfer-004"
+      }
+    },
+    {
+      "item_id": "cat-014",
+      "s3_uri": "s3://agentorchbench/geo/GSE160189/SRR12905322_2.fastq.gz",
+      "item_type": "s3_file",
+      "tags": [
+        "geo",
+        "hippocampus",
+        "batch-1",
+        "fastq",
+        "raw-delivery",
+        "snrna-seq",
+        "human"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_1",
+        "Study_ID": "GEO-STUDY-003",
+        "File_Format": "fastq",
+        "QC_Status": "qc-fail",
+        "Pipeline_Stage": "raw-delivery",
+        "Assay_Type": "Single Nucleus RNA-seq",
+        "Source": "bench-seed",
+        "Organization": "Benchmark",
+        "Transfer_ID": "transfer-004"
+      }
+    },
+    {
+      "item_id": "cat-015",
+      "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/analysis/pbmc3k_filtered_gene_bc_matrices.tar.gz",
+      "item_type": "s3_file",
+      "tags": [
+        "pbmc3k",
+        "batch-1",
+        "analysis-ready",
+        "count-matrix"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_1",
+        "Study_ID": "PBMC-STUDY-001",
+        "File_Format": "h5ad",
+        "QC_Status": "qc-pass",
+        "Pipeline_Stage": "analysis-ready",
+        "Assay_Type": "Single Cell RNA-seq (10X Chromium v3)",
+        "Source": "bench-seed",
+        "Organization": "Benchmark"
+      }
+    },
+    {
+      "item_id": "cat-016",
+      "s3_uri": "s3://agentorchbench/pbmc3k/batch_2/qc/pbmc3k_R1_fastqc.html",
+      "item_type": "s3_file",
+      "tags": [
+        "pbmc3k",
+        "batch-2",
+        "html",
+        "qc-output",
+        "fastqc"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_2",
+        "Study_ID": "PBMC-STUDY-001",
+        "File_Format": "html",
+        "QC_Status": "qc-warn",
+        "QC_Tool": "fastqc",
+        "Pipeline_Stage": "qc-output",
+        "Assay_Type": "Single Cell RNA-seq (10X Chromium v3)",
+        "Source": "bench-seed",
+        "Organization": "Benchmark"
+      }
+    },
+    {
+      "item_id": "cat-017",
+      "s3_uri": "s3://agentorchbench/allen-brain/WMB-10Xv2-CTXsp-raw.h5ad",
+      "item_type": "s3_file",
+      "tags": [
+        "allen-brain",
+        "batch-2",
+        "h5ad",
+        "raw-delivery",
+        "snrna-seq",
+        "mouse",
+        "cortex"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_2",
+        "Study_ID": "BRAIN-STUDY-002",
+        "File_Format": "h5ad",
+        "QC_Status": "qc-pending",
+        "Pipeline_Stage": "raw-delivery",
+        "Assay_Type": "Single Cell RNA-seq (10X Chromium v2)",
+        "Source": "bench-seed",
+        "Transfer_ID": "transfer-007",
+        "Organization": "Benchmark"
+      }
+    },
+    {
+      "item_id": "cat-018",
+      "s3_uri": "s3://agentorchbench/pbmc3k/batch_1/qc/mosdepth_coverage.txt",
+      "item_type": "s3_file",
+      "tags": [
+        "pbmc3k",
+        "batch-1",
+        "txt",
+        "qc-output",
+        "mosdepth"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_1",
+        "Study_ID": "PBMC-STUDY-001",
+        "File_Format": "txt",
+        "QC_Status": "qc-pass",
+        "QC_Tool": "mosdepth",
+        "Pipeline_Stage": "qc-output",
+        "Source": "bench-seed",
+        "Organization": "Benchmark"
+      }
+    },
+    {
+      "item_id": "cat-019",
+      "s3_uri": "s3://agentorchbench/pbmc3k/batch_2/qc/pbmc3k_R2_fastqc.zip",
+      "item_type": "s3_file",
+      "tags": [
+        "pbmc3k",
+        "batch-2",
+        "zip",
+        "qc-output",
+        "fastqc"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_2",
+        "Study_ID": "PBMC-STUDY-001",
+        "File_Format": "zip",
+        "QC_Status": "qc-pending",
+        "QC_Tool": "fastqc",
+        "Pipeline_Stage": "qc-output",
+        "Assay_Type": "Single Cell RNA-seq (10X Chromium v3)",
+        "Source": "bench-seed",
+        "Organization": "Benchmark"
+      }
+    },
+    {
+      "item_id": "cat-020",
+      "s3_uri": "s3://agentorchbench/geo/GSE160189/counts_matrix.h5",
+      "item_type": "s3_file",
+      "tags": [
+        "geo",
+        "hippocampus",
+        "batch-1",
+        "h5",
+        "analysis-ready",
+        "snrna-seq"
+      ],
+      "json_metadata": {
+        "Batch_ID": "batch_1",
+        "Study_ID": "GEO-STUDY-003",
+        "File_Format": "h5ad",
+        "QC_Status": "qc-pass",
+        "Pipeline_Stage": "analysis-ready",
+        "Assay_Type": "Single Nucleus RNA-seq",
+        "Source": "bench-seed",
+        "Organization": "Benchmark",
+        "Transfer_ID": "transfer-004"
+      }
+    }
+  ]
+}

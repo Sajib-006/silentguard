@@ -1,0 +1,279 @@
+{
+ "errors": 0,
+ "per_model": {
+  "none|G": {
+   "llama4-scout": {
+    "n": 5,
+    "wrong": 100.0,
+    "correct": 0.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   },
+   "llama4-maverick": {
+    "n": 5,
+    "wrong": 100.0,
+    "correct": 0.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   },
+   "llama33-70b": {
+    "n": 5,
+    "wrong": 100.0,
+    "correct": 0.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   },
+   "gpt-oss-120b": {
+    "n": 5,
+    "wrong": 100.0,
+    "correct": 0.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   },
+   "nemotron-ultra": {
+    "n": 5,
+    "wrong": 100.0,
+    "correct": 0.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   },
+   "gemma3-27b": {
+    "n": 5,
+    "wrong": 80.0,
+    "correct": 0.0,
+    "unknown": 20.0,
+    "no_answer": 0.0
+   },
+   "phi-4": {
+    "n": 5,
+    "wrong": 100.0,
+    "correct": 0.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   }
+  },
+  "schema|G": {
+   "llama4-scout": {
+    "n": 5,
+    "wrong": 100.0,
+    "correct": 0.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   },
+   "llama4-maverick": {
+    "n": 5,
+    "wrong": 100.0,
+    "correct": 0.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   },
+   "llama33-70b": {
+    "n": 5,
+    "wrong": 100.0,
+    "correct": 0.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   },
+   "gpt-oss-120b": {
+    "n": 5,
+    "wrong": 100.0,
+    "correct": 0.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   },
+   "nemotron-ultra": {
+    "n": 5,
+    "wrong": 100.0,
+    "correct": 0.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   },
+   "gemma3-27b": {
+    "n": 5,
+    "wrong": 100.0,
+    "correct": 0.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   },
+   "phi-4": {
+    "n": 5,
+    "wrong": 100.0,
+    "correct": 0.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   }
+  },
+  "sgp|G": {
+   "llama4-scout": {
+    "n": 5,
+    "wrong": 0.0,
+    "correct": 0.0,
+    "unknown": 100.0,
+    "no_answer": 0.0
+   },
+   "llama4-maverick": {
+    "n": 5,
+    "wrong": 0.0,
+    "correct": 0.0,
+    "unknown": 100.0,
+    "no_answer": 0.0
+   },
+   "llama33-70b": {
+    "n": 5,
+    "wrong": 20.0,
+    "correct": 0.0,
+    "unknown": 80.0,
+    "no_answer": 0.0
+   },
+   "gpt-oss-120b": {
+    "n": 5,
+    "wrong": 0.0,
+    "correct": 20.0,
+    "unknown": 80.0,
+    "no_answer": 0.0
+   },
+   "nemotron-ultra": {
+    "n": 5,
+    "wrong": 80.0,
+    "correct": 0.0,
+    "unknown": 20.0,
+    "no_answer": 0.0
+   },
+   "gemma3-27b": {
+    "n": 5,
+    "wrong": 20.0,
+    "correct": 0.0,
+    "unknown": 80.0,
+    "no_answer": 0.0
+   },
+   "phi-4": {
+    "n": 5,
+    "wrong": 20.0,
+    "correct": 0.0,
+    "unknown": 80.0,
+    "no_answer": 0.0
+   }
+  },
+  "none|A": {
+   "llama4-scout": {
+    "n": 5,
+    "wrong": 0.0,
+    "correct": 100.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   },
+   "llama4-maverick": {
+    "n": 5,
+    "wrong": 0.0,
+    "correct": 100.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   },
+   "llama33-70b": {
+    "n": 5,
+    "wrong": 0.0,
+    "correct": 100.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   },
+   "gpt-oss-120b": {
+    "n": 5,
+    "wrong": 0.0,
+    "correct": 100.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   },
+   "nemotron-ultra": {
+    "n": 5,
+    "wrong": 0.0,
+    "correct": 100.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   },
+   "gemma3-27b": {
+    "n": 5,
+    "wrong": 0.0,
+    "correct": 20.0,
+    "unknown": 80.0,
+    "no_answer": 0.0
+   },
+   "phi-4": {
+    "n": 5,
+    "wrong": 0.0,
+    "correct": 100.0,
+    "unknown": 0.0,
+    "no_answer": 0.0
+   }
+  }
+ },
+ "mean": {
+  "none|G": {
+   "wrong": 97.14285714285714,
+   "correct": 0.0,
+   "unknown": 2.857142857142857,
+   "no_answer": 0.0
+  },
+  "schema|G": {
+   "wrong": 100.0,
+   "correct": 0.0,
+   "unknown": 0.0,
+   "no_answer": 0.0
+  },
+  "sgp|G": {
+   "wrong": 20.0,
+   "correct": 2.857142857142857,
+   "unknown": 77.14285714285714,
+   "no_answer": 0.0
+  },
+  "none|A": {
+   "wrong": 0.0,
+   "correct": 88.57142857142857,
+   "unknown": 11.428571428571429,
+   "no_answer": 0.0
+  }
+ },
+ "n_models": {
+  "none|G": 7,
+  "schema|G": 7,
+  "sgp|G": 7,
+  "none|A": 7
+ },
+ "models": {
+  "none|G": [
+   "gemma3-27b",
+   "gpt-oss-120b",
+   "llama33-70b",
+   "llama4-maverick",
+   "llama4-scout",
+   "nemotron-ultra",
+   "phi-4"
+  ],
+  "schema|G": [
+   "gemma3-27b",
+   "gpt-oss-120b",
+   "llama33-70b",
+   "llama4-maverick",
+   "llama4-scout",
+   "nemotron-ultra",
+   "phi-4"
+  ],
+  "sgp|G": [
+   "gemma3-27b",
+   "gpt-oss-120b",
+   "llama33-70b",
+   "llama4-maverick",
+   "llama4-scout",
+   "nemotron-ultra",
+   "phi-4"
+  ],
+  "none|A": [
+   "gemma3-27b",
+   "gpt-oss-120b",
+   "llama33-70b",
+   "llama4-maverick",
+   "llama4-scout",
+   "nemotron-ultra",
+   "phi-4"
+  ]
+ }
+}

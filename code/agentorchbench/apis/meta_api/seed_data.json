@@ -1,0 +1,48 @@
+{
+  "biosamples": [
+    {
+      "accession": "SAMN00000001",
+      "organism": "Homo sapiens",
+      "study_id": "PBMC-STUDY-001",
+      "attributes": {
+        "tissue": "blood",
+        "cell_type": "PBMC",
+        "assay": "scRNAseq-10Xv3-GEX"
+      }
+    },
+    {
+      "accession": "SAMN00000002",
+      "organism": "Mus musculus",
+      "study_id": "BRAIN-STUDY-002",
+      "attributes": {
+        "tissue": "cortex",
+        "cell_type": "neuron",
+        "assay": "snRNAseq-DropSeq"
+      }
+    },
+    {
+      "accession": "SAMN00000003",
+      "organism": "Homo sapiens",
+      "study_id": "GEO-STUDY-003",
+      "attributes": {
+        "tissue": "hippocampus",
+        "cell_type": "mixed",
+        "assay": "snRNAseq-DropSeq"
+      }
+    }
+  ],
+  "synapse_entities": [
+    {
+      "id": "syn00000001",
+      "name": "PBMC3k_public_subset",
+      "study_id": "PBMC-STUDY-001",
+      "annotations": {"Batch_ID": "batch_1", "File_Format": "fastq"}
+    },
+    {
+      "id": "syn00000002",
+      "name": "Allen_WMB_cortex_public",
+      "study_id": "BRAIN-STUDY-002",
+      "annotations": {"Batch_ID": "batch_2", "File_Format": "h5ad"}
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+ "rows": [
+  {
+   "api": "ncbi",
+   "task": "BRCA1|human",
+   "N_A": 38023,
+   "N_AB": 1567,
+   "N_AnotB": 36456,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "ncbi",
+   "task": "TP53|mouse",
+   "N_A": 12796,
+   "N_AB": 116,
+   "N_AnotB": 12680,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "ncbi",
+   "task": "CFTR|human",
+   "N_A": 8118,
+   "N_AB": 1747,
+   "N_AnotB": 6371,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "ncbi",
+   "task": "MYC|mouse",
+   "N_A": 28259,
+   "N_AB": 697,
+   "N_AnotB": 27562,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "ncbi",
+   "task": "insulin|zebrafish",
+   "N_A": 114121,
+   "N_AB": 249,
+   "N_AnotB": 113872,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "uniprot",
+   "task": "kinase|9606",
+   "N_A": 8071748,
+   "N_AB": 19520,
+   "N_AnotB": 8052228,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "uniprot",
+   "task": "kinase|10090",
+   "N_A": 8071748,
+   "N_AB": 8359,
+   "N_AnotB": 8063389,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "uniprot",
+   "task": "insulin|9606",
+   "N_A": 394035,
+   "N_AB": 2375,
+   "N_AnotB": 391660,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "uniprot",
+   "task": "BRCA1|10090",
+   "N_A": 55460,
+   "N_AB": 205,
+   "N_AnotB": 55255,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "uniprot",
+   "task": "collagen|9606",
+   "N_A": 324481,
+   "N_AB": 1707,
+   "N_AnotB": 322774,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "europepmc",
+   "task": "malaria|2020",
+   "N_A": 291462,
+   "N_AB": 15436,
+   "N_AnotB": 276026,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "europepmc",
+   "task": "CRISPR|2018",
+   "N_A": 237230,
+   "N_AB": 11602,
+   "N_AnotB": 225628,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "europepmc",
+   "task": "tuberculosis|2015",
+   "N_A": 737892,
+   "N_AB": 18630,
+   "N_AnotB": 719262,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "europepmc",
+   "task": "zika|2016",
+   "N_A": 53192,
+   "N_AB": 2658,
+   "N_AnotB": 50534,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "europepmc",
+   "task": "dengue|2019",
+   "N_A": 104849,
+   "N_AB": 5210,
+   "N_AnotB": 99639,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "arxiv",
+   "task": "electron|hep-th",
+   "N_A": 187045,
+   "N_AB": 2800,
+   "N_AnotB": 184245,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "arxiv",
+   "task": "graphene|cond-mat.mes-hall",
+   "N_A": 21980,
+   "N_AB": 14912,
+   "N_AnotB": 7068,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "arxiv",
+   "task": "transformer|cs.CL",
+   "N_A": 180644,
+   "N_AB": 14184,
+   "N_AnotB": 166460,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "arxiv",
+   "task": "protein|q-bio.BM",
+   "N_A": 14035,
+   "N_AB": 3719,
+   "N_AnotB": 10316,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "arxiv",
+   "task": "neutrino|hep-ph",
+   "N_A": 41616,
+   "N_AB": 26216,
+   "N_AnotB": 15400,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "zenodo",
+   "task": "climate|dataset",
+   "N_A": 111867,
+   "N_AB": 25766,
+   "N_AnotB": 86101,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "zenodo",
+   "task": "covid|software",
+   "N_A": 39430,
+   "N_AB": 1037,
+   "N_AnotB": 38393,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "zenodo",
+   "task": "ocean|dataset",
+   "N_A": 85528,
+   "N_AB": 14003,
+   "N_AnotB": 71525,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "zenodo",
+   "task": "genome|software",
+   "N_A": 36866,
+   "N_AB": 3221,
+   "N_AnotB": 33645,
+   "holds": true,
+   "rel_gap": 0.0
+  },
+  {
+   "api": "zenodo",
+   "task": "ecology|image",
+   "N_A": 183053,
+   "N_AB": 40600,
+   "N_AnotB": 142453,
+   "holds": true,
+   "rel_gap": 0.0
+  }
+ ],
+ "n": 25,
+ "exact": 25,
+ "within_0.1pct": 25
+}

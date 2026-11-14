@@ -1,0 +1,43 @@
+{
+ "n_ops": 84,
+ "n_apis": 13,
+ "n_reads": 79,
+ "exact": 61,
+ "spec_only": 23,
+ "learned_only": 0,
+ "none": 0,
+ "spec": 84,
+ "membership": 47,
+ "count_identity": 25,
+ "value_swap": 56,
+ "by_kind": {
+  "aggregate": {
+   "n": 6,
+   "exact": 5
+  },
+  "count": {
+   "n": 1,
+   "exact": 1
+  },
+  "get_by_id": {
+   "n": 16,
+   "exact": 5
+  },
+  "other_read": {
+   "n": 9,
+   "exact": 4
+  },
+  "paginate": {
+   "n": 4,
+   "exact": 3
+  },
+  "search_list": {
+   "n": 43,
+   "exact": 43
+  },
+  "write": {
+   "n": 5,
+   "exact": 0
+  }
+ }
+}

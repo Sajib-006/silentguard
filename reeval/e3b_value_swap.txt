@@ -1,0 +1,17 @@
+NCBI E-utilities (gene)    base=37885     w:organism=FIRE | w:species=FIRE | w:taxid=FIRE | d:term=-
+UniProtKB                  base=55460     w:organism_id=FIRE | w:organism=FIRE | w:taxonomy=FIRE | d:query=-
+ClinicalTrials.gov v2      base=24424     w:status=n/a | w:overallStatus=n/a | w:recruitment_status=n/a | d:filter.overallStatus=-
+Europe PMC                 base=291095    w:year=FIRE | w:pub_year=FIRE | w:date=FIRE | d:query=-
+OpenAlex                   base=611853    w:year=n/a | w:publication_year=n/a | w:from_publication_date=n/a | d:filter=-
+Crossref                   base=89632     w:year=n/a | w:from-pub-date=n/a | w:published=n/a | d:filter=-
+openFDA drug events        base=617937    w:serious=n/a | w:seriousness=n/a | w:filter=n/a | d:search=-
+DataCite                   base=609169    w:type=FIRE | w:resourceType=FIRE | w:resource_type=- | d:resource-type-id=-
+Zenodo                     base=110905    w:resource_type=- | w:record_type=FIRE | w:kind=FIRE | d:q=-
+GitHub repository search   base=55653     w:language=FIRE | w:lang=FIRE | d:q=-
+ChEMBL molecules           base=2921148   w:phase=FIRE | w:clinical_phase=FIRE | w:maxphase=FIRE | d:max_phase=-
+arXiv                      base=186698    w:cat=FIRE | w:category=FIRE | d:search_query=-
+GBIF occurrences           base=31660     w:countryCode=FIRE | w:nation=FIRE | w:country_code=FIRE | d:country=-
+iNaturalist                base=18184     w:country=FIRE | w:place=FIRE | w:place_name=FIRE | d:place_id=-
+
+SILENT probes caught: 26/26   documented filters falsely flagged: 0/14   non-silent wrong params flagged: 0/2
+E3B_DONE

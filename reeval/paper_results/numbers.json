@@ -1,0 +1,1109 @@
+{
+ "aob": {
+  "none": {
+   "wrong_by_fault": {
+    "drop_last": 89.68253968253967,
+    "cap_total": 92.85714285714286,
+    "or_semantics": 89.28571428571429,
+    "drop_field": 77.38095238095238,
+    "ignore_negation": 6.15079365079365,
+    "off_by_one": 88.8888888888889
+   },
+   "wrong": 74.04100529100528,
+   "correct": 16.369047619047617,
+   "abstain": 9.58994708994709,
+   "clean_correct": 84.92063492063492
+  },
+  "skeptic": {
+   "wrong_by_fault": {
+    "drop_last": 88.2936507936508,
+    "cap_total": 91.26984126984128,
+    "or_semantics": 87.6984126984127,
+    "drop_field": 75.39682539682539,
+    "ignore_negation": 4.563492063492064,
+    "off_by_one": 92.85714285714286
+   },
+   "wrong": 73.34656084656085,
+   "correct": 16.369047619047617,
+   "abstain": 10.284391534391535,
+   "clean_correct": 86.11111111111111
+  },
+  "judge_check": {
+   "wrong_by_fault": {
+    "drop_last": 88.69047619047619,
+    "cap_total": 91.66666666666666,
+    "or_semantics": 84.72222222222224,
+    "drop_field": 73.01587301587301,
+    "ignore_negation": 6.15079365079365,
+    "off_by_one": 82.93650793650794
+   },
+   "wrong": 71.19708994708995,
+   "correct": 17.394179894179896,
+   "abstain": 11.40873015873016,
+   "clean_correct": 86.50793650793652
+  },
+  "checklist": {
+   "wrong_by_fault": {
+    "drop_last": 87.6984126984127,
+    "cap_total": 90.67460317460318,
+    "or_semantics": 87.69841269841268,
+    "drop_field": 73.4126984126984,
+    "ignore_negation": 4.761904761904762,
+    "off_by_one": 89.28571428571429
+   },
+   "wrong": 72.25529100529101,
+   "correct": 16.236772486772487,
+   "abstain": 11.507936507936508,
+   "clean_correct": 84.12698412698413
+  },
+  "reviewer": {
+   "wrong_by_fault": {
+    "drop_last": 91.86507936507938,
+    "cap_total": 88.2936507936508,
+    "or_semantics": 88.09523809523809,
+    "drop_field": 75.9920634920635,
+    "ignore_negation": 8.531746031746032,
+    "off_by_one": 90.0598032640286
+   },
+   "wrong": 73.80284867233823,
+   "correct": 15.844397181404142,
+   "abstain": 10.352754146257626,
+   "clean_correct": 80.35714285714286
+  },
+  "om": {
+   "wrong_by_fault": {
+    "drop_last": 89.2857142857143,
+    "cap_total": 90.27777777777779,
+    "or_semantics": 87.1031746031746,
+    "drop_field": 72.02380952380952,
+    "ignore_negation": 6.349206349206349,
+    "off_by_one": 87.89682539682539
+   },
+   "wrong": 72.15608465608464,
+   "correct": 16.633597883597883,
+   "abstain": 11.21031746031746,
+   "clean_correct": 86.11111111111111
+  },
+  "retry2": {
+   "wrong_by_fault": {
+    "drop_last": 92.26190476190474,
+    "cap_total": 91.26984126984128,
+    "or_semantics": 91.66666666666667,
+    "drop_field": 75.99206349206348,
+    "ignore_negation": 3.373015873015873,
+    "off_by_one": 92.06349206349206
+   },
+   "wrong": 74.43783068783068,
+   "correct": 17.294973544973544,
+   "abstain": 8.267195767195767,
+   "clean_correct": 88.2936507936508
+  },
+  "requery": {
+   "wrong_by_fault": {
+    "drop_last": 91.07142857142857,
+    "cap_total": 92.26190476190477,
+    "or_semantics": 91.46825396825396,
+    "drop_field": 79.36507936507935,
+    "ignore_negation": 3.373015873015873,
+    "off_by_one": 91.66666666666667
+   },
+   "wrong": 74.86772486772487,
+   "correct": 16.997354497354497,
+   "abstain": 8.134920634920636,
+   "clean_correct": 84.72222222222224
+  },
+  "selfverify": {
+   "wrong_by_fault": {
+    "drop_last": 71.82539682539682,
+    "cap_total": 72.81746031746032,
+    "or_semantics": 52.77777777777778,
+    "drop_field": 63.88888888888888,
+    "ignore_negation": 5.158730158730159,
+    "off_by_one": 70.83333333333333
+   },
+   "wrong": 56.21693121693123,
+   "correct": 14.21957671957672,
+   "abstain": 29.56349206349206,
+   "clean_correct": 76.5873015873016
+  },
+  "advisory": {
+   "wrong_by_fault": {
+    "drop_last": 71.82539682539684,
+    "cap_total": 74.0079365079365,
+    "or_semantics": 66.86507936507935,
+    "drop_field": 68.84920634920634,
+    "ignore_negation": 33.53174603174603,
+    "off_by_one": 63.69047619047619
+   },
+   "wrong": 63.12830687830688,
+   "correct": 11.441798941798941,
+   "abstain": 25.42989417989418,
+   "clean_correct": 85.51587301587301
+  },
+  "advisory_hint": {
+   "wrong_by_fault": {
+    "drop_last": 45.63492063492064,
+    "cap_total": 56.34920634920634,
+    "or_semantics": 29.761904761904766,
+    "drop_field": 41.66666666666667,
+    "ignore_negation": 7.936507936507937,
+    "off_by_one": 42.063492063492056
+   },
+   "wrong": 37.235449735449734,
+   "correct": 9.821428571428571,
+   "abstain": 52.94312169312169,
+   "clean_correct": 82.53968253968254
+  },
+  "repair3": {
+   "wrong_by_fault": {
+    "drop_last": 1.1904761904761905,
+    "cap_total": 3.1746031746031744,
+    "or_semantics": 2.5793650793650795,
+    "drop_field": 3.9682539682539684,
+    "ignore_negation": 2.380952380952381,
+    "off_by_one": 4.563492063492063
+   },
+   "wrong": 2.9761904761904767,
+   "correct": 57.275132275132265,
+   "abstain": 39.748677248677254,
+   "clean_correct": 83.33333333333334
+  },
+  "gate2": {
+   "wrong_by_fault": {
+    "drop_last": 32.34126984126984,
+    "cap_total": 27.38095238095238,
+    "or_semantics": 32.341269841269835,
+    "drop_field": 56.547619047619044,
+    "ignore_negation": 25.59523809523809,
+    "off_by_one": 23.214285714285715
+   },
+   "wrong": 32.90343915343915,
+   "correct": 5.158730158730159,
+   "abstain": 61.93783068783069,
+   "clean_correct": 84.92063492063492
+  },
+  "enforce2": {
+   "wrong_by_fault": {
+    "drop_last": 7.142857142857143,
+    "cap_total": 15.476190476190478,
+    "or_semantics": 4.563492063492064,
+    "drop_field": 7.142857142857143,
+    "ignore_negation": 9.523809523809522,
+    "off_by_one": 8.928571428571429
+   },
+   "wrong": 8.796296296296296,
+   "correct": 3.042328042328042,
+   "abstain": 88.16137566137566,
+   "clean_correct": 86.30952380952381
+  },
+  "judge_block": {
+   "wrong_by_fault": {
+    "drop_last": null,
+    "cap_total": null,
+    "or_semantics": null,
+    "drop_field": null,
+    "ignore_negation": null,
+    "off_by_one": null
+   },
+   "wrong": null,
+   "correct": null,
+   "abstain": null,
+   "clean_correct": null
+  },
+  "om_block": {
+   "wrong_by_fault": {
+    "drop_last": null,
+    "cap_total": null,
+    "or_semantics": null,
+    "drop_field": null,
+    "ignore_negation": null,
+    "off_by_one": null
+   },
+   "wrong": null,
+   "correct": null,
+   "abstain": null,
+   "clean_correct": null
+  },
+  "judge_block_plain": {
+   "wrong_by_fault": {
+    "drop_last": null,
+    "cap_total": null,
+    "or_semantics": null,
+    "drop_field": null,
+    "ignore_negation": null,
+    "off_by_one": null
+   },
+   "wrong": null,
+   "correct": null,
+   "abstain": null,
+   "clean_correct": null
+  },
+  "judge_advise_plain": {
+   "wrong_by_fault": {
+    "drop_last": null,
+    "cap_total": null,
+    "or_semantics": null,
+    "drop_field": null,
+    "ignore_negation": null,
+    "off_by_one": null
+   },
+   "wrong": null,
+   "correct": null,
+   "abstain": null,
+   "clean_correct": null
+  },
+  "advisory_abstain": {
+   "wrong_by_fault": {
+    "drop_last": null,
+    "cap_total": null,
+    "or_semantics": null,
+    "drop_field": null,
+    "ignore_negation": null,
+    "off_by_one": null
+   },
+   "wrong": null,
+   "correct": null,
+   "abstain": null,
+   "clean_correct": null
+  },
+  "advisory_nonum": {
+   "wrong_by_fault": {
+    "drop_last": 82.73809523809523,
+    "cap_total": 83.92857142857143,
+    "or_semantics": 80.75396825396827,
+    "drop_field": 73.21428571428571,
+    "ignore_negation": 19.246031746031747,
+    "off_by_one": 80.55555555555556
+   },
+   "wrong": 70.07275132275132,
+   "correct": 14.054232804232806,
+   "abstain": 15.873015873015873,
+   "clean_correct": 86.30952380952382
+  },
+  "advisory_nonum_abstain": {
+   "wrong_by_fault": {
+    "drop_last": null,
+    "cap_total": null,
+    "or_semantics": null,
+    "drop_field": null,
+    "ignore_negation": null,
+    "off_by_one": null
+   },
+   "wrong": null,
+   "correct": null,
+   "abstain": null,
+   "clean_correct": null
+  },
+  "sgp": {
+   "wrong_by_fault": {
+    "drop_last": 1.5873015873015872,
+    "cap_total": 1.984126984126984,
+    "or_semantics": 1.3888888888888888,
+    "drop_field": 2.579365079365079,
+    "ignore_negation": 1.388888888888889,
+    "off_by_one": 1.3888888888888888
+   },
+   "wrong": 1.7195767195767198,
+   "correct": 2.447089947089947,
+   "abstain": 95.83333333333334,
+   "clean_correct": 84.92063492063492
+  }
+ },
+ "toolmaze34": {
+  "checklist": {
+   "p3": 26.825396825396826,
+   "p4": 19.523809523809522,
+   "silent": 23.17460317460317,
+   "clean": 55.535714285714285,
+   "loud": 38.308773366079954
+  },
+  "om": {
+   "p3": 36.269841269841265,
+   "p4": 24.761904761904763,
+   "silent": 30.515873015873016,
+   "clean": 57.142857142857146,
+   "loud": 40.7276186817057
+  },
+  "omcl": {
+   "p3": 39.920634920634924,
+   "p4": 25.555555555555554,
+   "silent": 32.738095238095234,
+   "clean": 54.82142857142857,
+   "loud": 39.75853230810738
+  },
+  "blindr": {
+   "p3": 60.40584415584415,
+   "p4": 27.00036075036075,
+   "silent": 43.70310245310246,
+   "clean": 54.17903525046382,
+   "loud": null
+  },
+  "ours": {
+   "p3": 47.61904761904763,
+   "p4": 24.44444444444444,
+   "silent": 36.03174603174603,
+   "clean": 52.5,
+   "loud": 39.79648842777334
+  }
+ },
+ "retail": {
+  "none": [
+   78.57142857142857,
+   7.202380952380951,
+   14.226190476190476,
+   36.19047619047619
+  ],
+  "advisory": [
+   71.54761904761905,
+   7.678571428571429,
+   20.773809523809522,
+   35.714285714285715
+  ],
+  "advisory_hint": [
+   59.642857142857146,
+   8.928571428571429,
+   31.428571428571427,
+   36.90476190476191
+  ],
+  "repair3": [
+   15.000000000000002,
+   30.476190476190474,
+   54.523809523809526,
+   35.714285714285715
+  ],
+  "enforce2": [
+   12.261904761904761,
+   6.547619047619048,
+   81.19047619047619,
+   33.80952380952381
+  ],
+  "sgp": [
+   10.955882352941176,
+   7.086834733893558,
+   81.95728291316527,
+   38.482647296206615
+  ]
+ },
+ "realapi_free7": {
+  "No guard": [
+   89.84126984126983,
+   3.4920634920634916,
+   6.031746031746032,
+   92.06349206349206
+  ],
+  "Result check (ours v1)": [
+   17.77777777777778,
+   25.714285714285715,
+   55.23809523809524,
+   91.1111111111111
+  ],
+  "Spec check": [
+   20.952380952380953,
+   70.7936507936508,
+   6.984126984126983,
+   92.06349206349206
+  ],
+  "Blind retry (control)": [
+   89.52380952380953,
+   3.1746031746031744,
+   4.761904761904762,
+   93.01587301587301
+  ],
+  "\\textbf{SilentGuard (ours)}": [
+   21.269841269841272,
+   69.52380952380953,
+   7.936507936507937,
+   92.38095238095238
+  ]
+ },
+ "permodel": {
+  "aob_better": [
+   7,
+   7,
+   0.015625
+  ],
+  "tm1_better": [
+   10,
+   13,
+   0.048583984375
+  ],
+  "tm34_better": [
+   5,
+   7,
+   0.125
+  ]
+ },
+ "real_apis": {
+  "n_apis": 15,
+  "n_silent": 10,
+  "max_inflation": 691.395976331361,
+  "e3c": {
+   "A_none": {
+    "n": 260,
+    "wrong": 7.000000000000001,
+    "abstain": 2.0,
+    "correct": 89.0
+   },
+   "A_guard": {
+    "n": 260,
+    "wrong": 6.0,
+    "abstain": 4.0,
+    "correct": 89.0
+   },
+   "A_schema": {
+    "n": 260,
+    "wrong": 7.000000000000001,
+    "abstain": 3.0,
+    "correct": 89.0
+   },
+   "G_none": {
+    "n": 260,
+    "wrong": 82.0,
+    "abstain": 5.0,
+    "correct": 13.0
+   },
+   "G_guard": {
+    "n": 260,
+    "wrong": 28.999999999999996,
+    "abstain": 36.0,
+    "correct": 34.0
+   },
+   "G_schema": {
+    "n": 260,
+    "wrong": 30.0,
+    "abstain": 4.0,
+    "correct": 65.0
+   }
+  },
+  "value_swap_fired": 26
+ },
+ "p3x2": {
+  "rates": {
+   "ours": 46.43755615453728,
+   "blindr": 56.041083099906636,
+   "omcl": 32.496392496392495
+  },
+  "n_models": 7,
+  "ours_minus_blindr": [
+   -9.603526945369342,
+   0,
+   0.015625
+  ],
+  "ours_minus_omcl": [
+   13.94116365814479,
+   7,
+   0.015625
+  ],
+  "per_model": {
+   "llama4-scout": [
+    50.55555555555556,
+    60.0,
+    32.77777777777778
+   ],
+   "llama4-maverick": [
+    47.22222222222222,
+    56.111111111111114,
+    31.666666666666668
+   ],
+   "llama33-70b": [
+    57.22222222222222,
+    66.11111111111111,
+    32.22222222222222
+   ],
+   "gpt-oss-120b": [
+    43.39622641509434,
+    51.1764705882353,
+    36.36363636363637
+   ],
+   "nemotron-ultra": [
+    53.888888888888886,
+    65.55555555555556,
+    38.888888888888886
+   ],
+   "gemma3-27b": [
+    22.77777777777778,
+    34.44444444444444,
+    12.222222222222221
+   ],
+   "phi-4": [
+    50.0,
+    58.888888888888886,
+    43.333333333333336
+   ]
+  }
+ },
+ "controls": {
+  "0": [
+   "Re-check vs. blind retry (ToolMaze P3+P4)",
+   "SilentGuard (re-check only when a check fails)",
+   36.03174603174603
+  ],
+  "1": [
+   "Re-check vs. blind retry (ToolMaze P3+P4)",
+   "Blind retry (every call twice)",
+   43.70310245310246
+  ],
+  "2": [
+   "Re-check vs. blind retry (ToolMaze P3+P4)",
+   "No re-check (Checklist + OM)",
+   32.738095238095234
+  ],
+  "3": [
+   "Withhold vs. warn, learned checks (ToolMaze)",
+   "Warn (SilentGuard choice)",
+   33.482142857142854
+  ],
+  "4": [
+   "",
+   "Withhold",
+   32.142857142857146
+  ],
+  "5": [
+   "Withhold vs. warn, exact checks (AgentOrchBench)",
+   "Warn",
+   63.12830687830688
+  ],
+  "6": [
+   "",
+   "Enforce (withhold)",
+   8.796296296296296
+  ],
+  "7": [
+   "",
+   "SilentGuard choice",
+   1.7195767195767198
+  ],
+  "8": [
+   "Loud faults (ToolMaze P1/P2)",
+   "Checklist + OM",
+   39.75853230810738
+  ],
+  "9": [
+   "",
+   "SilentGuard",
+   39.79648842777334
+  ],
+  "10": [
+   "One-time fault lasting two calls (ToolMaze P3)",
+   "SilentGuard",
+   46.43755615453728
+  ],
+  "11": [
+   "",
+   "Blind retry",
+   56.041083099906636
+  ],
+  "12": [
+   "",
+   "No re-check (Checklist + OM)",
+   32.496392496392495
+  ]
+ },
+ "cost_aob": {
+  "No guard": [
+   1.978505291005291,
+   3183.4923941798943,
+   9.19537037037037,
+   0.0,
+   0.0
+  ],
+  "Caution prompt": [
+   2.0231481481481484,
+   3733.718253968254,
+   11.309358465608463,
+   0.0,
+   0.0
+  ],
+  "LLM judge": [
+   3.2261904761904767,
+   6287.1577380952385,
+   47.215145502645505,
+   0.0,
+   2.030753968253968
+  ],
+  "Checklist [Sun et al. 2024]": [
+   1.92989417989418,
+   3429.024470899471,
+   8.683498677248679,
+   0.0,
+   0.0
+  ],
+  "Reviewer [Ta et al. 2026]": [
+   1.896745602082029,
+   9276.232167409373,
+   25.02885500681325,
+   0.0,
+   2.5823995813845
+  ],
+  "Outcome Monitors [Panthi & Abdelfattah 2026]": [
+   1.8849206349206349,
+   3057.5502645502643,
+   8.790972222222223,
+   0.0,
+   0.0
+  ],
+  "Blind retry (control)": [
+   1.8505291005291007,
+   3051.9186507936506,
+   7.957242063492065,
+   0.0,
+   0.0
+  ],
+  "Re-query, both counts shown": [
+   1.8432539682539681,
+   3040.9044312169312,
+   7.902546296296299,
+   0.0,
+   0.0
+  ],
+  "Self-verification": [
+   5.010912698412698,
+   12422.242063492065,
+   33.307506613756615,
+   0.0,
+   0.0
+  ],
+  "Warning only": [
+   4.736441798941799,
+   9620.084656084655,
+   23.53300264550263,
+   1.8670634920634923,
+   0.0
+  ],
+  "Warning + recovery tip": [
+   5.559523809523809,
+   13830.854828042327,
+   30.562830687830694,
+   4.403769841269841,
+   0.0
+  ],
+  "Auto-repair": [
+   2.9143518518518516,
+   5781.5734126984125,
+   16.620105820105824,
+   1.693452380952381,
+   0.0
+  ],
+  "Answer gate": [
+   4.999338624338625,
+   10962.64847883598,
+   27.416468253968258,
+   1.9368386243386244,
+   0.0
+  ],
+  "Enforce": [
+   5.04728835978836,
+   11745.29398148148,
+   29.053141534391532,
+   3.3220899470899465,
+   0.0
+  ],
+  "LLM judge + blocking": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "Outcome Monitors + blocking": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "LLM judge without check results + blocking": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "LLM judge without check results": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "Warning (last-condition check) + permission to abstain": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "Warning (full check)": [
+   4.353174603174603,
+   8298.580357142857,
+   26.917526455026465,
+   2.756283068783069,
+   0.0
+  ],
+  "Warning (full check) + permission to abstain": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "SilentGuard (ours)": [
+   3.7523148148148153,
+   9055.38425925926,
+   18.871097883597887,
+   2.6617063492063493,
+   0.0
+  ]
+ },
+ "training": {
+  "Phi-4-mini/Base model": [
+   [
+    100.0,
+    73.33333333333333,
+    100.0,
+    100.0,
+    86.66666666666667
+   ],
+   [
+    57.77777777777778,
+    72.77777777777777,
+    25.555555555555557
+   ]
+  ],
+  "Phi-4-mini/SFT to refuse (trained on drop-last)": [
+   [
+    0.0,
+    6.666666666666667,
+    100.0,
+    0.0,
+    100.0
+   ],
+   [
+    0.0,
+    6.111111111111111,
+    100.0
+   ]
+  ],
+  "Phi-4-mini/SFT to repair": [
+   [
+    0.0,
+    45.333333333333336,
+    100.0,
+    0.0,
+    100.0
+   ],
+   [
+    1.1111111111111112,
+    90.0,
+    100.0
+   ]
+  ],
+  "Phi-4-mini/RL (DAPO, false-equation penalty)": [
+   [
+    0.0,
+    28.666666666666668,
+    100.0,
+    0.0,
+    100.0
+   ],
+   [
+    0.0,
+    59.44444444444444,
+    100.0
+   ]
+  ],
+  "Mistral-7B/Base model": [
+   [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    2.2222222222222223,
+    1.1111111111111112,
+    0.0
+   ]
+  ],
+  "Mistral-7B/SFT to refuse (trained on drop-last)": [
+   [
+    0.0,
+    8.666666666666666,
+    100.0,
+    0.0,
+    100.0
+   ],
+   [
+    3.3333333333333335,
+    0.5555555555555556,
+    100.0
+   ]
+  ],
+  "Mistral-7B/SFT to repair": [
+   [
+    0.0,
+    42.0,
+    100.0,
+    0.0,
+    100.0
+   ],
+   [
+    0.0,
+    81.66666666666667,
+    100.0
+   ]
+  ]
+ },
+ "pooled_stats": {
+  "toolmaze34_ours_vs_omcl": {
+   "pairs": 14,
+   "mean_diff": 3.4017857142857144,
+   "wins": 11,
+   "losses": 3,
+   "p": 0.0306396484375
+  },
+  "toolmaze34_ours_vs_om": {
+   "pairs": 14,
+   "mean_diff": 5.473214285714286,
+   "wins": 12,
+   "losses": 2,
+   "p": 0.0111083984375
+  },
+  "toolmaze34_ours_vs_checklist": {
+   "pairs": 14,
+   "mean_diff": 12.803571428571429,
+   "wins": 14,
+   "losses": 0,
+   "p": 0.0001220703125
+  },
+  "toolmaze34_ours_vs_blindr": {
+   "pairs": 14,
+   "mean_diff": -7.696574773678917,
+   "wins": 0,
+   "losses": 14,
+   "p": 0.0001220703125
+  },
+  "aob_sgp_vs_none_wrong": {
+   "models": 7,
+   "mean_diff": -72.32142857142857,
+   "sgp_fewer_wrong": 7,
+   "p": 0.015625
+  },
+  "aob_sgp_vs_checklist_wrong": {
+   "models": 7,
+   "mean_diff": -70.53571428571429,
+   "sgp_fewer_wrong": 7,
+   "p": 0.015625
+  },
+  "aob_sgp_vs_reviewer_wrong": {
+   "models": 7,
+   "mean_diff": -72.08327195276152,
+   "sgp_fewer_wrong": 7,
+   "p": 0.015625
+  },
+  "aob_sgp_vs_om_wrong": {
+   "models": 7,
+   "mean_diff": -70.43650793650794,
+   "sgp_fewer_wrong": 7,
+   "p": 0.015625
+  },
+  "aob_sgp_vs_judge_check_wrong": {
+   "models": 7,
+   "mean_diff": -69.47751322751323,
+   "sgp_fewer_wrong": 7,
+   "p": 0.015625
+  },
+  "aob_sgp_vs_retry2_wrong": {
+   "models": 7,
+   "mean_diff": -72.71825396825396,
+   "sgp_fewer_wrong": 7,
+   "p": 0.015625
+  },
+  "aob_sgp_vs_enforce2_wrong": {
+   "models": 7,
+   "mean_diff": -7.076719576719577,
+   "sgp_fewer_wrong": 6,
+   "p": 0.03125
+  },
+  "aob_sgp_vs_repair3_wrong": {
+   "models": 7,
+   "mean_diff": -1.2566137566137565,
+   "sgp_fewer_wrong": 4,
+   "p": 0.4375
+  }
+ },
+ "oracle_blind": {
+  "rows": [
+   [
+    "blind_analyzed_text_match",
+    36,
+    0,
+    [
+     4,
+     0,
+     32
+    ],
+    [
+     4,
+     0,
+     32
+    ],
+    [
+     4,
+     0,
+     32
+    ]
+   ],
+   [
+    "blind_null_negation_drop",
+    36,
+    0,
+    [
+     36,
+     0,
+     0
+    ],
+    [
+     36,
+     0,
+     0
+    ],
+    [
+     36,
+     0,
+     0
+    ]
+   ],
+   [
+    "blind_partial_shard_timeout",
+    36,
+    36,
+    [
+     16,
+     0,
+     20
+    ],
+    [
+     0,
+     36,
+     0
+    ],
+    [
+     2,
+     0,
+     34
+    ]
+   ],
+   [
+    "blind_tag_join_fanout",
+    36,
+    15,
+    [
+     0,
+     0,
+     36
+    ],
+    [
+     0,
+     15,
+     21
+    ],
+    [
+     0,
+     0,
+     36
+    ]
+   ],
+   [
+    "blind_keyset_cursor_ties",
+    36,
+    36,
+    [
+     27,
+     0,
+     9
+    ],
+    [
+     0,
+     36,
+     0
+    ],
+    [
+     36,
+     0,
+     0
+    ]
+   ],
+   [
+    "blind_lossy_bitmap_no_recheck",
+    36,
+    35,
+    [
+     1,
+     0,
+     35
+    ],
+    [
+     1,
+     35,
+     0
+    ],
+    [
+     1,
+     35,
+     0
+    ]
+   ]
+  ],
+  "verified_but_wrong_repairs": 49
+ },
+ "oracle_blind_totals": {
+  "none": [
+   84,
+   0,
+   132
+  ],
+  "sgp": [
+   41,
+   122,
+   53
+  ],
+  "rep": [
+   79,
+   35,
+   102
+  ]
+ },
+ "risk": {
+  "No guard": [
+   16.369047619047617,
+   74.04100529100528
+  ],
+  "Auto-repair": [
+   57.275132275132265,
+   2.9761904761904767
+  ],
+  "Enforce": [
+   3.042328042328042,
+   8.796296296296296
+  ],
+  "SilentGuard (ours)": [
+   2.447089947089947,
+   1.7195767195767198
+  ]
+ },
+ "repeated_actions": {
+  "blindr": [
+   2.3551948051948055,
+   88.14935064935064,
+   7
+  ],
+  "ours": [
+   0.2363095238095238,
+   22.61904761904762,
+   7
+  ]
+ },
+ "_macro_count": 202
+}

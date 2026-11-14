@@ -1,0 +1,209 @@
+{
+  "note": "Nemotron-3-Ultra control arms and the SilentGuard list arm. Run on Genentech's internal computing platform with the same code, tasks, fault types, seeds, settings and grader as the other runs. Company policy does not allow release of logs from that platform, so only per-arm counts are given. Each count was checked to fit the run totals (432 faulted and 72 clean runs per arm). unknown = 432 - wrong - correct. Wrong by fault type was given later (counts out of 72); the first row given for judge_advise_plain summed to 347 against a total of 344 and the user corrected it. The other three list arms come from our own run files (matrix_rec9).",
+  "aob": {
+    "judge_advise_plain": {
+      "wrong": 79.62962962962963,
+      "correct": 18.287037037037038,
+      "unknown": 2.0833333333333335,
+      "clean": 100.0,
+      "by_fault": {
+        "drop_last": 100.0,
+        "cap_total": 95.83333333333333,
+        "or_semantics": 98.61111111111111,
+        "drop_field": 83.33333333333333,
+        "ignore_negation": 0.0,
+        "off_by_one": 100.0
+      }
+    },
+    "judge_block_plain": {
+      "wrong": 79.16666666666667,
+      "correct": 18.75,
+      "unknown": 2.0833333333333335,
+      "clean": 98.61111111111111,
+      "by_fault": {
+        "drop_last": 100.0,
+        "cap_total": 95.83333333333333,
+        "or_semantics": 98.61111111111111,
+        "drop_field": 80.55555555555556,
+        "ignore_negation": 0.0,
+        "off_by_one": 100.0
+      }
+    },
+    "judge_block": {
+      "wrong": 5.555555555555555,
+      "correct": 4.398148148148148,
+      "unknown": 90.04629629629629,
+      "clean": 100.0,
+      "by_fault": {
+        "drop_last": 20.833333333333332,
+        "cap_total": 5.555555555555555,
+        "or_semantics": 1.3888888888888888,
+        "drop_field": 1.3888888888888888,
+        "ignore_negation": 0.0,
+        "off_by_one": 4.166666666666667
+      }
+    },
+    "om_block": {
+      "wrong": 80.0925925925926,
+      "correct": 18.75,
+      "unknown": 1.1574074074074074,
+      "clean": 100.0,
+      "by_fault": {
+        "drop_last": 97.22222222222223,
+        "cap_total": 100.0,
+        "or_semantics": 100.0,
+        "drop_field": 81.94444444444444,
+        "ignore_negation": 1.3888888888888888,
+        "off_by_one": 100.0
+      }
+    },
+    "advisory_abstain": {
+      "wrong": 12.962962962962964,
+      "correct": 5.324074074074074,
+      "unknown": 81.71296296296296,
+      "clean": 100.0,
+      "by_fault": {
+        "drop_last": 4.166666666666667,
+        "cap_total": 2.7777777777777777,
+        "or_semantics": 12.5,
+        "drop_field": 50.0,
+        "ignore_negation": 1.3888888888888888,
+        "off_by_one": 6.944444444444445
+      }
+    },
+    "advisory_nonum_abstain": {
+      "wrong": 9.953703703703704,
+      "correct": 3.240740740740741,
+      "unknown": 86.80555555555556,
+      "clean": 100.0,
+      "by_fault": {
+        "drop_last": 25.0,
+        "cap_total": 13.88888888888889,
+        "or_semantics": 6.944444444444445,
+        "drop_field": 8.333333333333334,
+        "ignore_negation": 5.555555555555555,
+        "off_by_one": 0.0
+      }
+    }
+  },
+  "rec": {
+    "No guard": [
+      38.888888888888886,
+      0.0,
+      56.111111111111114,
+      24.666666666666668,
+      0.0,
+      72.66666666666667,
+      96.66666666666667
+    ],
+    "Auto-repair": [
+      0.0,
+      0.0,
+      62.22222222222222,
+      0.0,
+      0.0,
+      45.333333333333336,
+      100.0
+    ],
+    "Checked answers only (SilentGuard rule)": [
+      0.0,
+      0.0,
+      26.666666666666668,
+      0.0,
+      0.0,
+      8.666666666666666,
+      100.0
+    ],
+    "SilentGuard": [
+      6.666666666666667,
+      6.666666666666667,
+      24.444444444444443,
+      12.0,
+      12.0,
+      8.666666666666666,
+      100.0
+    ]
+  },
+  "aob_counts": {
+    "judge_advise_plain": {
+      "wrong": 344,
+      "correct": 79,
+      "clean_correct": 72,
+      "wrong_by_fault": {
+        "drop_last": 72,
+        "cap_total": 69,
+        "or_semantics": 71,
+        "drop_field": 60,
+        "ignore_negation": 0,
+        "off_by_one": 72
+      }
+    },
+    "judge_block_plain": {
+      "wrong": 342,
+      "correct": 81,
+      "clean_correct": 71,
+      "wrong_by_fault": {
+        "drop_last": 72,
+        "cap_total": 69,
+        "or_semantics": 71,
+        "drop_field": 58,
+        "ignore_negation": 0,
+        "off_by_one": 72
+      },
+      "clean_wrong": 0,
+      "clean_unknown": 1
+    },
+    "judge_block": {
+      "wrong": 24,
+      "correct": 19,
+      "clean_correct": 72,
+      "wrong_by_fault": {
+        "drop_last": 15,
+        "cap_total": 4,
+        "or_semantics": 1,
+        "drop_field": 1,
+        "ignore_negation": 0,
+        "off_by_one": 3
+      }
+    },
+    "om_block": {
+      "wrong": 346,
+      "correct": 81,
+      "clean_correct": 72,
+      "wrong_by_fault": {
+        "drop_last": 70,
+        "cap_total": 72,
+        "or_semantics": 72,
+        "drop_field": 59,
+        "ignore_negation": 1,
+        "off_by_one": 72
+      }
+    },
+    "advisory_abstain": {
+      "wrong": 56,
+      "correct": 23,
+      "clean_correct": 72,
+      "wrong_by_fault": {
+        "drop_last": 3,
+        "cap_total": 2,
+        "or_semantics": 9,
+        "drop_field": 36,
+        "ignore_negation": 1,
+        "off_by_one": 5
+      }
+    },
+    "advisory_nonum_abstain": {
+      "wrong": 43,
+      "correct": 14,
+      "clean_correct": 72,
+      "wrong_by_fault": {
+        "drop_last": 18,
+        "cap_total": 10,
+        "or_semantics": 5,
+        "drop_field": 6,
+        "ignore_negation": 4,
+        "off_by_one": 0
+      }
+    }
+  }
+}

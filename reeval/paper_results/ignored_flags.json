@@ -1,0 +1,23 @@
+{
+ "advisory": {
+  "n_flagged_wrong": 1522,
+  "mention_pct": 39.55321944809461,
+  "conf_mean": 0.43224047306176167,
+  "conf_high_pct": 20.696452036793694,
+  "clean_conf_mean": 0.9990255220417641
+ },
+ "advisory_hint": {
+  "n_flagged_wrong": 961,
+  "mention_pct": 52.34131113423517,
+  "conf_mean": 0.7092091571279915,
+  "conf_high_pct": 34.85952133194589,
+  "clean_conf_mean": 0.9999038461538462
+ },
+ "judge_check": {
+  "n_flagged_wrong": 1979,
+  "mention_pct": 26.225366346639717,
+  "conf_mean": 0.753996968165739,
+  "conf_high_pct": 42.49621020717534,
+  "clean_conf_mean": 0.9884174311926608
+ }
+}
