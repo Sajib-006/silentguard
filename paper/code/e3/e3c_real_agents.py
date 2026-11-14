@@ -30,7 +30,7 @@ import argparse, json, re, sys, threading, time, urllib.parse
 from pathlib import Path
 import requests
 
-A = Path(__file__).resolve().parents[2]
+A = Path("/mnt/disk/sajibacharjeedip/AgentOrchBench")
 sys.path.insert(0, str(A / "code/eval_v7"))
 import providers, roster                                    # noqa: E402
 from strict_grade import strict_outcome                     # noqa: E402

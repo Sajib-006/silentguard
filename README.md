@@ -1,78 +1,147 @@
-# Invariant-Aware Harness Enforcement to Protect LLM Agents from Silent API Failures
+# SilentGuard
 
-Code for the paper *Invariant-Aware Harness Enforcement to Protect LLM Agents from Silent API Failures*
-(Sajib Acharjee Dip, Brian Ouyang, Lala Motlhabi).
+**Your agent's API said HTTP 200. The answer was still wrong.**
 
-An API can fail silently. It ignores part of a request, such as a misnamed filter, and still returns
-HTTP 200 with a plausible but wrong result. SilentGuard is a harness for LLM agents that tests each
-tool result against invariants that any correct API must satisfy (for example, the count with a
-condition plus the count with its negation must equal the count without it). It withholds values that
-break an exact invariant and warns on values that break a learned check.
+APIs fail silently. A misnamed filter is ignored, a total is capped at the page size, an AND is
+read as OR, and the API still returns HTTP 200 with a plausible number. Agents trust it. In our
+tests, 11 of 15 public research APIs answer at least one such mistake this way, with counts up to
+691 times too large.
 
-This repository contains AgentOrchBench (eight local services and a retail domain with synthetic
-data, tasks and fault injectors), the SilentGuard harness and the baselines, the real-API study, our
-ToolMaze and tau-bench arms, the prediction log and the scripts that build every table and figure.
+SilentGuard moves the decision from the model to the harness. It tests every tool result against
+**invariants that any correct API must satisfy**, re-runs a failing request once, and **withholds**
+a value that is proven wrong, so the model never sees it. It needs no extra model call and no
+change to the API.
 
-## Repository layout
+This repository also contains **AgentOrchBench**, a benchmark of silent API failures for LLM agents
+with exact answers.
 
-| Path | Contents |
-|---|---|
-| `code/agentorchbench/apis/` | The eight AgentOrchBench services and the retail domain (Flask), with synthetic seed data and fault injectors (`catalog_api/blind_faults.py`, `catalog_api/FAULTS.md`) |
-| `code/benchmark/tasks/` | Task files (`hd100_v7.jsonl`, `adv_d7_v*.jsonl`, `retail_v1.jsonl`, `rec_v1.jsonl`) |
-| `code/eval_v7/` | Agent runner, SilentGuard (`d7_harness.py`, `d7_records.py`, `executor.py`), baselines, model providers and the experiment matrix |
-| `code/e3/` | Real-API probes and the real-API agent study |
-| `code/external/toolmaze/`, `code/external/tau/` | Arms for ToolMaze and tau-bench |
-| `reeval/` | Analysis scripts, result summaries (`paper_results/`), the prediction log (`EXTERNAL_PLAN.md`) and the code hashes (`*.sha256`) |
+## The idea in one line
 
-## Installation
+For a request with conditions C1..Ck and any position i,
 
-Python 3.10. The run scripts expect a virtual environment named `env` at the repository root.
-
-```bash
-python3.10 -m venv env
-env/bin/pip install -r requirements.txt
-cp .env.example code/.env   # then fill in the keys for the providers you use
+```
+count(all conditions) + count(others, and NOT Ci) == count(others)
 ```
 
-ToolMaze and tau-bench are installed from their authors' repositories when you run those arms.
+"Ci" and "not Ci" split the matching records into two parts, so a correct API always passes.
+An API that drops, misreads or caps a condition breaks the identity, even though each response
+looks normal.
 
-## Reproducing
-
-Start the service stack for a worker (worker 1 serves the eight bio services, worker 5 the retail domain):
-
-```bash
-bash code/eval_v7/stack.sh up 1
-bash code/eval_v7/stack.sh up 5 retail
-env/bin/python code/eval_v7/selftest_inject.py --worker 1   # checks the fault injectors
-```
-
-Run an experiment stage across workers (stages are listed in `code/eval_v7/run_matrix.py`):
+## Install
 
 ```bash
-cd code/eval_v7
-../../env/bin/python run_matrix.py --stage silentguard --workers 1 --retail-workers 5 --dry-run
-../../env/bin/python run_matrix.py --stage silentguard --workers 1 --retail-workers 5
+git clone https://github.com/Sajib-006/silentguard.git
+cd silentguard
+pip install -e ".[bench]"          # the library alone has no dependencies: pip install -e .
 ```
 
-Run files are written under `runs/`. The runs refuse to start if a frozen file no longer matches its
-hash in `reeval/*.sha256`.
+## Quickstart
 
-Build the tables and figures from the run files:
+```python
+from silentguard import Condition, SilentGuard
+
+guard = SilentGuard(count=my_api_count)        # my_api_count(conditions) -> int | None
+result = guard.count([Condition("status", "pass"), Condition("tissue", "tumor")])
+
+result.status         # "verified", "verified_on_recheck", "withheld", "warned" or "unchecked"
+result.value          # the count, or None when withheld
+result.observation()  # the JSON text to show your agent
+guard.check_answer(n) # answer gate: accept a final answer only if the harness verified it
+```
+
+Run the 30-second demo (no model, no network):
 
 ```bash
-env/bin/python reeval/paper_tables_data.py
-env/bin/python reeval/paper_tables_render.py reeval/paper_results/table_data.json out/
-env/bin/python reeval/paper_figures.py reeval/paper_results/table_data.json out/figures/
+python examples/01_quickstart.py
 ```
 
-The real-API study sends read-only requests to public APIs, about one per second:
-
-```bash
-cd code/e3
-../../env/bin/python e3_real_apis.py --out ../../reeval/e3_real_apis.json
-../../env/bin/python e3c_real_agents.py --threads 4 --arms none,schema,sgp --out ../../runs/matrix_e3c
+```
+API that ignores 'tissue'
+  plain call returns : 159   (true answer 76)
+  SilentGuard        : withheld, value released = None
+  failed condition   : tissue=tumor
+  final answer  159  : rejected
 ```
 
-The GPT-5.6 runs on AgentOrchBench and the Nemotron-3-Ultra control arms were run on Genentech's
-internal computing platform with the same code, tasks, seeds and grader. Their per-arm counts are in
-`reeval/paper_results/frontier_runs.json` and `reeval/paper_results/nemotron_external.json`.
+## Use it with your agent
+
+SilentGuard gives you an OpenAI-style tool and a handler for it:
+
+```python
+guard = SilentGuard(count=my_api_count)
+tools = [guard.tool_schema()]                       # pass to your chat model
+observation = guard.call_tool(tool_call.arguments)  # run the guarded tool
+decision = guard.check_answer(final_count)          # gate the final answer
+if not decision.final:
+    messages.append({"role": "user", "content": decision.message})
+```
+
+`examples/03_llm_agent.py` runs a full agent loop against any OpenAI-compatible endpoint.
+
+## AgentOrchBench
+
+Local services with synthetic data, tasks with exact answers, and silent faults you can switch on.
+
+| Suite | Tasks | What the agent does |
+|---|---|---|
+| `count` | 36 | Count records that match 2 to 3 conditions (main suite) |
+| `lists` | 30 | Return the IDs of all matching records |
+| `retail` | 30 | Count orders in a second domain |
+| `workflows` | 100 | Multi-step workflows across eight services |
+
+| Fault | API behavior | Modeled on |
+|---|---|---|
+| `drop_last` | drops the last filter | a misnamed filter |
+| `cap_total` | reports at most 5 | page size returned as the total |
+| `or_semantics` | joins conditions with OR | a faulty query builder |
+| `drop_field` | ignores any filter on one field | an unindexed field |
+| `ignore_negation` | drops NOT | no NOT support |
+| `off_by_one` | adds one to the count | a range bug |
+
+```python
+from agentorchbench import CatalogClient, load_tasks, score, start_services
+
+with start_services("bio") as svc:          # starts the services locally, no Docker
+    api = CatalogClient(svc)
+    api.set_fault("drop_last")
+    for task in load_tasks("count"):
+        answer = my_agent(task.prompt, tool=api.count)
+        print(task.id, score(task, answer))  # correct, wrong, unknown or no_answer
+```
+
+With no model in the loop, `examples/02_benchmark_faults.py` asks every count task once with a plain
+call and once through SilentGuard:
+
+| Fault | Plain call wrong | SilentGuard wrong | SilentGuard withheld |
+|---|---|---|---|
+| none | 0% | 0% | 0% |
+| `drop_last` | 100% | 0% | 100% |
+| `cap_total` | 100% | 0% | 100% |
+| `or_semantics` | 100% | 0% | 100% |
+| `drop_field` | 83% | 0% | 83% |
+| `ignore_negation` | 0% | 0% | 100% (false alarm) |
+| `off_by_one` | 100% | 0% | 100% |
+
+The tasks are also on the Hugging Face Hub (link added at release).
+
+## Results with LLM agents
+
+Across 7 open models on the fault types its checks target, SilentGuard cuts wrong answers from
+74.0% to 1.7%, with no loss on fault-free tasks. On three frontier models wrong answers fall from
+70.2% to 0.5%. Checklists, reviewer models and LLM judges leave over 70% of answers wrong, because
+agents report a flagged count anyway. SilentGuard prevents wrong answers by abstaining, not by
+recovering them, and it cannot see a fault that keeps its checks true. The paper reports both.
+
+## Reproducing the paper
+
+The exact code, frozen by hash, is in [`paper/`](paper/README.md).
+
+## Citation
+
+```bibtex
+@article{dip2026silentguard,
+  title  = {Invariant-Aware Harness Enforcement to Protect LLM Agents from Silent API Failures},
+  author = {Dip, Sajib Acharjee and Ouyang, Brian and Motlhabi, Lala},
+  year   = {2026}
+}
+```

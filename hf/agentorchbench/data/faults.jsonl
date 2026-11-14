@@ -1,0 +1,8 @@
+{"fault": "drop_last", "api_behavior": "drops the last filter", "modeled_on": "a misnamed filter", "count_check": "fires", "in_main_results": true}
+{"fault": "cap_total", "api_behavior": "reports at most 5 matches", "modeled_on": "page size returned as the total", "count_check": "fires", "in_main_results": true}
+{"fault": "or_semantics", "api_behavior": "joins conditions with OR instead of AND", "modeled_on": "a faulty query builder", "count_check": "fires", "in_main_results": true}
+{"fault": "drop_field", "api_behavior": "ignores any filter on one field", "modeled_on": "an unindexed field", "count_check": "fires", "in_main_results": true}
+{"fault": "ignore_negation", "api_behavior": "drops NOT from a condition", "modeled_on": "no NOT support", "count_check": "false alarm", "in_main_results": true}
+{"fault": "off_by_one", "api_behavior": "adds one to the count", "modeled_on": "a range bug", "count_check": "fires", "in_main_results": true}
+{"fault": "prefix", "api_behavior": "matches by prefix instead of equality", "modeled_on": "loose matching", "count_check": "cannot see", "in_main_results": false}
+{"fault": "consistent_lie", "api_behavior": "lies the same way on every query", "modeled_on": "an adversarial API", "count_check": "cannot see", "in_main_results": false}

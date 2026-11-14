@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "silentguard"
+version = "0.1.0"
+description = "Harness enforcement that protects LLM agents from silent API failures, and the AgentOrchBench benchmark"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Sajib Acharjee Dip", email = "sajibacharjeedip@vt.edu" },
+  { name = "Brian Ouyang" },
+  { name = "Lala Motlhabi", email = "motlhabi.lala@gene.com" },
+]
+keywords = ["llm-agents", "tool-use", "silent-failures", "guardrails", "benchmark", "api"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.optional-dependencies]
+bench = ["requests>=2.31", "flask>=3.0", "flask-cors>=4.0"]
+agent = ["openai>=1.40"]
+dev = ["pytest>=8", "requests>=2.31", "flask>=3.0", "flask-cors>=4.0"]
+
+[project.urls]
+Repository = "https://github.com/Sajib-006/silentguard"
+
+[tool.setuptools]
+packages = ["silentguard", "agentorchbench"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

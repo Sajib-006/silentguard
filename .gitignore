@@ -1,10 +1,15 @@
 env/
 runs/
 out/
-code/.env
+paper/code/.env
 .env
 __pycache__/
 *.pyc
 *.db
 *.log
 .DS_Store
+paper/env/
+paper/runs/
+paper/out/
+*.egg-info/
+.pytest_cache/

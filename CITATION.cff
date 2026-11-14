@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use SilentGuard or AgentOrchBench, please cite the paper."
+title: "SilentGuard and AgentOrchBench"
+repository-code: "https://github.com/Sajib-006/silentguard"
+authors:
+  - family-names: Dip
+    given-names: Sajib Acharjee
+    affiliation: "Virginia Tech; Genentech"
+  - family-names: Ouyang
+    given-names: Brian
+    affiliation: Genentech
+  - family-names: Motlhabi
+    given-names: Lala
+    affiliation: Genentech
+preferred-citation:
+  type: article
+  title: "Invariant-Aware Harness Enforcement to Protect LLM Agents from Silent API Failures"
+  authors:
+    - family-names: Dip
+      given-names: Sajib Acharjee
+    - family-names: Ouyang
+      given-names: Brian
+    - family-names: Motlhabi
+      given-names: Lala
+  year: 2026
