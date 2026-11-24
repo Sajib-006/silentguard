@@ -1,9 +1,9 @@
 # Reproducing the paper
 
 This folder holds the exact code, tasks, predictions and analysis scripts behind the paper
-*Invariant-Aware Harness Enforcement to Protect LLM Agents from Silent API Failures*. The method
-files were frozen by hash before the planned runs, and the hashes in `reeval/*.sha256` still match
-the files here.
+*Invariant-Aware Harness Enforcement to Protect LLM Agents from Silent API Failures*. Each file
+in `reeval/*.sha256` records the versions that were frozen before one planned stage. Files that
+changed between stages have one hash per stage, and the files here are the final versions.
 
 | Path | Contents |
 |---|---|
