@@ -85,42 +85,52 @@ class SilentGuard:
         self.learned_checks = list(learned_checks)
         self.recheck = recheck
         self.max_rejections = max_rejections
-        self.verified: set[int] = set()
+        self._verified: list[tuple[int, int]] = []    # (value, number of conditions of its query)
+        self.max_conditions = 0                        # most conditions in any query of this task
         self.rejections = 0
         self.extra_calls = 0
 
+    @property
+    def verified(self) -> set[int]:
+        """Counts the answer gate accepts: values that passed the check on a query with at least as
+        many conditions as any query sent in this task (the paper's answer rule)."""
+        return {v for v, k in self._verified if k == self.max_conditions and k > 0}
+
     def reset(self) -> None:
         """Start a new task."""
-        self.verified.clear()
+        self._verified.clear()
+        self.max_conditions = 0
         self.rejections = 0
 
     def count(self, conditions: Sequence[Condition]) -> GuardedCount:
         """Ask the API for a count and release only what the checks allow."""
         conditions = list(conditions)
+        self.max_conditions = max(self.max_conditions, len(conditions))
         value = self._count(conditions)
         first = check_count(self._count, conditions, value)
         self.extra_calls += first.extra_calls
         if first.passed:
-            return self._accept("verified", value, first)
+            return self._accept("verified", value, first, n_conditions=len(conditions))
         if first.broken:
             if self.recheck:
                 value2 = self._count(conditions)
                 second = check_count(self._count, conditions, value2)
                 self.extra_calls += 1 + second.extra_calls
                 if second.passed:
-                    return self._accept("verified_on_recheck", value2, first, second)
+                    return self._accept("verified_on_recheck", value2, first, second, n_conditions=len(conditions))
                 return GuardedCount("withheld", None, first, second)
             return GuardedCount("withheld", None, first)
         # The exact check could not run (for example a request it does not cover).
         warnings = [w for w in (chk(conditions, value) for chk in self.learned_checks) if w]
         return GuardedCount("warned" if warnings else "unchecked", value, first, warnings=warnings)
 
-    def _accept(self, status, value, first, second=None) -> GuardedCount:
-        self.verified.add(value)
+    def _accept(self, status, value, first, second=None, n_conditions=0) -> GuardedCount:
+        self._verified.append((value, n_conditions))
         return GuardedCount(status, value, first, second)
 
     def check_answer(self, answer: Any) -> AnswerDecision:
-        """Answer gate: accept a final count only if the harness verified it."""
+        """Answer gate: accept a final count only if the harness verified it on a query with the most
+        conditions of the task, so a count of a looser query is not accepted."""
         if isinstance(answer, str) and UNDETERMINED in answer.lower():
             return AnswerDecision(True, True, UNDETERMINED)
         try:

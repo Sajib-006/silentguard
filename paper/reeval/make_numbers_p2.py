@@ -127,7 +127,7 @@ for arm, lab in ARMS:
 L += ["\\bottomrule", "\\end{tabular}",
       f"\\caption{{\\textbf{{Agents on fault types the check was not built for.}} \\% of runs with silent faults, mean of "
       f"{len(M)} open models (per model in Table~\\ref{{tab:app-mixed-permodel}}). Seen: the six fault types the count check can see. Unseen: six fault "
-      "types written after the method was frozen, by an author who had not seen the check. Wrong: the agent reported a "
+      "types written after the method was frozen. Wrong: the agent reported a "
       "wrong count. Correct: correct count under a fault. Clean: correct on fault-free tasks. Bold: best.}",
       "\\label{tab:mixed}", "\\end{table}"]
 (out / "tab_mixed.tex").write_text("\n".join(L) + "\n")

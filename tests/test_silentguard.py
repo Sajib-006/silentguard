@@ -86,3 +86,12 @@ def test_record_and_param_checks():
     bad = good + [next(r for r in RECORDS if r["a"] != "x")]
     assert not check_records(bad, Q).consistent
     assert check_params(["status", "tisue"], ["status", "tissue"]) == ["tisue"]
+
+
+def test_gate_rejects_count_of_a_looser_query():
+    g = SilentGuard(api())
+    loose = g.count([Condition("a", "x")])          # passes the check, but drops a condition
+    full = g.count(Q)
+    assert loose.status == "verified" and full.status == "verified"
+    assert not g.check_answer(loose.value).accepted
+    assert g.check_answer(full.value).accepted
