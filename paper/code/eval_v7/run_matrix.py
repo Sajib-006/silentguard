@@ -252,6 +252,32 @@ STAGES["permit5"] = {
                                                     "--d7-harness", "--d7-remediation", "advisory_nonum",
                                                     "--baseline", "skeptic"])
               for fam in F5_FAULTS]}
+# Phase 2 (2026-11-24), reeval/PHASE2_PLAN.md. Additive stages, same tasks, seeds and settings as final5.
+BLIND6 = ["blind_analyzed_text_match", "blind_null_negation_drop", "blind_partial_shard_timeout",
+          "blind_tag_join_fanout", "blind_keyset_cursor_ties", "blind_lossy_bitmap_no_recheck"]
+P2_ARMS = {"none": [],
+           "advisory_nonum_abstain": ["--d7-harness", "--d7-remediation", "advisory_nonum", "--baseline", "skeptic"],
+           "enforce2": ["--d7-harness", "--d7-remediation", "enforce2"],
+           "sgp": ["--d7-harness", "--d7-remediation", "sgp"]}
+# ctl5: the missing control, full check with numbers shown plus permission to abstain
+STAGES["ctl5"] = {
+    "conditions": ["A"], "domains": ["bio"], "seeds": 2, "task_file": "adv5",
+    "cells": [(f"f5-{fam}-advisory_num_abstain", ["--catalog", "large", "--projection", "count_only",
+                                                  "--sfr-mode", "off" if fam == "honest" else fam,
+                                                  "--d7-harness", "--d7-remediation", "advisory_num",
+                                                  "--baseline", "skeptic"])
+              for fam in F5_FAULTS]}
+# mix5: four arms on the six blind fault types
+STAGES["mix5"] = {
+    "conditions": ["A"], "domains": ["bio"], "seeds": 2, "task_file": "adv5",
+    "cells": [(f"f5-{fam}-{arm}", ["--catalog", "large", "--projection", "count_only", "--sfr-mode", fam] + a)
+              for fam in BLIND6 for arm, a in P2_ARMS.items()]}
+# mix5seen: the same four arms on the seen faults and clean tasks (for models served on a new setup)
+STAGES["mix5seen"] = {
+    "conditions": ["A"], "domains": ["bio"], "seeds": 2, "task_file": "adv5",
+    "cells": [(f"f5-{fam}-{arm}", ["--catalog", "large", "--projection", "count_only",
+                                   "--sfr-mode", "off" if fam == "honest" else fam] + a)
+              for fam in F5_FAULTS for arm, a in P2_ARMS.items()]}
 # every model must go through every one of these, with identical settings
 FULL_SUITE = ["leaderboard", "parametric", "escape", "silentguard", "remediation"]
 

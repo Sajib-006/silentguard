@@ -126,11 +126,24 @@ The tasks are also on the Hugging Face Hub: [Sajib-006/AgentOrchBench](https://h
 
 ## Results with LLM agents
 
-Across 7 open models on the fault types its checks target, SilentGuard cuts wrong answers from
-74.0% to 1.7%, with no loss on fault-free tasks. On three frontier models wrong answers fall from
-70.2% to 0.5%. Checklists, reviewer models and LLM judges leave over 70% of answers wrong, because
-agents report a flagged count anyway. SilentGuard prevents wrong answers by abstaining, not by
-recovering them, and it cannot see a fault that keeps its checks true. The paper reports both.
+Agents see the fault and report the result anyway. After a warning from an exact check, open models
+still reported a wrong count in 78.1% of runs. Checklists, reviewer models and LLM judges leave over
+70% of answers wrong. SilentGuard removes the value from the model's view instead.
+
+On 12 fault types (six the check was built for, six written after the method was frozen), with 4 open
+models:
+
+| Method | Wrong, seen faults | Wrong, unseen faults | Wrong, all 12 |
+|---|---|---|---|
+| No guard | 65.3% | 50.1% | 57.7% |
+| Warning + permission to abstain | 17.0% | 30.7% | 23.8% |
+| Enforce (failed value left visible) | 8.7% | 25.6% | 17.2% |
+| **SilentGuard** | **1.2%** | **21.0%** | **11.1%** |
+
+A warning that also shows the check's numbers works for some models and fails for others (0.0% to
+70.6% wrong by model on seen faults). SilentGuard stays at 0.0% to 2.5% on every model. It prevents
+wrong answers by abstaining, not by recovering them, so it also withholds some right answers, and it
+cannot see a fault that keeps its checks true. The paper reports both.
 
 ## Reproducing the paper
 

@@ -52,6 +52,35 @@ cd code/e3
 ../../env/bin/python e3c_real_agents.py --threads 4 --arms none,schema,sgp --out ../../runs/matrix_e3c
 ```
 
+## Second round of runs (agents on unseen fault types, control arm, real APIs with no documentation)
+
+The plan and predictions, written before these runs, are in `reeval/PHASE2_PLAN.md` (hash recorded in
+`reeval/EXTERNAL_PLAN.md`). The patch that adds the control arm and the stages is
+`code/eval_v7/patch_phase2.py`; the frozen versions are in `reeval/CONFIRM_PHASE2.sha256` and
+`reeval/CONFIRM_E3N.sha256`.
+
+```bash
+cd code/eval_v7
+../../env/bin/python run_matrix.py --stage mix5 --workers 1,2,3 --only <model>       # unseen fault types
+../../env/bin/python run_matrix.py --stage mix5seen --workers 1,2,3 --only <model>   # seen faults and clean
+../../env/bin/python run_matrix.py --stage ctl5 --workers 1,2,3 --only <model>       # warning with numbers
+cd ../e3
+../../env/bin/python e3n_natural.py --check                                          # no model call
+../../env/bin/python e3n_natural.py --only <model> --arms none,schema --repeats 2 --out ../../runs/matrix_e3n
+../../env/bin/python e3n_replay.py --rows ../../runs/matrix_e3n
+```
+
+Gemma-3-27B, Phi-4 and Llama-3.3-70B were served with vLLM (provider entry pointing at a local
+OpenAI-compatible server), gpt-oss-120b through the same endpoint as the first round.
+
+The run logs of this round, and the first-round rows the new table compares against, are in
+`runs_release/phase2_and_reference_runs.tar.gz`. To rebuild the table from them:
+
+```bash
+mkdir -p runs && tar xzf runs_release/phase2_and_reference_runs.tar.gz -C runs
+python3 reeval/phase2_analysis.py           # writes reeval/paper_results/phase2_stats.json
+```
+
 ## Tables and figures
 
 ```bash

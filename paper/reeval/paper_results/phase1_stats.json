@@ -1,0 +1,1149 @@
+{
+ "funnel": {
+  "advisory_nonum": {
+   "llama4-scout": {
+    "faulted": 432,
+    "fired": 302,
+    "fired_wrong_num": 256,
+    "mentions": 89,
+    "mentions_wrong_num": 67,
+    "fired_correct": 46,
+    "mentions_correct": 22,
+    "conf_wrong_after_flag": 0.3753906249999998,
+    "conf_clean_correct": 1.0
+   },
+   "llama4-maverick": {
+    "faulted": 432,
+    "fired": 417,
+    "fired_wrong_num": 343,
+    "mentions": 349,
+    "mentions_wrong_num": 291,
+    "fired_abstain": 2,
+    "mentions_abstain": 1,
+    "fired_correct": 72,
+    "mentions_correct": 57,
+    "conf_wrong_after_flag": 0.7005830903790116,
+    "conf_clean_correct": 1.0
+   },
+   "llama33-70b": {
+    "faulted": 432,
+    "fired": 420,
+    "fired_wrong_num": 341,
+    "mentions": 245,
+    "mentions_wrong_num": 196,
+    "fired_abstain": 13,
+    "mentions_abstain": 9,
+    "fired_correct": 66,
+    "mentions_correct": 40,
+    "conf_wrong_after_flag": 0.3392961876832841,
+    "conf_clean_correct": 1.0
+   },
+   "gpt-oss-120b": {
+    "faulted": 432,
+    "fired": 419,
+    "fired_wrong_num": 307,
+    "fired_no_answer": 92,
+    "mentions": 6,
+    "mentions_wrong_num": 4,
+    "fired_abstain": 4,
+    "fired_correct": 16,
+    "mentions_no_answer": 2,
+    "conf_wrong_after_flag": 0.8126384364820847,
+    "conf_clean_correct": 0.9986111111111112
+   },
+   "nemotron-ultra": {
+    "faulted": 432,
+    "fired": 420,
+    "fired_correct": 65,
+    "fired_wrong_num": 331,
+    "fired_no_answer": 24,
+    "conf_wrong_after_flag": 0.724924471299092,
+    "conf_clean_correct": 1.0
+   },
+   "gemma3-27b": {
+    "faulted": 432,
+    "fired": 403,
+    "fired_wrong_num": 329,
+    "mentions": 115,
+    "mentions_wrong_num": 93,
+    "fired_abstain": 4,
+    "mentions_abstain": 4,
+    "fired_correct": 70,
+    "mentions_correct": 18,
+    "conf_wrong_after_flag": 0.8642583586626137,
+    "conf_clean_correct": 1.0
+   },
+   "phi-4": {
+    "faulted": 432,
+    "fired": 145,
+    "fired_wrong_num": 67,
+    "mentions": 98,
+    "mentions_wrong_num": 53,
+    "fired_abstain": 45,
+    "mentions_abstain": 21,
+    "fired_no_answer": 16,
+    "mentions_no_answer": 9,
+    "fired_correct": 17,
+    "mentions_correct": 15,
+    "conf_wrong_after_flag": 0.7380597014925373,
+    "conf_clean_correct": 1.0
+   }
+  },
+  "advisory_nonum_abstain": {
+   "llama4-scout": {
+    "faulted": 432,
+    "fired": 345,
+    "fired_abstain": 183,
+    "mentions": 179,
+    "mentions_abstain": 127,
+    "fired_correct": 18,
+    "mentions_correct": 7,
+    "fired_wrong_num": 144,
+    "mentions_wrong_num": 45,
+    "conf_wrong_after_flag": 0.10909090909090909,
+    "conf_clean_correct": 1.0
+   },
+   "llama4-maverick": {
+    "faulted": 432,
+    "fired": 420,
+    "fired_abstain": 415,
+    "mentions": 416,
+    "mentions_abstain": 415,
+    "fired_wrong_num": 5,
+    "mentions_wrong_num": 1,
+    "conf_wrong_after_flag": 1.0,
+    "conf_clean_correct": 1.0
+   },
+   "llama33-70b": {
+    "faulted": 432,
+    "fired": 419,
+    "fired_abstain": 419,
+    "mentions": 419,
+    "mentions_abstain": 419,
+    "conf_wrong_after_flag": null,
+    "conf_clean_correct": 1.0
+   },
+   "gpt-oss-120b": {
+    "faulted": 432,
+    "fired": 412,
+    "fired_abstain": 357,
+    "mentions": 339,
+    "mentions_abstain": 339,
+    "fired_wrong_num": 21,
+    "fired_no_answer": 34,
+    "conf_wrong_after_flag": 0.9357142857142855,
+    "conf_clean_correct": 0.9972463768115938
+   },
+   "gemma3-27b": {
+    "faulted": 432,
+    "fired": 412,
+    "fired_wrong_num": 247,
+    "fired_abstain": 108,
+    "mentions": 224,
+    "mentions_abstain": 108,
+    "mentions_wrong_num": 93,
+    "fired_correct": 57,
+    "mentions_correct": 23,
+    "conf_wrong_after_flag": 0.7402834008097176,
+    "conf_clean_correct": 1.0
+   },
+   "phi-4": {
+    "faulted": 432,
+    "fired": 120,
+    "fired_abstain": 104,
+    "mentions": 115,
+    "mentions_abstain": 102,
+    "fired_no_answer": 15,
+    "mentions_no_answer": 12,
+    "fired_wrong_num": 1,
+    "mentions_wrong_num": 1,
+    "conf_wrong_after_flag": 1.0,
+    "conf_clean_correct": 1.0
+   }
+  }
+ },
+ "paired": {
+  "sgp_vs_none": {
+   "n_pairs": 3024,
+   "models": 7,
+   "a_wrong_only": 8,
+   "b_wrong_only": 2195,
+   "diff_points": -72.3,
+   "ci95_task_bootstrap": [
+    -74.1,
+    -70.4
+   ],
+   "mcnemar_p": 0.0,
+   "per_model_diff": {
+    "llama4-scout": -84.5,
+    "llama4-maverick": -80.3,
+    "llama33-70b": -80.6,
+    "gpt-oss-120b": -79.6,
+    "nemotron-ultra": -76.9,
+    "gemma3-27b": -73.4,
+    "phi-4": -31.0
+   }
+  },
+  "sgp_vs_advisory_nonum": {
+   "n_pairs": 3024,
+   "models": 7,
+   "a_wrong_only": 11,
+   "b_wrong_only": 2078,
+   "diff_points": -68.4,
+   "ci95_task_bootstrap": [
+    -70.2,
+    -66.5
+   ],
+   "mcnemar_p": 0.0,
+   "per_model_diff": {
+    "llama4-scout": -84.7,
+    "llama4-maverick": -79.4,
+    "llama33-70b": -78.9,
+    "gpt-oss-120b": -69.9,
+    "nemotron-ultra": -73.4,
+    "gemma3-27b": -74.5,
+    "phi-4": -17.6
+   }
+  },
+  "sgp_vs_advisory_nonum_abstain": {
+   "n_pairs": 2592,
+   "models": 6,
+   "a_wrong_only": 21,
+   "b_wrong_only": 492,
+   "diff_points": -18.2,
+   "ci95_task_bootstrap": [
+    -20.7,
+    -15.6
+   ],
+   "mcnemar_p": 8.230525771893674e-118,
+   "per_model_diff": {
+    "llama4-scout": -46.8,
+    "llama4-maverick": -0.7,
+    "llama33-70b": 0.0,
+    "gpt-oss-120b": -3.9,
+    "gemma3-27b": -55.3,
+    "phi-4": -2.3
+   }
+  },
+  "sgp_vs_enforce2": {
+   "n_pairs": 3024,
+   "models": 7,
+   "a_wrong_only": 36,
+   "b_wrong_only": 250,
+   "diff_points": -7.1,
+   "ci95_task_bootstrap": [
+    -8.6,
+    -5.6
+   ],
+   "mcnemar_p": 1.3584641939956782e-40,
+   "per_model_diff": {
+    "llama4-scout": -5.1,
+    "llama4-maverick": 0.0,
+    "llama33-70b": -1.2,
+    "gpt-oss-120b": -23.6,
+    "nemotron-ultra": -8.3,
+    "gemma3-27b": -3.0,
+    "phi-4": -8.3
+   }
+  },
+  "sgp_vs_gate2": {
+   "n_pairs": 3024,
+   "models": 7,
+   "a_wrong_only": 28,
+   "b_wrong_only": 971,
+   "diff_points": -31.2,
+   "ci95_task_bootstrap": [
+    -33.7,
+    -28.8
+   ],
+   "mcnemar_p": 8.367213908329951e-247,
+   "per_model_diff": {
+    "llama4-scout": -84.0,
+    "llama4-maverick": -9.3,
+    "llama33-70b": -50.9,
+    "gpt-oss-120b": -31.7,
+    "nemotron-ultra": -25.2,
+    "gemma3-27b": -8.3,
+    "phi-4": -8.8
+   }
+  },
+  "sgp_vs_repair3": {
+   "n_pairs": 3024,
+   "models": 7,
+   "a_wrong_only": 38,
+   "b_wrong_only": 76,
+   "diff_points": -1.3,
+   "ci95_task_bootstrap": [
+    -2.1,
+    -0.3
+   ],
+   "mcnemar_p": 0.000475185325941909,
+   "per_model_diff": {
+    "llama4-scout": -6.7,
+    "llama4-maverick": 0.0,
+    "llama33-70b": 0.0,
+    "gpt-oss-120b": -0.2,
+    "nemotron-ultra": -2.3,
+    "gemma3-27b": 2.5,
+    "phi-4": -2.1
+   }
+  },
+  "sgp_vs_judge_block": {
+   "n_pairs": 2592,
+   "models": 6,
+   "a_wrong_only": 35,
+   "b_wrong_only": 158,
+   "diff_points": -4.7,
+   "ci95_task_bootstrap": [
+    -6.5,
+    -3.0
+   ],
+   "mcnemar_p": 7.288893759572605e-20,
+   "per_model_diff": {
+    "llama4-scout": -16.7,
+    "llama4-maverick": -1.9,
+    "llama33-70b": -1.9,
+    "gpt-oss-120b": -5.8,
+    "gemma3-27b": -0.2,
+    "phi-4": -2.1
+   }
+  },
+  "sgp_vs_judge_check": {
+   "n_pairs": 3024,
+   "models": 7,
+   "a_wrong_only": 10,
+   "b_wrong_only": 2111,
+   "diff_points": -69.5,
+   "ci95_task_bootstrap": [
+    -71.4,
+    -67.6
+   ],
+   "mcnemar_p": 0.0,
+   "per_model_diff": {
+    "llama4-scout": -81.5,
+    "llama4-maverick": -79.6,
+    "llama33-70b": -78.7,
+    "gpt-oss-120b": -72.9,
+    "nemotron-ultra": -76.2,
+    "gemma3-27b": -73.8,
+    "phi-4": -23.6
+   }
+  },
+  "sgp_vs_checklist": {
+   "n_pairs": 3024,
+   "models": 7,
+   "a_wrong_only": 11,
+   "b_wrong_only": 2144,
+   "diff_points": -70.5,
+   "ci95_task_bootstrap": [
+    -72.6,
+    -68.3
+   ],
+   "mcnemar_p": 0.0,
+   "per_model_diff": {
+    "llama4-scout": -77.1,
+    "llama4-maverick": -79.9,
+    "llama33-70b": -80.8,
+    "gpt-oss-120b": -79.4,
+    "nemotron-ultra": -76.9,
+    "gemma3-27b": -77.5,
+    "phi-4": -22.2
+   }
+  },
+  "sgp_vs_reviewer": {
+   "n_pairs": 3023,
+   "models": 7,
+   "a_wrong_only": 12,
+   "b_wrong_only": 2191,
+   "diff_points": -72.1,
+   "ci95_task_bootstrap": [
+    -74.4,
+    -69.7
+   ],
+   "mcnemar_p": 0.0,
+   "per_model_diff": {
+    "llama4-scout": -77.5,
+    "llama4-maverick": -79.4,
+    "llama33-70b": -80.6,
+    "gpt-oss-120b": -78.7,
+    "nemotron-ultra": -76.9,
+    "gemma3-27b": -72.7,
+    "phi-4": -38.9
+   }
+  },
+  "sgp_vs_om": {
+   "n_pairs": 3024,
+   "models": 7,
+   "a_wrong_only": 11,
+   "b_wrong_only": 2141,
+   "diff_points": -70.4,
+   "ci95_task_bootstrap": [
+    -72.5,
+    -68.3
+   ],
+   "mcnemar_p": 0.0,
+   "per_model_diff": {
+    "llama4-scout": -79.2,
+    "llama4-maverick": -79.2,
+    "llama33-70b": -80.6,
+    "gpt-oss-120b": -79.6,
+    "nemotron-ultra": -76.9,
+    "gemma3-27b": -75.5,
+    "phi-4": -22.2
+   }
+  },
+  "sgp_vs_retry2": {
+   "n_pairs": 3024,
+   "models": 7,
+   "a_wrong_only": 13,
+   "b_wrong_only": 2212,
+   "diff_points": -72.7,
+   "ci95_task_bootstrap": [
+    -74.8,
+    -70.5
+   ],
+   "mcnemar_p": 0.0,
+   "per_model_diff": {
+    "llama4-scout": -75.9,
+    "llama4-maverick": -79.6,
+    "llama33-70b": -80.3,
+    "gpt-oss-120b": -79.6,
+    "nemotron-ultra": -76.9,
+    "gemma3-27b": -73.8,
+    "phi-4": -42.8
+   }
+  },
+  "sgp_vs_selfverify": {
+   "n_pairs": 3024,
+   "models": 7,
+   "a_wrong_only": 14,
+   "b_wrong_only": 1662,
+   "diff_points": -54.5,
+   "ci95_task_bootstrap": [
+    -56.6,
+    -52.3
+   ],
+   "mcnemar_p": 0.0,
+   "per_model_diff": {
+    "llama4-scout": -77.5,
+    "llama4-maverick": -35.9,
+    "llama33-70b": -69.2,
+    "gpt-oss-120b": -52.3,
+    "nemotron-ultra": -74.8,
+    "gemma3-27b": -60.4,
+    "phi-4": -11.3
+   }
+  },
+  "warning_vs_none": {
+   "n_pairs": 3024,
+   "models": 7,
+   "a_wrong_only": 150,
+   "b_wrong_only": 270,
+   "diff_points": -4.0,
+   "ci95_task_bootstrap": [
+    -5.1,
+    -2.8
+   ],
+   "mcnemar_p": 5.0523793698917925e-09,
+   "per_model_diff": {
+    "llama4-scout": 0.2,
+    "llama4-maverick": -0.9,
+    "llama33-70b": -1.6,
+    "gpt-oss-120b": -9.7,
+    "nemotron-ultra": -3.5,
+    "gemma3-27b": 1.2,
+    "phi-4": -13.4
+   }
+  },
+  "warning_abstain_vs_warning": {
+   "n_pairs": 2592,
+   "models": 6,
+   "a_wrong_only": 40,
+   "b_wrong_only": 1319,
+   "diff_points": -49.3,
+   "ci95_task_bootstrap": [
+    -52.0,
+    -46.7
+   ],
+   "mcnemar_p": 0.0,
+   "per_model_diff": {
+    "llama4-scout": -38.0,
+    "llama4-maverick": -78.7,
+    "llama33-70b": -78.9,
+    "gpt-oss-120b": -66.0,
+    "gemma3-27b": -19.2,
+    "phi-4": -15.3
+   }
+  }
+ },
+ "false_alarm": {
+  "none": {
+   "per_model": {
+    "llama4-scout": {
+     "correct": 57,
+     "n": 84,
+     "fault_ignore_negation": 72,
+     "wrong_num": 26,
+     "no_answer": 1,
+     "fault_drop_field": 12
+    },
+    "llama4-maverick": {
+     "correct": 82,
+     "n": 84,
+     "fault_ignore_negation": 72,
+     "abstain": 1,
+     "wrong_num": 1,
+     "fault_drop_field": 12
+    },
+    "llama33-70b": {
+     "correct": 84,
+     "n": 84,
+     "fault_drop_field": 12,
+     "fault_ignore_negation": 72
+    },
+    "gpt-oss-120b": {
+     "correct": 83,
+     "n": 84,
+     "fault_drop_field": 12,
+     "fault_ignore_negation": 72,
+     "wrong_num": 1
+    },
+    "nemotron-ultra": {
+     "correct": 83,
+     "n": 84,
+     "fault_ignore_negation": 72,
+     "no_answer": 1,
+     "fault_drop_field": 12
+    },
+    "gemma3-27b": {
+     "correct": 78,
+     "n": 84,
+     "fault_ignore_negation": 72,
+     "wrong_num": 2,
+     "no_answer": 3,
+     "fault_drop_field": 12,
+     "abstain": 1
+    },
+    "phi-4": {
+     "abstain": 27,
+     "n": 84,
+     "fault_ignore_negation": 72,
+     "correct": 28,
+     "no_answer": 23,
+     "wrong_num": 6,
+     "fault_drop_field": 12
+    }
+   },
+   "pooled": {
+    "correct": 495,
+    "n": 588,
+    "fault_ignore_negation": 504,
+    "wrong_num": 36,
+    "no_answer": 28,
+    "fault_drop_field": 84,
+    "abstain": 29
+   },
+   "pooled_pct": {
+    "correct": 84.2,
+    "wrong_num": 6.1,
+    "no_answer": 4.8,
+    "abstain": 4.9
+   },
+   "affected_pooled_pct": {
+    "abstain": 6.1,
+    "no_answer": 3.4,
+    "wrong_num": 90.4
+   },
+   "affected_n": 2436
+  },
+  "sgp": {
+   "per_model": {
+    "llama4-scout": {
+     "abstain": 72,
+     "n": 84,
+     "fault_ignore_negation": 72,
+     "correct": 12,
+     "fault_drop_field": 12
+    },
+    "llama4-maverick": {
+     "abstain": 72,
+     "n": 84,
+     "fault_ignore_negation": 72,
+     "correct": 12,
+     "fault_drop_field": 12
+    },
+    "llama33-70b": {
+     "correct": 12,
+     "n": 84,
+     "fault_drop_field": 12,
+     "abstain": 72,
+     "fault_ignore_negation": 72
+    },
+    "gpt-oss-120b": {
+     "abstain": 60,
+     "n": 84,
+     "fault_ignore_negation": 72,
+     "no_answer": 11,
+     "wrong_num": 1,
+     "correct": 12,
+     "fault_drop_field": 12
+    },
+    "nemotron-ultra": {
+     "correct": 12,
+     "n": 84,
+     "fault_drop_field": 12,
+     "abstain": 67,
+     "fault_ignore_negation": 72,
+     "wrong_num": 4,
+     "no_answer": 1
+    },
+    "gemma3-27b": {
+     "correct": 12,
+     "n": 84,
+     "fault_drop_field": 12,
+     "abstain": 71,
+     "fault_ignore_negation": 72,
+     "wrong_num": 1
+    },
+    "phi-4": {
+     "no_answer": 35,
+     "n": 84,
+     "fault_drop_field": 12,
+     "abstain": 45,
+     "wrong_num": 2,
+     "correct": 2,
+     "fault_ignore_negation": 72
+    }
+   },
+   "pooled": {
+    "abstain": 459,
+    "n": 588,
+    "fault_ignore_negation": 504,
+    "correct": 74,
+    "fault_drop_field": 84,
+    "no_answer": 47,
+    "wrong_num": 8
+   },
+   "pooled_pct": {
+    "abstain": 78.1,
+    "correct": 12.6,
+    "no_answer": 8.0,
+    "wrong_num": 1.4
+   },
+   "affected_pooled_pct": {
+    "abstain": 89.9,
+    "no_answer": 8.3,
+    "wrong_num": 1.8
+   },
+   "affected_n": 2436
+  },
+  "enforce2": {
+   "per_model": {
+    "llama4-scout": {
+     "abstain": 69,
+     "n": 84,
+     "fault_ignore_negation": 72,
+     "no_answer": 1,
+     "wrong_num": 5,
+     "correct": 9,
+     "fault_drop_field": 12
+    },
+    "llama4-maverick": {
+     "abstain": 72,
+     "n": 84,
+     "fault_ignore_negation": 72,
+     "correct": 12,
+     "fault_drop_field": 12
+    },
+    "llama33-70b": {
+     "correct": 12,
+     "n": 84,
+     "fault_drop_field": 12,
+     "abstain": 72,
+     "fault_ignore_negation": 72
+    },
+    "gpt-oss-120b": {
+     "correct": 12,
+     "n": 84,
+     "fault_drop_field": 12,
+     "wrong_num": 37,
+     "fault_ignore_negation": 72,
+     "no_answer": 7,
+     "abstain": 28
+    },
+    "nemotron-ultra": {
+     "correct": 22,
+     "n": 84,
+     "fault_drop_field": 12,
+     "abstain": 52,
+     "fault_ignore_negation": 72,
+     "no_answer": 8,
+     "wrong_num": 2
+    },
+    "gemma3-27b": {
+     "correct": 16,
+     "n": 84,
+     "fault_drop_field": 12,
+     "no_answer": 5,
+     "abstain": 62,
+     "fault_ignore_negation": 72,
+     "wrong_num": 1
+    },
+    "phi-4": {
+     "no_answer": 20,
+     "n": 84,
+     "fault_ignore_negation": 72,
+     "abstain": 53,
+     "correct": 8,
+     "wrong_num": 3,
+     "fault_drop_field": 12
+    }
+   },
+   "pooled": {
+    "abstain": 408,
+    "n": 588,
+    "fault_ignore_negation": 504,
+    "no_answer": 41,
+    "wrong_num": 48,
+    "correct": 91,
+    "fault_drop_field": 84
+   },
+   "pooled_pct": {
+    "abstain": 69.4,
+    "no_answer": 7.0,
+    "wrong_num": 8.2,
+    "correct": 15.5
+   },
+   "affected_pooled_pct": {
+    "abstain": 81.0,
+    "wrong_num": 8.9,
+    "no_answer": 10.1,
+    "correct": 0.0
+   },
+   "affected_n": 2436
+  },
+  "advisory_nonum": {
+   "per_model": {
+    "llama4-scout": {
+     "correct": 54,
+     "n": 84,
+     "fault_drop_field": 12,
+     "wrong_num": 30,
+     "fault_ignore_negation": 72
+    },
+    "llama4-maverick": {
+     "correct": 84,
+     "n": 84,
+     "fault_drop_field": 12,
+     "fault_ignore_negation": 72
+    },
+    "llama33-70b": {
+     "correct": 77,
+     "n": 84,
+     "fault_ignore_negation": 72,
+     "abstain": 1,
+     "wrong_num": 6,
+     "fault_drop_field": 12
+    },
+    "gpt-oss-120b": {
+     "correct": 20,
+     "n": 84,
+     "fault_drop_field": 12,
+     "wrong_num": 56,
+     "fault_ignore_negation": 72,
+     "no_answer": 8
+    },
+    "nemotron-ultra": {
+     "correct": 75,
+     "n": 84,
+     "fault_ignore_negation": 72,
+     "wrong_num": 5,
+     "no_answer": 4,
+     "fault_drop_field": 12
+    },
+    "gemma3-27b": {
+     "correct": 80,
+     "n": 84,
+     "fault_drop_field": 12,
+     "wrong_num": 4,
+     "fault_ignore_negation": 72
+    },
+    "phi-4": {
+     "correct": 25,
+     "n": 84,
+     "fault_drop_field": 12,
+     "no_answer": 28,
+     "abstain": 28,
+     "fault_ignore_negation": 72,
+     "wrong_num": 3
+    }
+   },
+   "pooled": {
+    "correct": 415,
+    "n": 588,
+    "fault_drop_field": 84,
+    "wrong_num": 104,
+    "fault_ignore_negation": 504,
+    "abstain": 29,
+    "no_answer": 40
+   },
+   "pooled_pct": {
+    "correct": 70.6,
+    "wrong_num": 17.7,
+    "abstain": 4.9,
+    "no_answer": 6.8
+   },
+   "affected_pooled_pct": {
+    "wrong_num": 82.7,
+    "no_answer": 8.7,
+    "abstain": 8.1,
+    "correct": 0.4
+   },
+   "affected_n": 2436
+  }
+ },
+ "natural": {
+  "per_api": {
+   "ncbi": {
+    "runs": 35,
+    "runs_with_undocumented_param": 0,
+    "correct": 32,
+    "no_answer": 1,
+    "wrong_num": 2
+   },
+   "uniprot": {
+    "runs": 35,
+    "runs_with_undocumented_param": 0,
+    "wrong_num": 1,
+    "correct": 33,
+    "abstain": 1
+   },
+   "europepmc": {
+    "runs": 35,
+    "runs_with_undocumented_param": 0,
+    "wrong_num": 2,
+    "correct": 31,
+    "abstain": 1,
+    "no_answer": 1
+   },
+   "gbif": {
+    "runs": 35,
+    "runs_with_undocumented_param": 0,
+    "abstain": 3,
+    "wrong_num": 2,
+    "no_answer": 1,
+    "correct": 29
+   },
+   "datacite": {
+    "runs": 35,
+    "runs_with_undocumented_param": 0,
+    "wrong_num": 2,
+    "correct": 32,
+    "abstain": 1
+   },
+   "chembl": {
+    "runs": 35,
+    "runs_with_undocumented_param": 0,
+    "correct": 34,
+    "no_answer": 1
+   },
+   "arxiv": {
+    "runs": 35,
+    "runs_with_undocumented_param": 0,
+    "correct": 35
+   },
+   "zenodo": {
+    "runs": 35,
+    "runs_with_undocumented_param": 0,
+    "correct": 32,
+    "abstain": 2,
+    "wrong_num": 1
+   },
+   "inat": {
+    "runs": 35,
+    "runs_with_undocumented_param": 1,
+    "correct": 32,
+    "abstain": 3,
+    "undoc_abstain": 1
+   }
+  },
+  "pooled": {
+   "runs": 315,
+   "runs_with_undocumented_param": 1,
+   "correct": 290,
+   "no_answer": 4,
+   "wrong_num": 10,
+   "abstain": 11,
+   "undoc_abstain": 1
+  }
+ },
+ "retail_clean": {
+  "gemma3-27b|none": {
+   "wrong_num": 58,
+   "turns_sum": 180,
+   "abstain": 1,
+   "no_answer": 1
+  },
+  "gemma3-27b|sgp": {
+   "abstain": 56,
+   "turns_sum": 434,
+   "wrong_num": 2,
+   "correct": 1,
+   "no_answer": 1
+  },
+  "gpt-oss-120b|none": {
+   "correct": 37,
+   "turns_sum": 211,
+   "wrong_num": 23
+  },
+  "gpt-oss-120b|sgp": {
+   "correct": 37,
+   "turns_sum": 173,
+   "wrong_num": 22
+  },
+  "llama33-70b|none": {
+   "wrong_num": 56,
+   "turns_sum": 191,
+   "correct": 3,
+   "no_answer": 1
+  },
+  "llama33-70b|sgp": {
+   "wrong_num": 9,
+   "turns_sum": 348,
+   "abstain": 41,
+   "correct": 9,
+   "no_answer": 1
+  },
+  "llama4-maverick|none": {
+   "abstain": 1,
+   "turns_sum": 218,
+   "correct": 46,
+   "wrong_num": 13
+  },
+  "llama4-maverick|sgp": {
+   "wrong_num": 9,
+   "turns_sum": 242,
+   "correct": 47,
+   "abstain": 4
+  },
+  "llama4-scout|none": {
+   "wrong_num": 39,
+   "turns_sum": 371,
+   "correct": 20,
+   "abstain": 1
+  },
+  "llama4-scout|sgp": {
+   "abstain": 49,
+   "turns_sum": 563,
+   "correct": 8,
+   "no_answer": 1,
+   "wrong_num": 2
+  },
+  "nemotron-ultra|none": {
+   "no_answer": 3,
+   "turns_sum": 195,
+   "correct": 36,
+   "wrong_num": 21
+  },
+  "nemotron-ultra|sgp": {
+   "wrong_num": 20,
+   "turns_sum": 198,
+   "correct": 40
+  },
+  "phi-4|none": {
+   "no_answer": 43,
+   "turns_sum": 237,
+   "abstain": 6,
+   "correct": 10,
+   "wrong_num": 1
+  },
+  "phi-4|sgp": {
+   "no_answer": 39,
+   "turns_sum": 225,
+   "correct": 19,
+   "wrong_num": 2
+  }
+ },
+ "retail_clean_errors_none": [
+  [
+   [
+    "gemma3-27b",
+    "wrong_num",
+    "",
+    false
+   ],
+   58
+  ],
+  [
+   [
+    "llama33-70b",
+    "wrong_num",
+    "",
+    false
+   ],
+   53
+  ],
+  [
+   [
+    "llama4-scout",
+    "wrong_num",
+    "",
+    false
+   ],
+   39
+  ],
+  [
+   [
+    "gpt-oss-120b",
+    "wrong_num",
+    "",
+    false
+   ],
+   23
+  ],
+  [
+   [
+    "phi-4",
+    "no_answer",
+    "aborted: consecutive failed calls",
+    true
+   ],
+   21
+  ],
+  [
+   [
+    "phi-4",
+    "no_answer",
+    "aborted: repeated identical call",
+    true
+   ],
+   21
+  ],
+  [
+   [
+    "nemotron-ultra",
+    "wrong_num",
+    "",
+    false
+   ],
+   21
+  ],
+  [
+   [
+    "llama4-maverick",
+    "wrong_num",
+    "",
+    false
+   ],
+   13
+  ],
+  [
+   [
+    "phi-4",
+    "abstain",
+    "aborted: repeated identical call",
+    true
+   ],
+   4
+  ],
+  [
+   [
+    "llama33-70b",
+    "wrong_num",
+    "aborted: consecutive failed calls",
+    true
+   ],
+   3
+  ],
+  [
+   [
+    "phi-4",
+    "abstain",
+    "",
+    false
+   ],
+   2
+  ],
+  [
+   [
+    "nemotron-ultra",
+    "no_answer",
+    "aborted: repeated identical call",
+    true
+   ],
+   2
+  ],
+  [
+   [
+    "phi-4",
+    "no_answer",
+    "protocol violation (no RUN/ANSWER)",
+    false
+   ],
+   1
+  ],
+  [
+   [
+    "phi-4",
+    "wrong_num",
+    "",
+    false
+   ],
+   1
+  ],
+  [
+   [
+    "llama33-70b",
+    "no_answer",
+    "aborted: consecutive failed calls",
+    true
+   ],
+   1
+  ],
+  [
+   [
+    "llama4-scout",
+    "abstain",
+    "aborted: consecutive failed calls",
+    true
+   ],
+   1
+  ],
+  [
+   [
+    "gemma3-27b",
+    "abstain",
+    "",
+    false
+   ],
+   1
+  ],
+  [
+   [
+    "gemma3-27b",
+    "no_answer",
+    "aborted: repeated identical call",
+    true
+   ],
+   1
+  ],
+  [
+   [
+    "llama4-maverick",
+    "abstain",
+    "",
+    false
+   ],
+   1
+  ],
+  [
+   [
+    "nemotron-ultra",
+    "no_answer",
+    "aborted: consecutive failed calls",
+    true
+   ],
+   1
+  ]
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "per_model": {
+  "gemma3-27b": {
+   "correct": 2.7777777777777777,
+   "wrong_num": 3.4722222222222223,
+   "unknown_harness": 91.66666666666667,
+   "unknown_agent": 1.8518518518518519,
+   "no_answer": 0.23148148148148148,
+   "any_gate_rejection": 92.36111111111111,
+   "n_faulted": 432,
+   "clean_correct": 90.27777777777777,
+   "clean_unknown_harness": 1.3888888888888888,
+   "judge_block_wrong": 3.7037037037037037,
+   "judge_block_n": 432
+  },
+  "gpt-oss-120b": {
+   "correct": 2.7777777777777777,
+   "wrong_num": 1.1574074074074074,
+   "unknown_harness": 14.583333333333334,
+   "unknown_agent": 65.27777777777777,
+   "no_answer": 16.203703703703702,
+   "any_gate_rejection": 35.879629629629626,
+   "n_faulted": 432,
+   "clean_correct": 100.0,
+   "clean_unknown_harness": 0.0,
+   "judge_block_wrong": 6.944444444444445,
+   "judge_block_n": 432
+  },
+  "llama33-70b": {
+   "correct": 2.7777777777777777,
+   "wrong_num": 0.0,
+   "unknown_harness": 0.0,
+   "unknown_agent": 97.22222222222223,
+   "no_answer": 0.0,
+   "any_gate_rejection": 6.481481481481482,
+   "n_faulted": 432,
+   "clean_correct": 100.0,
+   "clean_unknown_harness": 0.0,
+   "judge_block_wrong": 1.8518518518518519,
+   "judge_block_n": 432
+  },
+  "llama4-maverick": {
+   "correct": 2.7777777777777777,
+   "wrong_num": 0.46296296296296297,
+   "unknown_harness": 0.0,
+   "unknown_agent": 96.75925925925925,
+   "no_answer": 0.0,
+   "any_gate_rejection": 0.23148148148148148,
+   "n_faulted": 432,
+   "clean_correct": 98.61111111111111,
+   "clean_unknown_harness": 0.0,
+   "judge_block_wrong": 2.314814814814815,
+   "judge_block_n": 432
+  },
+  "llama4-scout": {
+   "correct": 2.7777777777777777,
+   "wrong_num": 2.0833333333333335,
+   "unknown_harness": 4.861111111111111,
+   "unknown_agent": 88.6574074074074,
+   "no_answer": 1.6203703703703705,
+   "any_gate_rejection": 63.19444444444444,
+   "n_faulted": 432,
+   "clean_correct": 87.5,
+   "clean_unknown_harness": 1.3888888888888888,
+   "judge_block_wrong": 18.75,
+   "judge_block_n": 432
+  },
+  "nemotron-ultra": {
+   "correct": 2.7777777777777777,
+   "wrong_num": 3.7037037037037037,
+   "unknown_harness": 11.574074074074074,
+   "unknown_agent": 80.55555555555556,
+   "no_answer": 1.3888888888888888,
+   "any_gate_rejection": 18.51851851851852,
+   "n_faulted": 432,
+   "clean_correct": 100.0,
+   "clean_unknown_harness": 0.0,
+   "judge_block_wrong": null,
+   "judge_block_n": 0
+  },
+  "phi-4": {
+   "correct": 0.46296296296296297,
+   "wrong_num": 1.1574074074074074,
+   "unknown_harness": 3.009259259259259,
+   "unknown_agent": 57.407407407407405,
+   "no_answer": 37.96296296296296,
+   "any_gate_rejection": 3.935185185185185,
+   "n_faulted": 432,
+   "clean_correct": 18.055555555555557,
+   "clean_unknown_harness": 0.0,
+   "judge_block_wrong": 3.240740740740741,
+   "judge_block_n": 432
+  }
+ },
+ "pooled_faulted": {
+  "unknown_harness": 543,
+  "any_gate_rejection": 953,
+  "n": 3024,
+  "wrong_num": 52,
+  "unknown_agent": 2107,
+  "no_answer": 248,
+  "correct": 74
+ },
+ "pooled_clean": {
+  "correct": 428,
+  "any_gate_rejection": 9,
+  "n": 504,
+  "wrong_num": 12,
+  "unknown_harness": 2,
+  "no_answer": 35,
+  "unknown_agent": 27
+ },
+ "pooled_faulted_pct": {
+  "unknown_harness": 18.0,
+  "any_gate_rejection": 31.5,
+  "wrong_num": 1.7,
+  "unknown_agent": 69.7,
+  "no_answer": 8.2,
+  "correct": 2.4,
+  "n": 3024
+ },
+ "pooled_clean_pct": {
+  "correct": 84.9,
+  "any_gate_rejection": 1.8,
+  "wrong_num": 2.4,
+  "unknown_harness": 0.4,
+  "no_answer": 6.9,
+  "unknown_agent": 5.4,
+  "n": 504
+ },
+ "sgp_vs_judge_block": {
+  "models": 6,
+  "sgp_fewer_wrong": 6,
+  "mean_diff": -4.75,
+  "signflip_p": 0.03125
+ }
+}

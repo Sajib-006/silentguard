@@ -609,7 +609,8 @@ def main():
                     help="prompt-level D7 instruction (31 = the legacy v1 wording)")
     ap.add_argument("--d7-remediation", default="advisory",
                     choices=["advisory", "error", "error_nonum", "withhold", "gate", "gate2", "enforce", "repair",
-                             "advisory_hint", "advisory_nonum", "enforce2", "repair3", "rec_enforce", "rec_repair", "sgp", "rec_sgp"],
+                             "advisory_hint", "advisory_nonum", "enforce2", "repair3", "rec_enforce", "rec_repair", "sgp", "rec_sgp",
+                             "advisory_num"],   # Phase 2 (2026-11-24)
                     help="how the harness acts on a failed check (E1)")
     ap.add_argument("--d7-harness", action="store_true",
                     help="run the complement check in the EXECUTOR after every filter query, "

@@ -1,0 +1,2945 @@
+{
+ "arm": "none",
+ "tol": 0.001,
+ "summary": {
+  "ncbi": {
+   "wrong_runs": 8,
+   "wrong_no_final_query": 0,
+   "wrong_tested": 8,
+   "wrong_caught_a": 0,
+   "wrong_caught_b": 0,
+   "wrong_caught_c": 0,
+   "wrong_caught_any": 0,
+   "wrong_c_not_testable": 0,
+   "correct_runs": 2,
+   "correct_no_final_query": 0,
+   "correct_tested": 2,
+   "correct_flagged_a": 0,
+   "correct_flagged_b": 0,
+   "correct_flagged_c": 0,
+   "correct_flagged_any": 0,
+   "correct_c_not_testable": 0,
+   "other_runs_not_tested": 0
+  },
+  "POOLED": {
+   "wrong_runs": 14,
+   "wrong_no_final_query": 0,
+   "wrong_tested": 14,
+   "wrong_caught_a": 6,
+   "wrong_caught_b": 1,
+   "wrong_caught_c": 0,
+   "wrong_caught_any": 6,
+   "wrong_c_not_testable": 6,
+   "correct_runs": 75,
+   "correct_no_final_query": 0,
+   "correct_tested": 75,
+   "correct_flagged_a": 1,
+   "correct_flagged_b": 0,
+   "correct_flagged_c": 0,
+   "correct_flagged_any": 1,
+   "correct_c_not_testable": 38,
+   "other_runs_not_tested": 1
+  },
+  "uniprot": {
+   "wrong_runs": 0,
+   "wrong_no_final_query": 0,
+   "wrong_tested": 0,
+   "wrong_caught_a": 0,
+   "wrong_caught_b": 0,
+   "wrong_caught_c": 0,
+   "wrong_caught_any": 0,
+   "wrong_c_not_testable": 0,
+   "correct_runs": 10,
+   "correct_no_final_query": 0,
+   "correct_tested": 10,
+   "correct_flagged_a": 0,
+   "correct_flagged_b": 0,
+   "correct_flagged_c": 0,
+   "correct_flagged_any": 0,
+   "correct_c_not_testable": 0,
+   "other_runs_not_tested": 0
+  },
+  "europepmc": {
+   "wrong_runs": 0,
+   "wrong_no_final_query": 0,
+   "wrong_tested": 0,
+   "wrong_caught_a": 0,
+   "wrong_caught_b": 0,
+   "wrong_caught_c": 0,
+   "wrong_caught_any": 0,
+   "wrong_c_not_testable": 0,
+   "correct_runs": 10,
+   "correct_no_final_query": 0,
+   "correct_tested": 10,
+   "correct_flagged_a": 0,
+   "correct_flagged_b": 0,
+   "correct_flagged_c": 0,
+   "correct_flagged_any": 0,
+   "correct_c_not_testable": 1,
+   "other_runs_not_tested": 0
+  },
+  "gbif": {
+   "wrong_runs": 0,
+   "wrong_no_final_query": 0,
+   "wrong_tested": 0,
+   "wrong_caught_a": 0,
+   "wrong_caught_b": 0,
+   "wrong_caught_c": 0,
+   "wrong_caught_any": 0,
+   "wrong_c_not_testable": 0,
+   "correct_runs": 10,
+   "correct_no_final_query": 0,
+   "correct_tested": 10,
+   "correct_flagged_a": 0,
+   "correct_flagged_b": 0,
+   "correct_flagged_c": 0,
+   "correct_flagged_any": 0,
+   "correct_c_not_testable": 10,
+   "other_runs_not_tested": 0
+  },
+  "zenodo": {
+   "wrong_runs": 0,
+   "wrong_no_final_query": 0,
+   "wrong_tested": 0,
+   "wrong_caught_a": 0,
+   "wrong_caught_b": 0,
+   "wrong_caught_c": 0,
+   "wrong_caught_any": 0,
+   "wrong_c_not_testable": 0,
+   "correct_runs": 10,
+   "correct_no_final_query": 0,
+   "correct_tested": 10,
+   "correct_flagged_a": 1,
+   "correct_flagged_b": 0,
+   "correct_flagged_c": 0,
+   "correct_flagged_any": 1,
+   "correct_c_not_testable": 4,
+   "other_runs_not_tested": 0
+  },
+  "chembl": {
+   "wrong_runs": 1,
+   "wrong_no_final_query": 0,
+   "wrong_tested": 1,
+   "wrong_caught_a": 1,
+   "wrong_caught_b": 1,
+   "wrong_caught_c": 0,
+   "wrong_caught_any": 1,
+   "wrong_c_not_testable": 1,
+   "correct_runs": 9,
+   "correct_no_final_query": 0,
+   "correct_tested": 9,
+   "correct_flagged_a": 0,
+   "correct_flagged_b": 0,
+   "correct_flagged_c": 0,
+   "correct_flagged_any": 0,
+   "correct_c_not_testable": 9,
+   "other_runs_not_tested": 0
+  },
+  "arxiv": {
+   "wrong_runs": 0,
+   "wrong_no_final_query": 0,
+   "wrong_tested": 0,
+   "wrong_caught_a": 0,
+   "wrong_caught_b": 0,
+   "wrong_caught_c": 0,
+   "wrong_caught_any": 0,
+   "wrong_c_not_testable": 0,
+   "correct_runs": 10,
+   "correct_no_final_query": 0,
+   "correct_tested": 10,
+   "correct_flagged_a": 0,
+   "correct_flagged_b": 0,
+   "correct_flagged_c": 0,
+   "correct_flagged_any": 0,
+   "correct_c_not_testable": 0,
+   "other_runs_not_tested": 0
+  },
+  "datacite": {
+   "wrong_runs": 3,
+   "wrong_no_final_query": 0,
+   "wrong_tested": 3,
+   "wrong_caught_a": 3,
+   "wrong_caught_b": 0,
+   "wrong_caught_c": 0,
+   "wrong_caught_any": 3,
+   "wrong_c_not_testable": 3,
+   "correct_runs": 6,
+   "correct_no_final_query": 0,
+   "correct_tested": 6,
+   "correct_flagged_a": 0,
+   "correct_flagged_b": 0,
+   "correct_flagged_c": 0,
+   "correct_flagged_any": 0,
+   "correct_c_not_testable": 6,
+   "other_runs_not_tested": 1
+  },
+  "inat": {
+   "wrong_runs": 2,
+   "wrong_no_final_query": 0,
+   "wrong_tested": 2,
+   "wrong_caught_a": 2,
+   "wrong_caught_b": 0,
+   "wrong_caught_c": 0,
+   "wrong_caught_any": 2,
+   "wrong_c_not_testable": 2,
+   "correct_runs": 8,
+   "correct_no_final_query": 0,
+   "correct_tested": 8,
+   "correct_flagged_a": 0,
+   "correct_flagged_b": 0,
+   "correct_flagged_c": 0,
+   "correct_flagged_any": 0,
+   "correct_c_not_testable": 8,
+   "other_runs_not_tested": 0
+  }
+ },
+ "unique_final_queries": [
+  {
+   "api": "ncbi",
+   "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmode=json&retmax=0&term=BRCA1%5BGene%5D%20AND%20Homo%20sapiens%5BOrganism%5D",
+   "count": 1,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "Homo sapiens[Organism]",
+      "B": "BRCA1[Gene]",
+      "N_A": 360732,
+      "N_AB": 1,
+      "N_A_not_B": 360731,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "BRCA1[Gene]",
+      "B": "Homo sapiens[Organism]",
+      "N_A": 693,
+      "N_AB": 1,
+      "N_A_not_B": 692,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "ncbi",
+   "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmode=json&retmax=0&term=TP53%5BGene%20Name%5D%20AND%20mouse%5BOrganism%5D",
+   "count": 3,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "mouse[Organism]",
+      "B": "TP53[Gene Name]",
+      "N_A": 321691,
+      "N_AB": 3,
+      "N_A_not_B": 321688,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "TP53[Gene Name]",
+      "B": "mouse[Organism]",
+      "N_A": 689,
+      "N_AB": 3,
+      "N_A_not_B": 686,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "ncbi",
+   "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmode=json&retmax=0&term=CFTR%5BGene%5D%20AND%20Homo%20sapiens%5BOrganism%5D",
+   "count": 1,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "Homo sapiens[Organism]",
+      "B": "CFTR[Gene]",
+      "N_A": 360732,
+      "N_AB": 1,
+      "N_A_not_B": 360731,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "CFTR[Gene]",
+      "B": "Homo sapiens[Organism]",
+      "N_A": 1020,
+      "N_AB": 1,
+      "N_A_not_B": 1019,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "ncbi",
+   "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmode=json&retmax=0&term=MYC%5BGene%20Name%5D%20AND%20Mus%20musculus%5BOrganism%5D",
+   "count": 2,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "Mus musculus[Organism]",
+      "B": "MYC[Gene Name]",
+      "N_A": 251860,
+      "N_AB": 2,
+      "N_A_not_B": 251858,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "MYC[Gene Name]",
+      "B": "Mus musculus[Organism]",
+      "N_A": 923,
+      "N_AB": 2,
+      "N_A_not_B": 921,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "ncbi",
+   "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmode=json&retmax=0&term=insulin%5BAll%20Fields%5D%20AND%20Danio%20rerio%5BOrganism%5D",
+   "count": 249,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "Danio rerio[Organism]",
+      "B": "insulin[All Fields]",
+      "N_A": 141750,
+      "N_AB": 241,
+      "N_A_not_B": 141509,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "insulin[All Fields]",
+      "B": "Danio rerio[Organism]",
+      "N_A": 114690,
+      "N_AB": 241,
+      "N_A_not_B": 114449,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "uniprot",
+   "url": "https://rest.uniprot.org/uniprotkb/search?format=json&size=1&query=kinase%20AND%20organism_id:9606",
+   "count": 25101,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "organism_id:9606",
+      "B": "kinase",
+      "N_A": 327072,
+      "N_AB": 25101,
+      "N_A_not_B": 301971,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "kinase",
+      "B": "organism_id:9606",
+      "N_A": 8212821,
+      "N_AB": 25101,
+      "N_A_not_B": 8187720,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "uniprot",
+   "url": "https://rest.uniprot.org/uniprotkb/search?format=json&size=1&query=kinase%20AND%20organism_id:10090",
+   "count": 18148,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "organism_id:10090",
+      "B": "kinase",
+      "N_A": 261799,
+      "N_AB": 18148,
+      "N_A_not_B": 243651,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "kinase",
+      "B": "organism_id:10090",
+      "N_A": 8212821,
+      "N_AB": 18148,
+      "N_A_not_B": 8194673,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "uniprot",
+   "url": "https://rest.uniprot.org/uniprotkb/search?format=json&size=1&query=insulin+AND+organism_id:9606",
+   "count": 2531,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "organism_id:9606",
+      "B": "insulin",
+      "N_A": 327072,
+      "N_AB": 2531,
+      "N_A_not_B": 324541,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "insulin",
+      "B": "organism_id:9606",
+      "N_A": 400159,
+      "N_AB": 2531,
+      "N_A_not_B": 397628,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "uniprot",
+   "url": "https://rest.uniprot.org/uniprotkb/search?format=json&size=1&query=insulin%20AND%20organism_id:9606",
+   "count": 2531,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "organism_id:9606",
+      "B": "insulin",
+      "N_A": 327072,
+      "N_AB": 2531,
+      "N_A_not_B": 324541,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "insulin",
+      "B": "organism_id:9606",
+      "N_A": 400159,
+      "N_AB": 2531,
+      "N_A_not_B": 397628,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "uniprot",
+   "url": "https://rest.uniprot.org/uniprotkb/search?format=json&size=1&query=BRCA1%20AND%20organism_id:10090",
+   "count": 448,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "organism_id:10090",
+      "B": "BRCA1",
+      "N_A": 261799,
+      "N_AB": 448,
+      "N_A_not_B": 261351,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "BRCA1",
+      "B": "organism_id:10090",
+      "N_A": 59140,
+      "N_AB": 448,
+      "N_A_not_B": 58692,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "uniprot",
+   "url": "https://rest.uniprot.org/uniprotkb/search?format=json&size=1&query=collagen%20AND%20organism_id:9606",
+   "count": 1919,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "organism_id:9606",
+      "B": "collagen",
+      "N_A": 327072,
+      "N_AB": 1919,
+      "N_A_not_B": 325153,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "collagen",
+      "B": "organism_id:9606",
+      "N_A": 336209,
+      "N_AB": 1919,
+      "N_A_not_B": 334290,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "europepmc",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=1&query=malaria%20PUB_YEAR:2020",
+   "count": 15433,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "only one conjunct (no top-level AND)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "europepmc",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=1&query=malaria%20AND%20PUB_YEAR:2020",
+   "count": 15433,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "PUB_YEAR:2020",
+      "B": "malaria",
+      "N_A": 1593665,
+      "N_AB": 15433,
+      "N_A_not_B": 1578232,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "malaria",
+      "B": "PUB_YEAR:2020",
+      "N_A": 293461,
+      "N_AB": 15433,
+      "N_A_not_B": 278028,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "europepmc",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=1&query=CRISPR%20AND%20PUB_YEAR:2018",
+   "count": 11596,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "PUB_YEAR:2018",
+      "B": "CRISPR",
+      "N_A": 1252923,
+      "N_AB": 11596,
+      "N_A_not_B": 1241327,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "CRISPR",
+      "B": "PUB_YEAR:2018",
+      "N_A": 243632,
+      "N_AB": 11596,
+      "N_A_not_B": 232036,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "europepmc",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=1&query=tuberculosis%20AND%20PUB_YEAR%3A2015",
+   "count": 18628,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "PUB_YEAR:2015",
+      "B": "tuberculosis",
+      "N_A": 1136535,
+      "N_AB": 18628,
+      "N_A_not_B": 1117907,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "tuberculosis",
+      "B": "PUB_YEAR:2015",
+      "N_A": 743496,
+      "N_AB": 18628,
+      "N_A_not_B": 724868,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "europepmc",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=1&query=zika%20AND%20PUB_YEAR%3A2016",
+   "count": 2657,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "PUB_YEAR:2016",
+      "B": "zika",
+      "N_A": 1162739,
+      "N_AB": 2657,
+      "N_A_not_B": 1160082,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "zika",
+      "B": "PUB_YEAR:2016",
+      "N_A": 53804,
+      "N_AB": 2657,
+      "N_A_not_B": 51147,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "europepmc",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=1&query=dengue%20AND%20PUB_YEAR:2019",
+   "count": 5209,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "PUB_YEAR:2019",
+      "B": "dengue",
+      "N_A": 1334252,
+      "N_AB": 5209,
+      "N_A_not_B": 1329043,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "dengue",
+      "B": "PUB_YEAR:2019",
+      "N_A": 105967,
+      "N_AB": 5209,
+      "N_A_not_B": 100758,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "europepmc",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=1&query=dengue%20AND%20PUB_YEAR%3A2019",
+   "count": 5209,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "PUB_YEAR:2019",
+      "B": "dengue",
+      "N_A": 1334252,
+      "N_AB": 5209,
+      "N_A_not_B": 1329043,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "dengue",
+      "B": "PUB_YEAR:2019",
+      "N_A": 105967,
+      "N_AB": 5209,
+      "N_A_not_B": 100758,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "gbif",
+   "url": "https://api.gbif.org/v1/occurrence/search?limit=0&scientificName=Puma%20concolor&country=US",
+   "count": 11969,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "gbif",
+   "url": "https://api.gbif.org/v1/occurrence/search?limit=0&scientificName=Ursus%20arctos&country=CA",
+   "count": 3554,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "gbif",
+   "url": "https://api.gbif.org/v1/occurrence/search?limit=0&scientificName=Canis%20lupus&country=US",
+   "count": 17619,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "gbif",
+   "url": "https://api.gbif.org/v1/occurrence/search?limit=0&scientificName=Lynx%20lynx&country=SE",
+   "count": 4210,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "gbif",
+   "url": "https://api.gbif.org/v1/occurrence/search?scientificName=Lynx%20lynx&country=SE&limit=0",
+   "count": 4210,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "gbif",
+   "url": "https://api.gbif.org/v1/occurrence/search?limit=0&scientificName=Vulpes%20vulpes&country=GB",
+   "count": 182315,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "zenodo",
+   "url": "https://zenodo.org/api/records?size=1&q=climate%20AND%20type:dataset",
+   "count": 27636,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "type:dataset",
+      "B": "climate",
+      "N_A": 787350,
+      "N_AB": 27680,
+      "N_A_not_B": 759670,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "climate",
+      "B": "type:dataset",
+      "N_A": 119460,
+      "N_AB": 27680,
+      "N_A_not_B": 91780,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "zenodo",
+   "url": "https://zenodo.org/api/records?size=1&q=climate&resource_type=dataset",
+   "count": 27636,
+   "a_unknown_params": [
+    "resource_type"
+   ],
+   "a": true,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "only one conjunct (no top-level AND)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": true
+  },
+  {
+   "api": "zenodo",
+   "url": "https://zenodo.org/api/records?size=1&q=covid%20AND%20resource_type.type:software",
+   "count": 1105,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "resource_type.type:software",
+      "B": "covid",
+      "N_A": 344709,
+      "N_AB": 1106,
+      "N_A_not_B": 343603,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "covid",
+      "B": "resource_type.type:software",
+      "N_A": 42136,
+      "N_AB": 1106,
+      "N_A_not_B": 41030,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "zenodo",
+   "url": "https://zenodo.org/api/records?size=1&q=ocean%20AND%20type:dataset",
+   "count": 16619,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "type:dataset",
+      "B": "ocean",
+      "N_A": 787350,
+      "N_AB": 16633,
+      "N_A_not_B": 770719,
+      "gap": 2,
+      "fires": false
+     },
+     {
+      "A": "ocean",
+      "B": "type:dataset",
+      "N_A": 91578,
+      "N_AB": 16633,
+      "N_A_not_B": 74945,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "zenodo",
+   "url": "https://zenodo.org/api/records?size=1&q=genome%20AND%20type:software",
+   "count": 3630,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "type:software",
+      "B": "genome",
+      "N_A": 344709,
+      "N_AB": 3635,
+      "N_A_not_B": 341074,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "genome",
+      "B": "type:software",
+      "N_A": 38921,
+      "N_AB": 3635,
+      "N_A_not_B": 35286,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "zenodo",
+   "url": "https://zenodo.org/api/records?size=1&q=genome&type=software",
+   "count": 3630,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "only one conjunct (no top-level AND)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "zenodo",
+   "url": "https://zenodo.org/api/records?size=1&q=ecology&type=image",
+   "count": 42722,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "only one conjunct (no top-level AND)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "chembl",
+   "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?limit=1&molecule_type=Small%20molecule&max_phase=4",
+   "count": 3475,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "chembl",
+   "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?limit=1&molecule_type=Antibody&max_phase=4",
+   "count": 150,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "chembl",
+   "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?limit=0&molecule_type=Protein&max_phase=4",
+   "count": 271,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "chembl",
+   "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?limit=1&molecule_type=Protein&max_phase=4",
+   "count": 271,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "chembl",
+   "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?limit=1&molecule_type=Small%20molecule&max_phase=3",
+   "count": 1174,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "chembl",
+   "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?limit=0&molecule_type=Antibody&max_phase=2",
+   "count": 618,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "chembl",
+   "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?limit=1&molecule_type=Antibody&max_clinical_phase=2",
+   "count": 1032,
+   "a_unknown_params": [
+    "max_clinical_phase"
+   ],
+   "a": true,
+   "b_ignored": [
+    "max_clinical_phase"
+   ],
+   "b": true,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": true
+  },
+  {
+   "api": "arxiv",
+   "url": "http://export.arxiv.org/api/query?search_query=all:electron+AND+cat:hep-th&max_results=1",
+   "count": 2830,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "cat:hep-th",
+      "B": "all:electron",
+      "N_A": 188166,
+      "N_AB": 2830,
+      "N_A_not_B": 185336,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "all:electron",
+      "B": "cat:hep-th",
+      "N_A": 189339,
+      "N_AB": 2830,
+      "N_A_not_B": 186509,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "arxiv",
+   "url": "http://export.arxiv.org/api/query?search_query=all:graphene+AND+cat:cond-mat.mes-hall&max_results=1",
+   "count": 15040,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "cat:cond-mat.mes-hall",
+      "B": "all:graphene",
+      "N_A": 104658,
+      "N_AB": 15041,
+      "N_A_not_B": 89617,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "all:graphene",
+      "B": "cat:cond-mat.mes-hall",
+      "N_A": 22170,
+      "N_AB": 15041,
+      "N_A_not_B": 7129,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "arxiv",
+   "url": "http://export.arxiv.org/api/query?search_query=all:transformer+AND+cat:cs.CL&max_results=1",
+   "count": 14556,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "cat:cs.CL",
+      "B": "all:transformer",
+      "N_A": 126184,
+      "N_AB": 14561,
+      "N_A_not_B": 111623,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "all:transformer",
+      "B": "cat:cs.CL",
+      "N_A": 186033,
+      "N_AB": 14561,
+      "N_A_not_B": 171472,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "arxiv",
+   "url": "http://export.arxiv.org/api/query?search_query=all:protein+AND+cat:q-bio.BM&max_results=1",
+   "count": 3784,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "cat:q-bio.BM",
+      "B": "all:protein",
+      "N_A": 7007,
+      "N_AB": 3784,
+      "N_A_not_B": 3223,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "all:protein",
+      "B": "cat:q-bio.BM",
+      "N_A": 14317,
+      "N_AB": 3784,
+      "N_A_not_B": 10533,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "arxiv",
+   "url": "http://export.arxiv.org/api/query?search_query=all:neutrino+AND+cat:hep-ph&max_results=1",
+   "count": 26436,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": true,
+    "fires": false,
+    "detail": [
+     {
+      "A": "cat:hep-ph",
+      "B": "all:neutrino",
+      "N_A": 201583,
+      "N_AB": 26436,
+      "N_A_not_B": 175147,
+      "gap": 0,
+      "fires": false
+     },
+     {
+      "A": "all:neutrino",
+      "B": "cat:hep-ph",
+      "N_A": 41987,
+      "N_AB": 26436,
+      "N_A_not_B": 15551,
+      "gap": 0,
+      "fires": false
+     }
+    ]
+   },
+   "c_testable": true,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "datacite",
+   "url": "https://api.datacite.org/dois?query=climate&filter[resource-type-id]=Dataset&page[size]=1",
+   "count": 638600,
+   "a_unknown_params": [
+    "filter[resource-type-id]"
+   ],
+   "a": true,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "only one conjunct (no top-level AND)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": true
+  },
+  {
+   "api": "datacite",
+   "url": "https://api.datacite.org/dois?query=malaria&page[size]=1",
+   "count": 60838,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "only one conjunct (no top-level AND)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "datacite",
+   "url": "https://api.datacite.org/dois?query=climate&filter%5Bresource-type-id%5D=Dataset&page[size]=1",
+   "count": 638600,
+   "a_unknown_params": [
+    "filter[resource-type-id]"
+   ],
+   "a": true,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "only one conjunct (no top-level AND)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": true
+  },
+  {
+   "api": "datacite",
+   "url": "https://api.datacite.org/dois?query=malaria&filter[resource-type-id]=text&page[size]=1",
+   "count": 60838,
+   "a_unknown_params": [
+    "filter[resource-type-id]"
+   ],
+   "a": true,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "only one conjunct (no top-level AND)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": true
+  },
+  {
+   "api": "datacite",
+   "url": "https://api.datacite.org/dois?query=ocean&resource-type-id=dataset&page[size]=1",
+   "count": 341079,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "only one conjunct (no top-level AND)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "datacite",
+   "url": "https://api.datacite.org/dois?query=genome&resource-type-id=software&page[size]=1",
+   "count": 14641,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "only one conjunct (no top-level AND)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "datacite",
+   "url": "https://api.datacite.org/dois?query=glacier&resource-type-id=image&page[size]=1",
+   "count": 27614,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "only one conjunct (no top-level AND)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "datacite",
+   "url": "https://api.datacite.org/dois?query=glacier&resource-type-id=Image&page[size]=1",
+   "count": 27614,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "only one conjunct (no top-level AND)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "inat",
+   "url": "https://api.inaturalist.org/v1/observations?per_page=0&taxon_name=Puma%20concolor&d1=2020-01-01&d2=2020-12-31",
+   "count": 1533,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "inat",
+   "url": "https://api.inaturalist.org/v1/observations?per_page=0&taxon_name=Puma%20concolor&year=2020",
+   "count": 1533,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "inat",
+   "url": "https://api.inaturalist.org/v1/observations?taxon_name=Ursus%20arctos&d1=2019-01-01&d2=2019-12-31&per_page=0",
+   "count": 1463,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "inat",
+   "url": "https://api.inaturalist.org/v1/observations?taxon_name=Canis%20lupus&d1=2021-01-01&d2=2021-12-31&per_page=0",
+   "count": 17907,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "inat",
+   "url": "https://api.inaturalist.org/v1/observations?per_page=0&taxon_name=Canis%20lupus&d1=2021-01-01&d2=2021-12-31",
+   "count": 17907,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "inat",
+   "url": "https://api.inaturalist.org/v1/observations?taxon_name=Lynx%20rufus&d1=2018-01-01&d2=2018-12-31&per_page=0",
+   "count": 2922,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "inat",
+   "url": "https://api.inaturalist.org/v1/observations?taxon_name=Lynx%20rufus&observed_on_after=2018-01-01&observed_on_before=2018-12-31&per_page=0",
+   "count": 57361,
+   "a_unknown_params": [
+    "observed_on_after",
+    "observed_on_before"
+   ],
+   "a": true,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": true
+  },
+  {
+   "api": "inat",
+   "url": "https://api.inaturalist.org/v1/observations?taxon_name=Vulpes%20vulpes&d1=2022-01-01&d2=2022-12-31&per_page=0",
+   "count": 16971,
+   "a_unknown_params": [],
+   "a": false,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": false
+  },
+  {
+   "api": "inat",
+   "url": "https://api.inaturalist.org/v1/observations?per_page=0&taxon_name=Vulpes%20vulpes&observed_on_gte=2022-01-01&observed_on_lte=2022-12-31",
+   "count": 176983,
+   "a_unknown_params": [
+    "observed_on_gte",
+    "observed_on_lte"
+   ],
+   "a": true,
+   "b_ignored": [],
+   "b": false,
+   "c_result": {
+    "testable": false,
+    "reason": "no query-language string (filters are separate parameters)"
+   },
+   "c_testable": false,
+   "c": false,
+   "any": true
+  }
+ ],
+ "runs": [
+  {
+   "key": "gpt-oss-120b",
+   "api": "ncbi",
+   "task": "BRCA1|human",
+   "rep": 0,
+   "kind": "wrong",
+   "answer": "count=1",
+   "truth": 1568,
+   "final": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmode=json&retmax=0&term=BRCA1%5BGene%5D%20AND%20Homo%20sapiens%5BOrganism%5D",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "ncbi",
+   "task": "BRCA1|human",
+   "rep": 1,
+   "kind": "wrong",
+   "answer": "count=1",
+   "truth": 1568,
+   "final": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmode=json&retmax=0&term=BRCA1%5BGene%5D%20AND%20Homo%20sapiens%5BOrganism%5D",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "ncbi",
+   "task": "TP53|mouse",
+   "rep": 0,
+   "kind": "wrong",
+   "answer": "count=3",
+   "truth": 116,
+   "final": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmode=json&retmax=0&term=TP53%5BGene%20Name%5D%20AND%20mouse%5BOrganism%5D",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "ncbi",
+   "task": "TP53|mouse",
+   "rep": 1,
+   "kind": "wrong",
+   "answer": "count=3",
+   "truth": 116,
+   "final": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmode=json&retmax=0&term=TP53%5BGene%20Name%5D%20AND%20mouse%5BOrganism%5D",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "ncbi",
+   "task": "CFTR|human",
+   "rep": 0,
+   "kind": "wrong",
+   "answer": "count=1",
+   "truth": 1747,
+   "final": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmode=json&retmax=0&term=CFTR%5BGene%5D%20AND%20Homo%20sapiens%5BOrganism%5D",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "ncbi",
+   "task": "CFTR|human",
+   "rep": 1,
+   "kind": "wrong",
+   "answer": "count=1",
+   "truth": 1747,
+   "final": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmode=json&retmax=0&term=CFTR%5BGene%5D%20AND%20Homo%20sapiens%5BOrganism%5D",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "ncbi",
+   "task": "MYC|mouse",
+   "rep": 0,
+   "kind": "wrong",
+   "answer": "count=2",
+   "truth": 697,
+   "final": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmode=json&retmax=0&term=MYC%5BGene%20Name%5D%20AND%20Mus%20musculus%5BOrganism%5D",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "ncbi",
+   "task": "MYC|mouse",
+   "rep": 1,
+   "kind": "wrong",
+   "answer": "count=2",
+   "truth": 697,
+   "final": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmode=json&retmax=0&term=MYC%5BGene%20Name%5D%20AND%20Mus%20musculus%5BOrganism%5D",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "ncbi",
+   "task": "insulin|zebrafish",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=249",
+   "truth": 249,
+   "final": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmode=json&retmax=0&term=insulin%5BAll%20Fields%5D%20AND%20Danio%20rerio%5BOrganism%5D",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "ncbi",
+   "task": "insulin|zebrafish",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=249",
+   "truth": 249,
+   "final": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmode=json&retmax=0&term=insulin%5BAll%20Fields%5D%20AND%20Danio%20rerio%5BOrganism%5D",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "uniprot",
+   "task": "kinase|9606",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=25101",
+   "truth": 25101,
+   "final": "https://rest.uniprot.org/uniprotkb/search?format=json&size=1&query=kinase%20AND%20organism_id:9606",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "uniprot",
+   "task": "kinase|9606",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=25101",
+   "truth": 25101,
+   "final": "https://rest.uniprot.org/uniprotkb/search?format=json&size=1&query=kinase%20AND%20organism_id:9606",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "uniprot",
+   "task": "kinase|10090",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=18148",
+   "truth": 18148,
+   "final": "https://rest.uniprot.org/uniprotkb/search?format=json&size=1&query=kinase%20AND%20organism_id:10090",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "uniprot",
+   "task": "kinase|10090",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=18148",
+   "truth": 18148,
+   "final": "https://rest.uniprot.org/uniprotkb/search?format=json&size=1&query=kinase%20AND%20organism_id:10090",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "uniprot",
+   "task": "insulin|9606",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=2531",
+   "truth": 2531,
+   "final": "https://rest.uniprot.org/uniprotkb/search?format=json&size=1&query=insulin+AND+organism_id:9606",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "uniprot",
+   "task": "insulin|9606",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=2531",
+   "truth": 2531,
+   "final": "https://rest.uniprot.org/uniprotkb/search?format=json&size=1&query=insulin%20AND%20organism_id:9606",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "uniprot",
+   "task": "BRCA1|10090",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=448",
+   "truth": 448,
+   "final": "https://rest.uniprot.org/uniprotkb/search?format=json&size=1&query=BRCA1%20AND%20organism_id:10090",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "uniprot",
+   "task": "BRCA1|10090",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=448",
+   "truth": 448,
+   "final": "https://rest.uniprot.org/uniprotkb/search?format=json&size=1&query=BRCA1%20AND%20organism_id:10090",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "uniprot",
+   "task": "collagen|9606",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=1919",
+   "truth": 1919,
+   "final": "https://rest.uniprot.org/uniprotkb/search?format=json&size=1&query=collagen%20AND%20organism_id:9606",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "uniprot",
+   "task": "collagen|9606",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=1919",
+   "truth": 1919,
+   "final": "https://rest.uniprot.org/uniprotkb/search?format=json&size=1&query=collagen%20AND%20organism_id:9606",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "europepmc",
+   "task": "malaria|2020",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=15433",
+   "truth": 15433,
+   "final": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=1&query=malaria%20PUB_YEAR:2020",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "europepmc",
+   "task": "malaria|2020",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=15433",
+   "truth": 15433,
+   "final": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=1&query=malaria%20AND%20PUB_YEAR:2020",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "europepmc",
+   "task": "CRISPR|2018",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=11596",
+   "truth": 11596,
+   "final": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=1&query=CRISPR%20AND%20PUB_YEAR:2018",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "europepmc",
+   "task": "CRISPR|2018",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=11596",
+   "truth": 11596,
+   "final": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=1&query=CRISPR%20AND%20PUB_YEAR:2018",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "europepmc",
+   "task": "tuberculosis|2015",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=18628",
+   "truth": 18628,
+   "final": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=1&query=tuberculosis%20AND%20PUB_YEAR%3A2015",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "europepmc",
+   "task": "tuberculosis|2015",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=18628",
+   "truth": 18628,
+   "final": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=1&query=tuberculosis%20AND%20PUB_YEAR%3A2015",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "europepmc",
+   "task": "zika|2016",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=2657",
+   "truth": 2657,
+   "final": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=1&query=zika%20AND%20PUB_YEAR%3A2016",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "europepmc",
+   "task": "zika|2016",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=2657",
+   "truth": 2657,
+   "final": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=1&query=zika%20AND%20PUB_YEAR%3A2016",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "europepmc",
+   "task": "dengue|2019",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=5209",
+   "truth": 5209,
+   "final": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=1&query=dengue%20AND%20PUB_YEAR:2019",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "europepmc",
+   "task": "dengue|2019",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=5209",
+   "truth": 5209,
+   "final": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&pageSize=1&query=dengue%20AND%20PUB_YEAR%3A2019",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "gbif",
+   "task": "Puma concolor|US",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=11969",
+   "truth": 11969,
+   "final": "https://api.gbif.org/v1/occurrence/search?limit=0&scientificName=Puma%20concolor&country=US",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "gbif",
+   "task": "Puma concolor|US",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=11969",
+   "truth": 11969,
+   "final": "https://api.gbif.org/v1/occurrence/search?limit=0&scientificName=Puma%20concolor&country=US",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "gbif",
+   "task": "Ursus arctos|CA",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=3554",
+   "truth": 3554,
+   "final": "https://api.gbif.org/v1/occurrence/search?limit=0&scientificName=Ursus%20arctos&country=CA",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "gbif",
+   "task": "Ursus arctos|CA",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=3554",
+   "truth": 3554,
+   "final": "https://api.gbif.org/v1/occurrence/search?limit=0&scientificName=Ursus%20arctos&country=CA",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "gbif",
+   "task": "Canis lupus|US",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=17619",
+   "truth": 17619,
+   "final": "https://api.gbif.org/v1/occurrence/search?limit=0&scientificName=Canis%20lupus&country=US",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "gbif",
+   "task": "Canis lupus|US",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=17619",
+   "truth": 17619,
+   "final": "https://api.gbif.org/v1/occurrence/search?limit=0&scientificName=Canis%20lupus&country=US",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "gbif",
+   "task": "Lynx lynx|SE",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=4210",
+   "truth": 4210,
+   "final": "https://api.gbif.org/v1/occurrence/search?limit=0&scientificName=Lynx%20lynx&country=SE",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "gbif",
+   "task": "Lynx lynx|SE",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=4210",
+   "truth": 4210,
+   "final": "https://api.gbif.org/v1/occurrence/search?scientificName=Lynx%20lynx&country=SE&limit=0",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "gbif",
+   "task": "Vulpes vulpes|GB",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=182315",
+   "truth": 182315,
+   "final": "https://api.gbif.org/v1/occurrence/search?limit=0&scientificName=Vulpes%20vulpes&country=GB",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "gbif",
+   "task": "Vulpes vulpes|GB",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=182315",
+   "truth": 182315,
+   "final": "https://api.gbif.org/v1/occurrence/search?limit=0&scientificName=Vulpes%20vulpes&country=GB",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "zenodo",
+   "task": "climate|dataset",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=27636",
+   "truth": 27636,
+   "final": "https://zenodo.org/api/records?size=1&q=climate%20AND%20type:dataset",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "zenodo",
+   "task": "climate|dataset",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=27636",
+   "truth": 27636,
+   "final": "https://zenodo.org/api/records?size=1&q=climate&resource_type=dataset",
+   "a": true,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "zenodo",
+   "task": "covid|software",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=1105",
+   "truth": 1105,
+   "final": "https://zenodo.org/api/records?size=1&q=covid%20AND%20resource_type.type:software",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "zenodo",
+   "task": "covid|software",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=1105",
+   "truth": 1105,
+   "final": "https://zenodo.org/api/records?size=1&q=covid%20AND%20resource_type.type:software",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "zenodo",
+   "task": "ocean|dataset",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=16619",
+   "truth": 16619,
+   "final": "https://zenodo.org/api/records?size=1&q=ocean%20AND%20type:dataset",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "zenodo",
+   "task": "ocean|dataset",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=16619",
+   "truth": 16619,
+   "final": "https://zenodo.org/api/records?size=1&q=ocean%20AND%20type:dataset",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "zenodo",
+   "task": "genome|software",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=3630",
+   "truth": 3630,
+   "final": "https://zenodo.org/api/records?size=1&q=genome%20AND%20type:software",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "zenodo",
+   "task": "genome|software",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=3630",
+   "truth": 3630,
+   "final": "https://zenodo.org/api/records?size=1&q=genome&type=software",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "zenodo",
+   "task": "ecology|image",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=42722",
+   "truth": 42722,
+   "final": "https://zenodo.org/api/records?size=1&q=ecology&type=image",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "zenodo",
+   "task": "ecology|image",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=42722",
+   "truth": 42722,
+   "final": "https://zenodo.org/api/records?size=1&q=ecology&type=image",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "chembl",
+   "task": "Small molecule|4",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=3475",
+   "truth": 3475,
+   "final": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?limit=1&molecule_type=Small%20molecule&max_phase=4",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "chembl",
+   "task": "Small molecule|4",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=3475",
+   "truth": 3475,
+   "final": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?limit=1&molecule_type=Small%20molecule&max_phase=4",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "chembl",
+   "task": "Antibody|4",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=150",
+   "truth": 150,
+   "final": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?limit=1&molecule_type=Antibody&max_phase=4",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "chembl",
+   "task": "Antibody|4",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=150",
+   "truth": 150,
+   "final": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?limit=1&molecule_type=Antibody&max_phase=4",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "chembl",
+   "task": "Protein|4",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=271",
+   "truth": 271,
+   "final": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?limit=0&molecule_type=Protein&max_phase=4",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "chembl",
+   "task": "Protein|4",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=271",
+   "truth": 271,
+   "final": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?limit=1&molecule_type=Protein&max_phase=4",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "chembl",
+   "task": "Small molecule|3",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=1174",
+   "truth": 1174,
+   "final": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?limit=1&molecule_type=Small%20molecule&max_phase=3",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "chembl",
+   "task": "Small molecule|3",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=1174",
+   "truth": 1174,
+   "final": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?limit=1&molecule_type=Small%20molecule&max_phase=3",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "chembl",
+   "task": "Antibody|2",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=618",
+   "truth": 618,
+   "final": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?limit=0&molecule_type=Antibody&max_phase=2",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "chembl",
+   "task": "Antibody|2",
+   "rep": 1,
+   "kind": "wrong",
+   "answer": "count=1032",
+   "truth": 618,
+   "final": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?limit=1&molecule_type=Antibody&max_clinical_phase=2",
+   "a": true,
+   "b": true,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "arxiv",
+   "task": "electron|hep-th",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=2830",
+   "truth": 2830,
+   "final": "http://export.arxiv.org/api/query?search_query=all:electron+AND+cat:hep-th&max_results=1",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "arxiv",
+   "task": "electron|hep-th",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=2830",
+   "truth": 2830,
+   "final": "http://export.arxiv.org/api/query?search_query=all:electron+AND+cat:hep-th&max_results=1",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "arxiv",
+   "task": "graphene|cond-mat.mes-hall",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=15040",
+   "truth": 15040,
+   "final": "http://export.arxiv.org/api/query?search_query=all:graphene+AND+cat:cond-mat.mes-hall&max_results=1",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "arxiv",
+   "task": "graphene|cond-mat.mes-hall",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=15040",
+   "truth": 15040,
+   "final": "http://export.arxiv.org/api/query?search_query=all:graphene+AND+cat:cond-mat.mes-hall&max_results=1",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "arxiv",
+   "task": "transformer|cs.CL",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=14556",
+   "truth": 14556,
+   "final": "http://export.arxiv.org/api/query?search_query=all:transformer+AND+cat:cs.CL&max_results=1",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "arxiv",
+   "task": "transformer|cs.CL",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=14556",
+   "truth": 14556,
+   "final": "http://export.arxiv.org/api/query?search_query=all:transformer+AND+cat:cs.CL&max_results=1",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "arxiv",
+   "task": "protein|q-bio.BM",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=3784",
+   "truth": 3784,
+   "final": "http://export.arxiv.org/api/query?search_query=all:protein+AND+cat:q-bio.BM&max_results=1",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "arxiv",
+   "task": "protein|q-bio.BM",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=3784",
+   "truth": 3784,
+   "final": "http://export.arxiv.org/api/query?search_query=all:protein+AND+cat:q-bio.BM&max_results=1",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "arxiv",
+   "task": "neutrino|hep-ph",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=26436",
+   "truth": 26436,
+   "final": "http://export.arxiv.org/api/query?search_query=all:neutrino+AND+cat:hep-ph&max_results=1",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "arxiv",
+   "task": "neutrino|hep-ph",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=26436",
+   "truth": 26436,
+   "final": "http://export.arxiv.org/api/query?search_query=all:neutrino+AND+cat:hep-ph&max_results=1",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": true
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "datacite",
+   "task": "climate|dataset",
+   "rep": 0,
+   "kind": "wrong",
+   "answer": "count=638600",
+   "truth": 225012,
+   "final": "https://api.datacite.org/dois?query=climate&filter[resource-type-id]=Dataset&page[size]=1",
+   "a": true,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "datacite",
+   "task": "malaria|text",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=24467",
+   "truth": 24467,
+   "final": "https://api.datacite.org/dois?query=malaria&page[size]=1",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "datacite",
+   "task": "climate|dataset",
+   "rep": 1,
+   "kind": "wrong",
+   "answer": "count=638600",
+   "truth": 225012,
+   "final": "https://api.datacite.org/dois?query=climate&filter%5Bresource-type-id%5D=Dataset&page[size]=1",
+   "a": true,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "datacite",
+   "task": "malaria|text",
+   "rep": 1,
+   "kind": "wrong",
+   "answer": "count=60838",
+   "truth": 24467,
+   "final": "https://api.datacite.org/dois?query=malaria&filter[resource-type-id]=text&page[size]=1",
+   "a": true,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "datacite",
+   "task": "ocean|dataset",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=341079",
+   "truth": 341079,
+   "final": "https://api.datacite.org/dois?query=ocean&resource-type-id=dataset&page[size]=1",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "datacite",
+   "task": "genome|software",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=14641",
+   "truth": 14641,
+   "final": "https://api.datacite.org/dois?query=genome&resource-type-id=software&page[size]=1",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "datacite",
+   "task": "genome|software",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=14641",
+   "truth": 14641,
+   "final": "https://api.datacite.org/dois?query=genome&resource-type-id=software&page[size]=1",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "datacite",
+   "task": "glacier|image",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=27614",
+   "truth": 27614,
+   "final": "https://api.datacite.org/dois?query=glacier&resource-type-id=image&page[size]=1",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "datacite",
+   "task": "glacier|image",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=27614",
+   "truth": 27614,
+   "final": "https://api.datacite.org/dois?query=glacier&resource-type-id=Image&page[size]=1",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "inat",
+   "task": "Puma concolor|2020",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=1533",
+   "truth": 1533,
+   "final": "https://api.inaturalist.org/v1/observations?per_page=0&taxon_name=Puma%20concolor&d1=2020-01-01&d2=2020-12-31",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "inat",
+   "task": "Puma concolor|2020",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=1533",
+   "truth": 1533,
+   "final": "https://api.inaturalist.org/v1/observations?per_page=0&taxon_name=Puma%20concolor&year=2020",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "inat",
+   "task": "Ursus arctos|2019",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=1463",
+   "truth": 1463,
+   "final": "https://api.inaturalist.org/v1/observations?taxon_name=Ursus%20arctos&d1=2019-01-01&d2=2019-12-31&per_page=0",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "inat",
+   "task": "Ursus arctos|2019",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=1463",
+   "truth": 1463,
+   "final": "https://api.inaturalist.org/v1/observations?taxon_name=Ursus%20arctos&d1=2019-01-01&d2=2019-12-31&per_page=0",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "inat",
+   "task": "Canis lupus|2021",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=17907",
+   "truth": 17907,
+   "final": "https://api.inaturalist.org/v1/observations?taxon_name=Canis%20lupus&d1=2021-01-01&d2=2021-12-31&per_page=0",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "inat",
+   "task": "Canis lupus|2021",
+   "rep": 1,
+   "kind": "correct",
+   "answer": "count=17907",
+   "truth": 17907,
+   "final": "https://api.inaturalist.org/v1/observations?per_page=0&taxon_name=Canis%20lupus&d1=2021-01-01&d2=2021-12-31",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "inat",
+   "task": "Lynx rufus|2018",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=2922",
+   "truth": 2922,
+   "final": "https://api.inaturalist.org/v1/observations?taxon_name=Lynx%20rufus&d1=2018-01-01&d2=2018-12-31&per_page=0",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "inat",
+   "task": "Lynx rufus|2018",
+   "rep": 1,
+   "kind": "wrong",
+   "answer": "count=57361",
+   "truth": 2922,
+   "final": "https://api.inaturalist.org/v1/observations?taxon_name=Lynx%20rufus&observed_on_after=2018-01-01&observed_on_before=2018-12-31&per_page=0",
+   "a": true,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "inat",
+   "task": "Vulpes vulpes|2022",
+   "rep": 0,
+   "kind": "correct",
+   "answer": "count=16971",
+   "truth": 16971,
+   "final": "https://api.inaturalist.org/v1/observations?taxon_name=Vulpes%20vulpes&d1=2022-01-01&d2=2022-12-31&per_page=0",
+   "a": false,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  },
+  {
+   "key": "gpt-oss-120b",
+   "api": "inat",
+   "task": "Vulpes vulpes|2022",
+   "rep": 1,
+   "kind": "wrong",
+   "answer": "count=176983",
+   "truth": 16971,
+   "final": "https://api.inaturalist.org/v1/observations?per_page=0&taxon_name=Vulpes%20vulpes&observed_on_gte=2022-01-01&observed_on_lte=2022-12-31",
+   "a": true,
+   "b": false,
+   "c": false,
+   "c_testable": false
+  }
+ ],
+ "note": "query-language APIs: ncbi, uniprot, europepmc, arxiv (main); zenodo, datacite (extra). gbif, chembl, inat have no query string, so (c) is not testable there."
+}

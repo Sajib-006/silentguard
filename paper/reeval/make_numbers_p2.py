@@ -1,0 +1,189 @@
+"""Write numbers_p2.tex and tab_mixed.tex from the Phase 2 result files. No number is typed by hand.
+
+    python make_numbers_p2.py <phase2_stats.json> <e3n rows dir or ''> <e3n_replay_summary.json or ''> <out dir>
+
+Reporting choices, fixed on 2026-11-24 before the last two models finished:
+- the mixed table shows the mean over all complete models (per-model values in the appendix table);
+- the same means without Phi-4 are written as macros (its sanity gate failed by 0.4 points);
+- outcomes are wrong, correct, unknown and no answer, as in the paper's other tables.
+"""
+import collections
+import glob
+import json
+import math
+import sys
+from pathlib import Path
+
+stats = json.loads(Path(sys.argv[1]).read_text())
+rows_dir, replay_path, out = sys.argv[2], sys.argv[3], Path(sys.argv[4])
+M = stats["complete_models"]
+T = stats["table"]
+K = {}
+NAME = {"gpt-oss-120b": "gpt-oss-120b", "phi-4": "Phi-4", "gemma3-27b": "Gemma-3-27B", "llama33-70b": "Llama-3.3-70B"}
+ARMS = [("none", "No guard"), ("advisory_nonum_abstain", "Warning + abstain"), ("enforce2", "Enforce"),
+        ("sgp", "\\textbf{SilentGuard}")]
+
+
+def ms(arm, key, models):
+    v = [T[m][arm][key] for m in models if T[m][arm].get(key) is not None]
+    if not v:
+        return None, None
+    mean = sum(v) / len(v)
+    se = math.sqrt(sum((x - mean) ** 2 for x in v) / (len(v) - 1) / len(v)) if len(v) > 1 else 0.0
+    return mean, se
+
+
+def f1(x):
+    return "--" if x is None else f"{x:.1f}"
+
+
+K["p2-models"] = str(len(M))
+K["p2-model-list"] = ", ".join(NAME[m] for m in M)
+short = {"none": "none", "advisory_nonum_abstain": "abst", "enforce2": "enf", "sgp": "sgp", "advisory_num_abstain": "ctl"}
+no_phi = [m for m in M if m != "phi-4"]
+for arm, s in short.items():
+    for key, k in (("blind_wrong", "blind"), ("seen_wrong", "seen"), ("all12_wrong", "all"), ("blind_correct", "blind-correct"),
+                   ("all12_correct", "all-correct"), ("blind_unknown", "blind-unknown"), ("clean_correct", "clean")):
+        K[f"p2-{s}-{k}"] = f1(ms(arm, key, M)[0])
+        K[f"p2x-{s}-{k}"] = f1(ms(arm, key, no_phi)[0])       # without Phi-4
+    vals = [T[m][arm].get("blind_wrong") for m in M if T[m][arm].get("blind_wrong") is not None]
+    if vals:
+        K[f"p2-{s}-blind-min"], K[f"p2-{s}-blind-max"] = f"{min(vals):.0f}", f"{max(vals):.0f}"
+    vals = [T[m][arm].get("seen_wrong") for m in M if T[m][arm].get("seen_wrong") is not None]
+    if vals:
+        K[f"p2-{s}-seen-min"], K[f"p2-{s}-seen-max"] = f"{min(vals):.0f}", f"{max(vals):.0f}"
+
+P = stats.get("predictions", {})
+held = [k for k in ("M1", "M2", "M3", "M4", "M5", "M6", "Z1", "Z2", "Z3") if P.get(k, {}).get("held")]
+failed = [k for k in ("M1", "M2", "M3", "M4", "M5", "M6", "Z1", "Z2", "Z3") if k in P and not P[k].get("held")]
+K["p2-pred-n"], K["p2-pred-held"] = str(len(held) + len(failed)), str(len(held))
+K["p2-pred-failed-list"] = ", ".join(failed) if failed else "none"
+for k, name in (("M3", "m3"), ("M6", "m6"), ("Z2", "z2")):
+    if k in P:
+        lo, hi = P[k]["ci95"]
+        d = P[k]["diff_a_minus_b"]
+        K[f"p2-{name}"] = f"{abs(d):.1f}"
+        K[f"p2-{name}-lo"], K[f"p2-{name}-hi"] = f"{min(abs(lo), abs(hi)):.1f}", f"{max(abs(lo), abs(hi)):.1f}"
+for f, v in (stats.get("by_blind_fault") or {}).items():
+    k = f.replace("blind_", "").replace("_", "-")
+    K[f"p2-bf-{k}-none"], K[f"p2-bf-{k}-sgp"] = f1(v["none"]), f1(v["sgp"])
+for m, s in (stats.get("sanity") or {}).items():
+    K[f"p2-gate-{m}-new"], K[f"p2-gate-{m}-old"] = f1(s["none_seen_wrong_new"]), f1(s["none_seen_wrong_old"])
+    K[f"p2-gate-{m}-clean-new"], K[f"p2-gate-{m}-clean-old"] = f1(s["none_clean_new"]), f1(s["none_clean_old"])
+K["p2-gate-pass"] = str(sum(1 for s in (stats.get("sanity") or {}).values() if s["pass"]))
+K["p2-gate-n"] = str(len(stats.get("sanity") or {}))
+
+# real-API pilot with no documentation
+if rows_dir:
+    rows = [json.loads(l) for f in glob.glob(str(Path(rows_dir) / "e3n-*.jsonl")) for l in open(f)]
+    for arm, s in (("none", "none"), ("schema", "spec")):
+        c = collections.Counter(r["outcome"] for r in rows if r["arm"] == arm)
+        n = sum(c.values())
+        if n:
+            K[f"e3n-{s}-n"] = str(n)
+            K[f"e3n-{s}-wrong"], K[f"e3n-{s}-correct"] = f"{100 * c['wrong_num'] / n:.1f}", f"{100 * c['correct'] / n:.1f}"
+            K[f"e3n-{s}-wrong-n"] = str(c["wrong_num"])
+    K["e3n-ncbi-wrong-n"] = str(sum(1 for r in rows if r["arm"] == "none" and r["api"] == "ncbi" and r["outcome"] == "wrong_num"))
+if replay_path and Path(replay_path).exists():
+    R = json.loads(Path(replay_path).read_text())
+    pool = (R.get("summary") or R.get("stats") or R).get("POOLED", {})
+    for k in ("wrong_runs", "wrong_tested", "wrong_caught_a", "wrong_caught_b", "wrong_caught_c", "wrong_caught_any",
+              "correct_runs", "correct_tested", "correct_flagged_any"):
+        if k in pool:
+            K["e3n-rp-" + k.replace("_", "-")] = str(pool[k])
+
+lines = ["% GENERATED by make_numbers_p2.py from the Phase 2 result files. Do not edit by hand."]
+lines += [f"\\expandafter\\def\\csname num@{k}\\endcsname{{{v}}}" for k, v in sorted(K.items())]
+(out / "numbers_p2.tex").write_text("\n".join(lines) + "\n")
+
+# mixed-fault table
+best = {}
+for key in ("seen_wrong", "blind_wrong", "all12_wrong"):
+    vals = {a: ms(a, key, M)[0] for a, _ in ARMS}
+    best[key] = min(vals, key=lambda a: vals[a])
+for key in ("all12_correct", "clean_correct"):
+    vals = {a: ms(a, key, M)[0] for a, _ in ARMS}
+    best[key] = max(vals, key=lambda a: vals[a])
+
+
+def cell(arm, key):
+    m, se = ms(arm, key, M)
+    if m is None:
+        return "--"
+    s = f"{m:.1f}"
+    if best[key] == arm:
+        s = f"\\textbf{{{s}}}"
+    return s
+
+
+L = ["\\begin{table}[t]", "\\centering", "\\small", "\\setlength{\\tabcolsep}{2.2pt}",
+     "\\begin{tabular}{@{}lccccc@{}}", "\\toprule", "\\rowcolor{head}",
+     " & \\multicolumn{3}{c}{\\textbf{Wrong}$\\downarrow$} & \\textbf{Correct}$\\uparrow$ & \\textbf{Clean}$\\uparrow$\\\\",
+     "\\rowcolor{head}\\cmidrule(lr){2-4}", "\\rowcolor{head}\\textbf{Method} & Seen & Unseen & All 12 & All 12 & \\\\", "\\midrule"]
+for arm, lab in ARMS:
+    pre = "\\rowcolor{ours}" if arm == "sgp" else ""
+    L.append(f"{pre}{lab} & {cell(arm, 'seen_wrong')} & {cell(arm, 'blind_wrong')} & {cell(arm, 'all12_wrong')} & "
+             f"{cell(arm, 'all12_correct')} & {cell(arm, 'clean_correct')}\\\\")
+L += ["\\bottomrule", "\\end{tabular}",
+      f"\\caption{{\\textbf{{Agents on fault types the check was not built for.}} \\% of runs with silent faults, mean of "
+      f"{len(M)} open models (per model in Table~\\ref{{tab:app-mixed-permodel}}). Seen: the six fault types the count check can see. Unseen: six fault "
+      "types written after the method was frozen, by an author who had not seen the check. Wrong: the agent reported a "
+      "wrong count. Correct: correct count under a fault. Clean: correct on fault-free tasks. Bold: best.}",
+      "\\label{tab:mixed}", "\\end{table}"]
+(out / "tab_mixed.tex").write_text("\n".join(L) + "\n")
+# per-model table (appendix)
+L = ["\\begin{table*}[t]", "\\centering", "\\small", "\\setlength{\\tabcolsep}{2.6pt}",
+     "\\begin{tabular}{@{}l" + "ccc" * len(M) + "@{}}", "\\toprule", "\\rowcolor{head}",
+     " & " + " & ".join(f"\\multicolumn{{3}}{{c}}{{\\textbf{{{NAME[m]}}}}}" for m in M) + "\\\\",
+     "\\rowcolor{head}\\textbf{Method} & " + " & ".join("Seen & Unseen & Clean" for _ in M) + "\\\\", "\\midrule"]
+ALL5 = ARMS[:2] + [("advisory_num_abstain", "Warning + numbers + abstain")] + ARMS[2:]
+for arm, lab in ALL5:
+    cells = []
+    for m in M:
+        r = T[m][arm]
+        cells += [f1(r.get("seen_wrong")), f1(r.get("blind_wrong")), f1(r.get("clean_correct"))]
+    L.append(("\\rowcolor{ours}" if arm == "sgp" else "") + f"{lab} & " + " & ".join(cells) + "\\\\")
+L += ["\\bottomrule", "\\end{tabular}",
+      "\\caption{Second round of runs, per model. Seen and Unseen: \\% of faulted runs with a wrong count on the six seen and the six "
+      "unseen fault types. Clean: \\% correct on fault-free tasks. The warning with numbers was run on seen faults only. "
+      "Gemma-3-27B, Phi-4 and Llama-3.3-70B were served with vLLM on university GPUs for every cell of this table, and "
+      "gpt-oss-120b by the same endpoint as in the main runs.}", "\\label{tab:app-mixed-permodel}", "\\end{table*}"]
+(out / "tab_app_mixed_permodel.tex").write_text("\n".join(L) + "\n")
+
+TEXT = {"M1": "Unseen faults: no guard wrong in at least 50\\% of runs",
+        "M2": "Unseen faults: SilentGuard wrong in 15--35\\% of runs, below no guard on every model",
+        "M3": "Unseen faults: SilentGuard below warning + may abstain (paired runs)",
+        "M4": "All 12 fault types: SilentGuard wrong at most one third of no guard",
+        "M5": "Unseen faults: SilentGuard correct at least 10 points below no guard (cost)",
+        "M6": "Unseen faults: Enforce above SilentGuard (paired runs)",
+        "Z1": "Warning with numbers + may abstain leaves at least 5\\% wrong",
+        "Z2": "SilentGuard below the warning with numbers (paired runs, at least 3 of 4 models)",
+        "Z3": "Warning with numbers: at least 10 points between the best and worst model"}
+
+
+def obs(k):
+    p = P[k]
+    if k == "M1": return f"{p['none_blind_wrong']}"
+    if k == "M2": return f"{p['sgp_blind_wrong']}, {p['below_none_on']}/{len(M)}"
+    if k in ("M3", "M6", "Z2"): return f"{abs(p['diff_a_minus_b'])} [{min(abs(p['ci95'][0]), abs(p['ci95'][1]))}, {max(abs(p['ci95'][0]), abs(p['ci95'][1]))}]"
+    if k == "M4": return f"{p['sgp_all12_wrong']} vs {p['none_all12_wrong']}"
+    if k == "M5": return f"{p['sgp_blind_correct']} vs {p['none_blind_correct']}"
+    if k == "Z1": return f"{p['ctl_seen_wrong']}"
+    if k == "Z3": return f"{p['range']}"
+
+
+L = ["\\begin{table*}[t]", "\\centering", "\\small", "\\setlength{\\tabcolsep}{4pt}",
+     "\\begin{tabular}{@{}lp{9.2cm}lc@{}}", "\\toprule", "\\rowcolor{head}",
+     "\\textbf{ID} & \\textbf{Prediction} & \\textbf{Observed} & \\textbf{Outcome}\\\\", "\\midrule"]
+for k in ("M1", "M2", "M3", "M4", "M5", "M6", "Z1", "Z2", "Z3"):
+    if k in P:
+        L.append(f"{k} & {TEXT[k]} & {obs(k)} & " + ("held" if P[k]["held"] else "\\textbf{\\textcolor{loss}{failed}}") + "\\\\")
+L += ["\\bottomrule", "\\end{tabular}",
+      f"\\caption{{Predictions of the second round of runs, written down before any of them ran ({len(held)} of "
+      f"{len(held) + len(failed)} held). Means over {len(M)} open models (\\%). Paired rows give the difference in "
+      "wrong-answer rate with its 95\\% interval (bootstrap over tasks).}", "\\label{tab:app-prereg2}", "\\end{table*}"]
+(out / "tab_app_prereg2.tex").write_text("\n".join(L) + "\n")
+print(f"{len(K)} macros, table for {len(M)} models written to {out}")
+for k in sorted(K):
+    if k.startswith(("p2-none-", "p2-sgp-", "p2-ctl-", "p2-pred", "e3n-", "p2-gate")):
+        print(f"  {k:28s} {K[k]}")

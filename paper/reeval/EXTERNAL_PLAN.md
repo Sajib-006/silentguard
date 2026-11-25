@@ -369,3 +369,9 @@ guard with the right docs is correct at least 85 percent of the time.
   one although the backend answers). All 7 models: no guard 97.1 wrong, spec check alone 100.0, SilentGuard 20.0 wrong /
   2.9 correct / 77.1 unknown, right docs 88.6 correct. V1, V2, V3 (at its boundary), V5 held; V4 failed. 7 wrong answers
   under SilentGuard: 4 from live-count drift between request and probe, 3 from Nemotron switching to year=.
+
+## 2026-11-24: Phase 2 (review round of 2026-11-24), written before any Phase 2 run
+Full plan with predictions Z1-Z3 (stage ctl5), M1-M6 (stage mix5) and the go rule for the real-API pilot e3n:
+reeval/PHASE2_PLAN.md (sha256 549bb9315778592c766b18f4238e6717ac3ab51278adaab54d14eb1052eb567b). Free models only: gpt-oss-120b (VT ARC endpoint), Gemma-3-27B, Phi-4,
+Llama-3.3-70B (ARC GPUs, vLLM).
+Addendum for the e3n pilot added before it ran (replay tolerance, conjunct limit, pilot size). PHASE2_PLAN.md sha256 now 1dcbf3c941f0fce78a79362a10a3e275c0c14b30ea1f54443867112cdffea86d.

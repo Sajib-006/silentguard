@@ -1,0 +1,131 @@
+{
+ "groups": {
+  "biomedical (NCBI gene, UniProtKB, Europe PMC, ChEMBL)": [
+   "ncbi",
+   "uniprot",
+   "europepmc",
+   "chembl"
+  ],
+  "biodiversity (GBIF, iNaturalist)": [
+   "gbif",
+   "inat"
+  ],
+  "general research (Zenodo, arXiv, DataCite)": [
+   "zenodo",
+   "arxiv",
+   "datacite"
+  ]
+ },
+ "results": {
+  "biomedical (NCBI gene, UniProtKB, Europe PMC, ChEMBL)": {
+   "none": {
+    "n": 140,
+    "wrong": 89.3,
+    "correct": 2.9,
+    "unknown": 7.9
+   },
+   "retry2": {
+    "n": 140,
+    "wrong": 91.4,
+    "correct": 2.9,
+    "unknown": 3.6
+   },
+   "schema": {
+    "n": 140,
+    "wrong": 38.6,
+    "correct": 52.1,
+    "unknown": 7.9
+   },
+   "sgp": {
+    "n": 140,
+    "wrong": 37.1,
+    "correct": 51.4,
+    "unknown": 10.0
+   }
+  },
+  "biodiversity (GBIF, iNaturalist)": {
+   "none": {
+    "n": 70,
+    "wrong": 91.4,
+    "correct": 0.0,
+    "unknown": 8.6
+   },
+   "retry2": {
+    "n": 70,
+    "wrong": 91.4,
+    "correct": 0.0,
+    "unknown": 2.9
+   },
+   "schema": {
+    "n": 70,
+    "wrong": 1.4,
+    "correct": 98.6,
+    "unknown": 0.0
+   },
+   "sgp": {
+    "n": 70,
+    "wrong": 2.9,
+    "correct": 97.1,
+    "unknown": 0.0
+   }
+  },
+  "general research (Zenodo, arXiv, DataCite)": {
+   "none": {
+    "n": 105,
+    "wrong": 89.5,
+    "correct": 6.7,
+    "unknown": 1.9
+   },
+   "retry2": {
+    "n": 105,
+    "wrong": 85.7,
+    "correct": 5.7,
+    "unknown": 7.6
+   },
+   "schema": {
+    "n": 105,
+    "wrong": 10.5,
+    "correct": 77.1,
+    "unknown": 10.5
+   },
+   "sgp": {
+    "n": 105,
+    "wrong": 12.4,
+    "correct": 75.2,
+    "unknown": 10.5
+   }
+  }
+ },
+ "biomedical_probe_misnamed_filter": [
+  [
+   "NCBI E-utilities (gene)",
+   "silent",
+   24.2
+  ],
+  [
+   "UniProtKB",
+   "silent",
+   83.3
+  ],
+  [
+   "ClinicalTrials.gov v2",
+   "rejected",
+   null
+  ],
+  [
+   "Europe PMC",
+   "silent",
+   18.9
+  ],
+  [
+   "openFDA drug events",
+   "rejected",
+   null
+  ],
+  [
+   "ChEMBL molecules",
+   "silent",
+   691.4
+  ]
+ ]
+}

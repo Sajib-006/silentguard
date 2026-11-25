@@ -22,7 +22,7 @@ import d7_harness
 import d7_harness_v3
 import d7_records
 REC_ARMS = {"rec_enforce", "rec_repair", "rec_sgp"}                # E9: answers are record lists
-V3_ARMS = {"advisory_hint", "advisory_nonum", "enforce2", "repair3", "sgp"}      # EDIT 4 arms: detector checks every position
+V3_ARMS = {"advisory_hint", "advisory_nonum", "enforce2", "repair3", "sgp", "advisory_num"}      # EDIT 4 arms: detector checks every position
 HINT = " Ways to recover a reliable count: (1) the API may be dropping a condition -- re-issue the query with an extra filter that matches every record added as the LAST filter, and check that the padded counts add up; (2) the API may be combining conditions with OR -- count each condition on its own and combine them by inclusion-exclusion; (3) the count may be capped -- split the query by another field so each piece is small, and add the pieces. If no route checks out, answer that the count cannot be determined."
 
 ALLOWED_HOSTS = {"localhost", "127.0.0.1", "0.0.0.0"}
@@ -330,6 +330,16 @@ def execute(cmd: str, condition: str, g_enforce: str = "record", timeout: float 
                     # isolates the number leak: same v3 verdict as the hint arm, no numbers, no hint, no gate
                     if v["ran"]:
                         rec["full_body"] = rec["full_body"] + "\n\n" + v["text"]
+                elif d7_remediation == "advisory_num":
+                    # Phase 2 (2026-11-24) control: the same v3 verdict, plus the numbers of the first failed check
+                    if v["ran"]:
+                        extra = ""
+                        if failed and v.get("detail") and v.get("failed_at"):
+                            dd = v["detail"][v["failed_at"][0]]
+                            extra = (f" Check numbers: reported count {v['n']} + count with {dd['field']} negated "
+                                     f"{dd['negated_count']} = {v['n'] + dd['negated_count']}, but the count without "
+                                     f"that condition is {dd['without_count']}.")
+                        rec["full_body"] = rec["full_body"] + "\n\n" + v["text"] + extra
                 elif d7_remediation == "rec_enforce":
                     rec["full_body"] = rec["full_body"] + "\n\n" + v["text"]
                 elif d7_remediation == "rec_sgp" and failed:

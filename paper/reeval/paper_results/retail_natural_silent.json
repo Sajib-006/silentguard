@@ -1,0 +1,99 @@
+{
+ "per_model": {
+  "llama4-scout": {
+   "n": 60,
+   "wrong_num": 39,
+   "api_ignored_body": 35,
+   "ignored_wrong_num": 34,
+   "ignored_nohdr": 35,
+   "sgp_pair": 35,
+   "sgp_abstain": 32,
+   "correct": 20,
+   "sgp_correct": 3,
+   "abstain": 1,
+   "ignored_abstain": 1
+  },
+  "llama4-maverick": {
+   "n": 60,
+   "abstain": 1,
+   "correct": 46,
+   "wrong_num": 13
+  },
+  "llama33-70b": {
+   "n": 60,
+   "wrong_num": 56,
+   "api_ignored_body": 44,
+   "ignored_wrong_num": 44,
+   "ignored_nohdr": 44,
+   "sgp_pair": 44,
+   "sgp_wrong_num": 2,
+   "sgp_abstain": 33,
+   "sgp_correct": 9,
+   "correct": 3,
+   "no_answer": 1
+  },
+  "gpt-oss-120b": {
+   "n": 60,
+   "correct": 37,
+   "wrong_num": 23,
+   "api_ignored_body": 3,
+   "ignored_wrong_num": 3,
+   "ignored_nohdr": 3,
+   "sgp_pair": 3,
+   "sgp_wrong_num": 1,
+   "sgp_correct": 2
+  },
+  "nemotron-ultra": {
+   "n": 60,
+   "no_answer": 3,
+   "correct": 36,
+   "wrong_num": 21
+  },
+  "gemma3-27b": {
+   "n": 60,
+   "wrong_num": 58,
+   "api_ignored_body": 58,
+   "ignored_wrong_num": 56,
+   "ignored_nohdr": 58,
+   "sgp_pair": 58,
+   "sgp_abstain": 54,
+   "abstain": 1,
+   "ignored_abstain": 1,
+   "no_answer": 1,
+   "ignored_no_answer": 1,
+   "sgp_wrong_num": 2,
+   "sgp_correct": 1,
+   "sgp_no_answer": 1
+  },
+  "phi-4": {
+   "n": 60,
+   "no_answer": 43,
+   "abstain": 6,
+   "correct": 10,
+   "api_ignored_body": 2,
+   "ignored_no_answer": 1,
+   "ignored_nohdr": 2,
+   "sgp_pair": 2,
+   "sgp_no_answer": 2,
+   "wrong_num": 1,
+   "ignored_wrong_num": 1
+  }
+ },
+ "pooled": {
+  "n": 420,
+  "wrong_num": 211,
+  "api_ignored_body": 142,
+  "ignored_wrong_num": 138,
+  "ignored_nohdr": 142,
+  "sgp_pair": 142,
+  "sgp_abstain": 119,
+  "correct": 152,
+  "sgp_correct": 15,
+  "abstain": 9,
+  "ignored_abstain": 2,
+  "sgp_wrong_num": 5,
+  "no_answer": 48,
+  "ignored_no_answer": 2,
+  "sgp_no_answer": 3
+ }
+}

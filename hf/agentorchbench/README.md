@@ -127,10 +127,13 @@ Report wrong answers under faults, correct answers on fault-free tasks, and abst
 
 ## Main results
 
-Across 7 open models, unguarded agents report a wrong count in 74.0% of faulted runs. Checklists,
-reviewer models and LLM judges leave over 70% wrong. SilentGuard, which tests each result against
-exact invariants and withholds values that break them, leaves 1.7% wrong on the fault types its
-checks target, with no loss on fault-free tasks. See the paper for all methods, models and limits.
+Across 7 open models, unguarded agents report a wrong count in 74.0% of faulted runs, and checklists,
+reviewer models and LLM judges leave over 70% wrong. On all 12 fault types (six that the exact check
+was built for and six written later), with 4 open models, no guard leaves 57.7% wrong, a warning with
+permission to abstain 23.8%, and SilentGuard, which withholds values that break an exact invariant,
+11.1%. One later fault type (a match on parts of a text value) keeps the check's identity true, and no
+method helps there. SilentGuard abstains rather than recovers, so it also withholds some right
+answers. See the paper for all methods, models and limits.
 
 ## Data
 
