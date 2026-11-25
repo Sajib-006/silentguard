@@ -1,0 +1,15 @@
+{
+ "note": "ToolMaze repeated action counts, computed from the full traces (not in the release, too large). Recompute with the traces and the ToolMaze repo.",
+ "repeated_actions": {
+  "blindr": [
+   2.3551948051948055,
+   88.14935064935064,
+   7
+  ],
+  "ours": [
+   0.2363095238095238,
+   22.61904761904762,
+   7
+  ]
+ }
+}

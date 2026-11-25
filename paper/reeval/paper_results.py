@@ -603,8 +603,14 @@ def risk_table():
 def repeated_actions():
     """ToolMaze: how often each harness repeats an ACTION tool (bookings, payments, messages): blind retry
     re-sends every call; SilentGuard re-calls only a result that failed a check."""
+    defs = B / "external" / "ToolMaze" / "tools" / "definitions" / "action.yaml"
+    if not defs.exists() or not glob.glob(str(R / "ext_toolmaze5/expA" / "*" / "traces")):
+        # public release: the full ToolMaze traces are not included, so use the counts computed from them
+        res = {k: tuple(v) for k, v in json.load(open(B / "reeval" / "paper_results" / "repeated_actions.json"))["repeated_actions"].items()}
+        NUM["repeated_actions"] = res
+        return res
     import yaml
-    acts = {t["name"] for t in yaml.safe_load(open(B / "external" / "ToolMaze" / "tools" / "definitions" / "action.yaml"))["tools"]}
+    acts = {t["name"] for t in yaml.safe_load(open(defs))["tools"]}
     res = {}
     for arm, root, tag in (("blindr", "ext_toolmaze5/expA", "[harness blind retry]"),
                            ("ours", "ext_toolmaze4/test4", "[harness re-check]")):

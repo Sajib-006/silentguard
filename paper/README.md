@@ -81,6 +81,21 @@ mkdir -p runs && tar xzf runs_release/phase2_and_reference_runs.tar.gz -C runs
 python3 reeval/phase2_analysis.py           # writes reeval/paper_results/phase2_stats.json
 ```
 
+## Rebuild every table from the released logs
+
+`runs_release/` holds the run logs of both rounds (`round1_runs.tar.gz`, `phase2_and_reference_runs.tar.gz`).
+With Python 3 and the packages in `requirements.txt`:
+
+```bash
+bash reeval/rebuild_tables.sh
+```
+
+This recomputes `reeval/paper_results/table_data.json` and `phase2_stats.json` from the raw runs. We checked that
+both come out identical to the committed files. Two inputs are counts only, because those runs were made on a
+company platform whose logs cannot be released: the GPT-5.6 runs on AgentOrchBench and the Nemotron-3-Ultra
+control arms (`reeval/paper_results/frontier_runs.json`, `nemotron_external.json`). The ToolMaze repeated-action
+counts come from full traces that are too large to release (`reeval/paper_results/repeated_actions.json`).
+
 ## Tables and figures
 
 ```bash
